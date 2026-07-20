@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import ImportedLogoGroup from "@/imports/LogoGroup/index";
 import VoidHomeMobile from "@/imports/VoidHomeMobile/index";
+import Rectangle from "@/imports/Rectangle240649349/index";
 
 function TopMarquee() {
   const text = "currently open to freelance work · ";
@@ -40,13 +41,18 @@ function TopMarquee() {
 
 function MetadataDescription() {
   return (
-    <div className="flex flex-col gap-6 items-start w-full">
-      <p
-        className="text-[#e4501d] text-[32px] tracking-[-1px]"
-        style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 500 }}
-      >
-        uiux designer
-      </p>
+    <div className="flex flex-col gap-3 items-start w-full">
+      <div className="flex items-center">
+        <div style={{ position: "relative", width: "10px", height: "10px", marginRight: "8px", flexShrink: 0, transform: "rotate(-45deg)" }}>
+          <Rectangle />
+        </div>
+        <p
+          className="text-[32px] tracking-[-1px]"
+          style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 500, color: "#161513" }}
+        >
+          uiux designer
+        </p>
+      </div>
       <div
         className="text-[#8a8a8a] text-[22px] max-w-[680px]"
         style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 400, lineHeight: 1.6 }}
@@ -62,7 +68,7 @@ function MetadataDescription() {
 function IntroStack() {
   return (
     <div className="flex flex-col gap-8 items-start w-full">
-      <div style={{ position: "relative", width: "434.834px", height: "126.72px" }}>
+      <div style={{ position: "relative", width: "279px", height: "77px" }}>
         <ImportedLogoGroup />
       </div>
       <MetadataDescription />
@@ -79,14 +85,14 @@ const navItems = [
 function NavigationList() {
   return (
     <div
-      className="flex flex-col gap-3 items-start pt-6 w-full text-[#e4501d]"
+      className="flex flex-col gap-3 items-start pt-6 w-fit text-[#e4501d]"
       style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 500 }}
     >
       {navItems.map(({ num, label, to }) => (
         <Link key={num} to={to} className="no-underline">
           <div className="flex gap-12 items-center cursor-pointer group">
             <p className="text-[20px] w-8 opacity-70">{num}</p>
-            <p className="text-[32px] tracking-[-1px] whitespace-nowrap group-hover:underline text-[#e4501d]">
+            <p className="text-[24px] tracking-[-1px] whitespace-nowrap group-hover:underline text-[#161513]">
               {label}
             </p>
           </div>

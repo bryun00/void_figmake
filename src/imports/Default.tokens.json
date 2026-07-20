@@ -1,0 +1,107 @@
+{
+  "color": {
+    "bg": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9725490212440491,
+          0.9137254953384399
+        ],
+        "alpha": 1,
+        "hex": "#FFF8E9"
+      },
+      "$description": "배경",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2311:1689",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "ink": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.08627451211214066,
+          0.08235294371843338,
+          0.07450980693101883
+        ],
+        "alpha": 1,
+        "hex": "#161513"
+      },
+      "$description": "메인 텍스트",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2311:1690",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "gray": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5411764979362488,
+          0.5411764979362488,
+          0.5411764979362488
+        ],
+        "alpha": 1,
+        "hex": "#8A8A8A"
+      },
+      "$description": "보조 텍스트",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2311:1691",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "accent": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8941176533699036,
+          0.3137255012989044,
+          0.11372549086809158
+        ],
+        "alpha": 1,
+        "hex": "#E4501D"
+      },
+      "$description": "포인트",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2311:1692",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "divider": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8980392217636108,
+          0.8784313797950745,
+          0.8156862854957581
+        ],
+        "alpha": 1,
+        "hex": "#E5E0D0"
+      },
+      "$description": "구분선",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2311:1693",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Default"
+  }
+}

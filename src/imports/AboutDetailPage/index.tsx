@@ -1,72 +1,13 @@
-import svgPaths from "./svg-cs2p8mvx7u";
-import { Link } from "react-router";
+import imgAboutTitle from "@/imports/image-3.png";
+import SiteHeader from "@/app/components/SiteHeader";
 
-function Frame() {
-  return (
-    <div className="absolute h-[23.467px] left-0 top-0 w-[84.751px]">
-      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 84.7505 23.4667">
-        <g id="Frame 2087328046">
-          <g id="VOID">
-            <path d={svgPaths.p32b9b400} fill="var(--fill-0, #E4501D)" id="Vector" />
-            <path d={svgPaths.p3ae9d200} fill="var(--fill-0, #E4501D)" id="Vector_2" />
-            <path d={svgPaths.p234d70b0} fill="var(--fill-0, #E4501D)" id="Vector_3" />
-            <path d={svgPaths.p2ca5b680} fill="var(--fill-0, #E4501D)" id="Vector_4" />
-          </g>
-          <path d={svgPaths.p3e350440} fill="var(--fill-0, #E4501D)" id="â¢" />
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function Frame1() {
-  return (
-    <div className="h-[23.467px] relative shrink-0 w-full">
-      <Frame />
-    </div>
-  );
-}
-
-function Logo() {
-  return (
-    <Link to="/" className="no-underline">
-      <div className="content-stretch flex flex-col items-start pt-[4px] relative shrink-0 w-[85px] cursor-pointer" data-name="logo">
-        <Frame1 />
-      </div>
-    </Link>
-  );
-}
-
-function Navigation() {
-  return (
-    <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk:Medium',sans-serif] gap-[32px] items-center leading-[normal] not-italic relative shrink-0 text-[14px] whitespace-nowrap" data-name="navigation">
-      <p className="relative shrink-0 text-[#e4501d]">about</p>
-      <p className="relative shrink-0 text-[#161513]">work</p>
-      <p className="relative shrink-0 text-[#161513]">contact</p>
-    </div>
-  );
-}
-
-function Header() {
-  return (
-    <div className="relative shrink-0 w-full" data-name="header">
-      <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <div className="flex flex-row items-center size-full">
-        <div className="content-stretch flex items-center justify-between px-[80px] py-[24px] relative size-full">
-          <Logo />
-          <Navigation />
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function IntroBlock() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px relative" data-name="intro-block">
       <div className="[word-break:break-word] font-['Pretendard:Regular',sans-serif] leading-[0] not-italic relative shrink-0 text-[#e4501d] text-[22px] w-full">
-        <p className="leading-[1.6] mb-0">{`우리는, 고객사와 '함께 고민하고, 함께 쓰는'`}</p>
-        <p className="leading-[1.6]">Web/Creative 파트너입니다.</p>
+        <p className="leading-[1.6] mb-0" style={{ color: "var(--color-ink)" }}>{`우리는, 고객사와 '함께 고민하고, 함께 쓰는'`}</p>
+        <p className="leading-[1.6]" style={{ color: "var(--color-ink)" }}>Web/Creative 파트너입니다.</p>
       </div>
     </div>
   );
@@ -77,7 +18,7 @@ function Hero() {
     <div className="relative shrink-0 w-full" data-name="hero">
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
       <div className="content-stretch flex gap-[82px] items-start pb-[170px] pt-[80px] px-[80px] relative size-full">
-        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['TheNightWatch_:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[90px] tracking-[-1.8px] w-[462px]">About</p>
+        <img src={imgAboutTitle} alt="About" style={{ display: "block", width: "462px", height: "56px", objectFit: "contain", objectPosition: "left", flexShrink: 0 }} />
         <IntroBlock />
       </div>
     </div>
@@ -416,7 +357,7 @@ function Footer() {
 export default function AboutDetailPage() {
   return (
     <div className="bg-[#fff8e9] content-stretch flex flex-col items-start relative size-full" data-name="about-detail-page">
-      <Header />
+      <SiteHeader />
       <Hero />
       <Biography />
       <Footer />
