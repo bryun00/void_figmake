@@ -3,7 +3,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import WorkPage from "./pages/WorkPage";
 import ContactPageRoute from "./pages/ContactPage";
-import WorkDetailPage from "./pages/WorkDetailPage";
+import WorkDetailIBKPage from "./pages/WorkDetailIBKPage";
 
 export const router = createBrowserRouter([
   {
@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
     Component: ContactPageRoute,
   },
   {
-    path: "/work/1",
-    Component: WorkDetailPage,
+    path: "/work/ibk",
+    Component: WorkDetailIBKPage,
   },
 ]);

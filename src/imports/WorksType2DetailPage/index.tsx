@@ -1,7 +1,6 @@
-import { Link } from "react-router";
 import SiteHeader from '@/app/components/SiteHeader';
 import imgWorksTitle from "@/imports/image-4.png";
-import WorkCard1 from "@/imports/SectionRow-1/index";
+import ImportedContents from "@/imports/Contents/index";
 
 function IntroBlock() {
   return (
@@ -181,9 +180,9 @@ function SectionRow2() {
 function Component() {
   return (
     <div className="content-stretch flex gap-[52px] items-center relative shrink-0 w-full" data-name="1">
-      <Link to="/work/1" className="no-underline flex-1 min-w-0"><WorkCard1 /></Link>
       <WorkCard1 />
-      <WorkCard1 />
+      <SectionRow1 />
+      <SectionRow2 />
     </div>
   );
 }
@@ -284,9 +283,9 @@ function SectionRow5() {
 function Component1() {
   return (
     <div className="content-stretch flex gap-[52px] items-center relative shrink-0 w-full" data-name="2">
-      <WorkCard1 />
-      <WorkCard1 />
-      <WorkCard1 />
+      <SectionRow3 />
+      <SectionRow4 />
+      <SectionRow5 />
     </div>
   );
 }
@@ -387,9 +386,9 @@ function SectionRow8() {
 function Component2() {
   return (
     <div className="content-stretch flex gap-[52px] items-center relative shrink-0 w-full" data-name="3">
-      <WorkCard1 />
-      <WorkCard1 />
-      <WorkCard1 />
+      <SectionRow6 />
+      <SectionRow7 />
+      <SectionRow8 />
     </div>
   );
 }
@@ -420,7 +419,7 @@ function Frame6() {
     <div className="content-stretch flex flex-col items-start relative w-full">
       <SiteHeader />
       <Hero />
-      <Contents />
+      <ImportedContents />
     </div>
   );
 }
