@@ -1,5 +1,7 @@
+import { Link } from "react-router";
 import SiteHeader from '@/app/components/SiteHeader';
 import imgWorksTitle from "@/imports/image-4.png";
+import WorkCard1 from "@/imports/SectionRow-1/index";
 
 function IntroBlock() {
   return (
@@ -48,7 +50,7 @@ function Frame10() {
 function Frame11() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center not-italic relative shrink-0 whitespace-nowrap">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Work</p>
+      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Product</p>
       <p className="font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">1</p>
     </div>
   );
@@ -57,7 +59,7 @@ function Frame11() {
 function Frame12() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center not-italic relative shrink-0 whitespace-nowrap">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Work</p>
+      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Marketing</p>
       <p className="font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">1</p>
     </div>
   );
@@ -66,7 +68,7 @@ function Frame12() {
 function Frame13() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center not-italic relative shrink-0 whitespace-nowrap">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Work</p>
+      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Etc</p>
       <p className="font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">2</p>
     </div>
   );
@@ -179,9 +181,9 @@ function SectionRow2() {
 function Component() {
   return (
     <div className="content-stretch flex gap-[52px] items-center relative shrink-0 w-full" data-name="1">
-      <SectionRow />
-      <SectionRow1 />
-      <SectionRow2 />
+      <Link to="/work/1" className="no-underline flex-1 min-w-0"><WorkCard1 /></Link>
+      <WorkCard1 />
+      <WorkCard1 />
     </div>
   );
 }
@@ -282,9 +284,9 @@ function SectionRow5() {
 function Component1() {
   return (
     <div className="content-stretch flex gap-[52px] items-center relative shrink-0 w-full" data-name="2">
-      <SectionRow3 />
-      <SectionRow4 />
-      <SectionRow5 />
+      <WorkCard1 />
+      <WorkCard1 />
+      <WorkCard1 />
     </div>
   );
 }
@@ -385,9 +387,9 @@ function SectionRow8() {
 function Component2() {
   return (
     <div className="content-stretch flex gap-[52px] items-center relative shrink-0 w-full" data-name="3">
-      <SectionRow6 />
-      <SectionRow7 />
-      <SectionRow8 />
+      <WorkCard1 />
+      <WorkCard1 />
+      <WorkCard1 />
     </div>
   );
 }

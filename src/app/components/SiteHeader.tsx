@@ -1,26 +1,17 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router";
-import svgPaths from "@/imports/AboutDetailPage/svg-cs2p8mvx7u";
+import svgPaths from "@/imports/LogoGroup-2/svg-3o2zgfa2t5";
 import ScrollToTop from "./ScrollToTop";
 
 function LogoSvg() {
   return (
-    <div className="relative shrink-0 w-[85px]" style={{ paddingTop: "4px" }}>
-      <div className="h-[23.467px] relative w-full">
-        <div className="absolute h-[23.467px] left-0 top-0 w-[84.751px]">
-          <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 84.7505 23.4667">
-            <g>
-              <g id="VOID">
-                <path d={svgPaths.p32b9b400} fill="#E4501D" />
-                <path d={svgPaths.p3ae9d200} fill="#E4501D" />
-                <path d={svgPaths.p234d70b0} fill="#E4501D" />
-                <path d={svgPaths.p2ca5b680} fill="#E4501D" />
-              </g>
-              <path d={svgPaths.p3e350440} fill="#E4501D" />
-            </g>
-          </svg>
-        </div>
-      </div>
+    <div className="h-[24px] relative shrink-0 w-[85px]" style={{ paddingTop: "4px" }}>
+      <svg className="absolute block inset-0 size-full" fill="none" height="24" preserveAspectRatio="none" viewBox="0 0 85 24" width="85">
+        <g id="logo">
+          <path d={svgPaths.p865340} fill="#161513" />
+          <path d={svgPaths.p140ac680} fill="#161513" />
+        </g>
+      </svg>
     </div>
   );
 }
