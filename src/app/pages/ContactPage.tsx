@@ -1,9 +1,17 @@
 import ContactPage from "@/imports/ContactPage/index";
+import ContactMobile from "@/imports/ContactMobile/index";
 
 export default function ContactPageRoute() {
   return (
-    <div className="bg-[#fff8e9] min-h-screen w-full">
-      <ContactPage />
-    </div>
+    <>
+      {/* Mobile: ≤440px */}
+      <div className="max-[440px]:block hidden min-h-[100dvh] w-full bg-[#fff8e9]">
+        <ContactMobile />
+      </div>
+      {/* Desktop: >440px */}
+      <div className="max-[440px]:hidden bg-[#fff8e9] min-h-screen w-full">
+        <ContactPage />
+      </div>
+    </>
   );
 }

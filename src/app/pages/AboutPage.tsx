@@ -1,5 +1,5 @@
 import AboutDetailPage from "@/imports/AboutDetailPage/index";
-import AboutMobile from "@/imports/AboutMobile/index";
+import AboutMobile from "@/imports/AboutMobile-1/index";
 
 export default function AboutPage() {
   return (

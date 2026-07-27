@@ -1,4 +1,6 @@
+import { Link } from "react-router";
 import svgPaths from "./svg-9lrwavw4py";
+import SiteHeader from "@/app/components/SiteHeader";
 import imgHeroMockup from "./16157e464f9995eabe4b29aedace4290bb468547.png";
 import imgImage3898 from "./96ae625849d030eba35c2edb0dd0648c8134c73f.png";
 import imgImage3865 from "./254af040ededa96a1116e9178aad06c49526fbe0.png";
@@ -56,11 +58,13 @@ function Navigation() {
 function ArrowLeftWrapper() {
   return (
     <div className="relative shrink-0 size-[16px]" data-name="arrow-left-wrapper">
-      <svg className="absolute block inset-0 size-full" fill="none" height="16" preserveAspectRatio="none" viewBox="0 0 16 16" width="16">
-        <g id="arrow-left-wrapper">
-          <path d="M8 2L2 8L8 14M2 8H14" id="arrow-left" stroke="var(--stroke-0, #E4501D)" strokeLinecap="round" strokeWidth="2" />
-        </g>
-      </svg>
+      <Link to="/work" className="absolute inset-0 flex items-center justify-center hover:opacity-70 transition-opacity">
+        <svg className="block size-full" fill="none" height="16" preserveAspectRatio="none" viewBox="0 0 16 16" width="16">
+          <g id="arrow-left-wrapper">
+            <path d="M8 2L2 8L8 14M2 8H14" id="arrow-left" stroke="var(--stroke-0, #E4501D)" strokeLinecap="round" strokeWidth="2" />
+          </g>
+        </svg>
+      </Link>
     </div>
   );
 }
@@ -71,7 +75,7 @@ function BackNav() {
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex gap-[8px] items-center pt-[40px] px-[80px] relative size-full">
           <ArrowLeftWrapper />
-          <p className="[word-break:break-word] font-['Space_Grotesk:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[14px] whitespace-nowrap">Back to works</p>
+          <Link to="/work" className="[word-break:break-word] font-['Space_Grotesk:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[14px] whitespace-nowrap no-underline hover:opacity-70 transition-opacity">Back to works</Link>
         </div>
       </div>
     </div>
@@ -1144,11 +1148,7 @@ function Up() {
 export default function WorksDetailDesktop() {
   return (
     <div className="bg-[#fff8e9] content-stretch flex flex-col items-start relative size-full" data-name="works-detail-desktop">
-      <div className="backdrop-blur-[2px] bg-[rgba(255,248,233,0.45)] content-stretch flex h-[76px] items-center justify-between px-[80px] py-[24px] shrink-0 sticky top-0 w-[1440px]" data-name="gnb">
-        <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-        <LogoGroup />
-        <Navigation />
-      </div>
+      <SiteHeader />
       <BackNav />
       <CaseHeaderGrid />
       <HeroMockupContainer />

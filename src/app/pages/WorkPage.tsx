@@ -1,9 +1,17 @@
 import WorksType2DetailPage from "@/imports/WorksType2DetailPage/index";
+import WorksListMobile from "@/imports/WorksListMobile/index";
 
 export default function WorkPage() {
   return (
-    <div className="bg-[#fff8e9] min-h-screen w-full">
-      <WorksType2DetailPage />
-    </div>
+    <>
+      {/* Mobile: ≤440px */}
+      <div className="max-[440px]:block hidden min-h-[100dvh] w-full bg-[#fff8e9]">
+        <WorksListMobile />
+      </div>
+      {/* Desktop: >440px */}
+      <div className="max-[440px]:hidden bg-[#fff8e9] min-h-screen w-full">
+        <WorksType2DetailPage />
+      </div>
+    </>
   );
 }

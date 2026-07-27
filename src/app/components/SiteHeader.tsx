@@ -63,7 +63,7 @@ export default function SiteHeader() {
               key={label}
               to={to}
               className="no-underline hover:opacity-70 transition-opacity"
-              style={{ color: pathname === to ? "#e4501d" : "#161513" }}
+              style={{ color: pathname === to || (to !== "/" && pathname.startsWith(to)) ? "#e4501d" : "#161513" }}
             >
               {label}
             </Link>
