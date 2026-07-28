@@ -35,7 +35,7 @@ function Navigation({ onOpen }: { onOpen: () => void }) {
 
 function Header({ onOpen }: { onOpen: () => void }) {
   return (
-    <div className="relative shrink-0 w-full" data-name="header">
+    <div className="bg-[rgba(255,248,233,0.45)] relative shrink-0 w-full" data-name="header">
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center justify-between px-[20px] py-[16px] relative size-full">
@@ -53,7 +53,7 @@ function Hero() {
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start not-italic px-[20px] py-[40px] relative size-full text-[#161513]">
         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['TheNightWatch_:Regular',sans-serif] leading-[normal] relative shrink-0 text-[52px] tracking-[-1.04px] w-full">About</p>
-        <div className="font-['Pretendard:Regular',sans-serif] leading-[0] relative shrink-0 text-[22px] w-full">
+        <div className="font-['Pretendard:Regular',sans-serif] leading-[0] relative shrink-0 text-[20px] w-full">
           <p className="leading-[1.6] mb-0">{`우리는, 고객사와 '함께 고민하고,`}</p>
           <p className="leading-[1.6]">{`함께 쓰는' Web/Creative 파트너입니다.`}</p>
         </div>
