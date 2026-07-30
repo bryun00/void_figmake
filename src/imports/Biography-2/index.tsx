@@ -15,7 +15,7 @@ function MaskGroup() {
 
 function Img() {
   return (
-    <div className="absolute bg-[#569c49] h-[240px] left-0 top-0 w-[296px]" data-name="img">
+    <div className="absolute bg-[#569c49] h-[240px] left-0 top-0 w-full" data-name="img">
       <MaskGroup />
     </div>
   );
@@ -57,7 +57,7 @@ function SectionRow() {
 }
 
 function Img1() {
-  return <div className="absolute bg-[#559390] h-[240px] left-0 top-[0.5px] w-[296px]" data-name="img" />;
+  return <div className="absolute bg-[#559390] h-[240px] left-0 top-[0.5px] w-full" data-name="img" />;
 }
 
 function Frame1() {

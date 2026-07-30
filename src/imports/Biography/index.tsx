@@ -8,7 +8,7 @@ import { imgVer21 } from "./svg-hds8k";
 
 function Img() {
   return (
-    <div className="absolute bg-[#3351bc] h-[240px] left-0 top-0 w-[296px]" data-name="img">
+    <div className="absolute bg-[#3351bc] h-[240px] left-0 top-0 w-full" data-name="img">
       <div className="absolute aspect-[2741/2741] left-[19px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-19px_144px] mask-size-[296px_240px] right-[-160px] shadow-[22px_203px_95.6px_0px_rgba(0,0,0,0.11)] top-[-144px]" style={{ maskImage: `url("${imgVer21}")` }} data-name="공통이미지_ver 2 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <img alt="" className="absolute h-[100.02%] left-0 max-w-none top-[-0.01%] w-[92.7%]" src={imgVer22} />
@@ -58,7 +58,7 @@ function SectionRow() {
 
 function Img1() {
   return (
-    <div className="absolute bg-[#405dc3] h-[240px] left-0 top-0 w-[296px]" data-name="img">
+    <div className="absolute bg-[#405dc3] h-[240px] left-0 top-0 w-full" data-name="img">
       <div className="absolute left-[25px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-25px_23px] mask-size-[296px_240px] size-[406px] top-[-23px]" style={{ maskImage: `url("${imgVer21}")` }} data-name="image 3916">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage3916} />
       </div>
@@ -106,7 +106,7 @@ function SectionRow1() {
 
 function Img2() {
   return (
-    <div className="absolute bg-[#ffeb56] h-[240px] left-0 top-0 w-[296px]" data-name="img">
+    <div className="absolute bg-[#ffeb56] h-[240px] left-0 top-0 w-full" data-name="img">
       <div className="absolute aspect-[1578/1356] bottom-[-73px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-52px_22px] mask-size-[296px_240px] right-[-146px] top-[-22px]" style={{ maskImage: `url("${imgVer21}")` }} data-name="image 3959">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage3959} />
       </div>
@@ -164,7 +164,7 @@ function Component1() {
 
 function Img3() {
   return (
-    <div className="absolute bg-[#645fbc] h-[240px] left-0 top-[0.5px] w-[296px]" data-name="img">
+    <div className="absolute bg-[#645fbc] h-[240px] left-0 top-[0.5px] w-full" data-name="img">
       <div className="absolute h-[154px] left-[13px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-13px_-69px] mask-size-[296px_240px] top-[69px] w-[269px]" style={{ maskImage: `url("${imgVer21}")` }} data-name="image 3960">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage3960} />
       </div>
@@ -212,7 +212,7 @@ function SectionRow3() {
 
 function Img4() {
   return (
-    <div className="absolute bg-[#767676] h-[240px] left-0 top-0 w-[296px]" data-name="img">
+    <div className="absolute bg-[#767676] h-[240px] left-0 top-0 w-full" data-name="img">
       <div className="absolute h-[156px] left-[11px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11px_-62px] mask-size-[296px_240px] top-[62px] w-[273px]" style={{ maskImage: `url("${imgVer21}")` }} data-name="image 3961">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage3961} />
       </div>
@@ -260,7 +260,7 @@ function SectionRow4() {
 
 function Img5() {
   return (
-    <div className="absolute bg-[#c87294] h-[240px] left-0 overflow-clip top-[0.5px] w-[296px]" data-name="img">
+    <div className="absolute bg-[#c87294] h-[240px] left-0 overflow-clip top-[0.5px] w-full" data-name="img">
       <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[174px] left-[calc(50%-0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-34px_-46px] mask-size-[296px_240px] top-[calc(50%+13px)] w-[227px]" style={{ maskImage: `url("${imgVer21}")` }} data-name="image 3962">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage3962} />
       </div>
@@ -318,7 +318,7 @@ function Component5() {
 
 function Img6() {
   return (
-    <div className="absolute bg-[#767676] h-[240px] left-0 top-0 w-[296px]" data-name="img">
+    <div className="absolute bg-[#767676] h-[240px] left-0 top-0 w-full" data-name="img">
       <div className="absolute h-[156px] left-[11px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11px_-62px] mask-size-[296px_240px] top-[62px] w-[273px]" style={{ maskImage: `url("${imgVer21}")` }} data-name="image 3961">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage3961} />
       </div>
