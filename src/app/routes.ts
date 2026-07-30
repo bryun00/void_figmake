@@ -56,4 +56,4 @@ export const router = createBrowserRouter([
     path: "/work/ls",
     Component: WorkDetailLSPage,
   },
-]);
+], { basename: import.meta.env.BASE_URL });
