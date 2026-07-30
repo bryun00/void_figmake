@@ -14,7 +14,7 @@ function Frame6() {
     <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
       <div aria-hidden className="absolute border-[#e4501d] border-b border-solid inset-0 pointer-events-none" />
       <p className="[word-break:break-word] font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[24px] whitespace-nowrap">Product</p>
-      <p className="[word-break:break-word] font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] not-italic relative shrink-0 text-[#8a8a8a] text-[22px] whitespace-nowrap">4</p>
+      <p className="[word-break:break-word] font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] not-italic relative shrink-0 text-[#8a8a8a] text-[22px] whitespace-nowrap">6</p>
     </div>
   );
 }
@@ -129,7 +129,9 @@ function Component2() {
 function SectionRow1() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
-      <Component2 />
+      <Link to="/work/bk" className="no-underline w-full cursor-pointer">
+        <Component2 />
+      </Link>
     </div>
   );
 }
@@ -142,7 +144,7 @@ function Frame13() {
   return (
     <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">구축</p>
-      <p className="relative shrink-0 text-[#8a8a8a]">2023</p>
+      <p className="relative shrink-0 text-[#8a8a8a]">2020</p>
     </div>
   );
 }
@@ -171,7 +173,9 @@ function Component3() {
 function SectionRow2() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
-      <Component3 />
+      <Link to="/work/amf" className="no-underline w-full cursor-pointer">
+        <Component3 />
+      </Link>
     </div>
   );
 }
@@ -193,8 +197,8 @@ function Frame3() {
 function Frame14() {
   return (
     <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
-      <p className="relative shrink-0 text-[#e4501d]">운영</p>
-      <p className="relative shrink-0 text-[#8a8a8a]">2024</p>
+      <p className="relative shrink-0 text-[#e4501d]">제안</p>
+      <p className="relative shrink-0 text-[#8a8a8a]">2020</p>
     </div>
   );
 }
@@ -204,8 +208,8 @@ function LeftLabelColumn3() {
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-0 not-italic top-[264px] w-[296px]" data-name="left-label-column">
       <Frame14 />
       <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
-        <p className="leading-[normal] mb-0">NH pay,NH 카드</p>
-        <p className="leading-[normal]">pc,mobile</p>
+        <p className="leading-[normal] mb-0">B2G 게임즈</p>
+        <p className="leading-[normal]">승부예측 커뮤니티사이트</p>
       </div>
     </div>
   );
@@ -223,7 +227,9 @@ function Component4() {
 function SectionRow3() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
-      <Component4 />
+      <Link to="/work/b2g" className="no-underline w-full cursor-pointer">
+        <Component4 />
+      </Link>
     </div>
   );
 }
@@ -235,8 +241,8 @@ function Frame4() {
 function Frame15() {
   return (
     <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
-      <p className="relative shrink-0 text-[#e4501d]">프로필</p>
-      <p className="relative shrink-0 text-[#8a8a8a]">2023</p>
+      <p className="relative shrink-0 text-[#e4501d]">운영</p>
+      <p className="relative shrink-0 text-[#8a8a8a]">2016</p>
     </div>
   );
 }
@@ -246,8 +252,8 @@ function LeftLabelColumn4() {
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-0 not-italic top-[263.5px] w-[296px]" data-name="left-label-column">
       <Frame15 />
       <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
-        <p className="leading-[normal] mb-0">하나은행 기업뱅킹</p>
-        <p className="leading-[normal]">{`pc,mobile `}</p>
+        <p className="leading-[normal] mb-0">쁘띠엘린 몰</p>
+        <p className="leading-[normal]">스마트라이크 브랜드 사이트</p>
       </div>
     </div>
   );
@@ -265,7 +271,9 @@ function Component6() {
 function SectionRow4() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
-      <Component6 />
+      <Link to="/work/petit-elin-brand" className="no-underline w-full cursor-pointer">
+        <Component6 />
+      </Link>
     </div>
   );
 }
@@ -278,7 +286,7 @@ function Frame16() {
   return (
     <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">제안</p>
-      <p className="relative shrink-0 text-[#8a8a8a]">2022</p>
+      <p className="relative shrink-0 text-[#8a8a8a]">2019</p>
     </div>
   );
 }
@@ -288,8 +296,8 @@ function LeftLabelColumn5() {
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-0 not-italic top-[263.5px] w-[296px]" data-name="left-label-column">
       <Frame16 />
       <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
-        <p className="leading-[normal] mb-0">B2G 게임즈</p>
-        <p className="leading-[normal]">승부예측 커뮤니티사이트</p>
+        <p className="leading-[normal] mb-0">쁘띠엘린 몰</p>
+        <p className="leading-[normal]">온라인몰 제안 시안</p>
       </div>
     </div>
   );
@@ -307,7 +315,9 @@ function Component7() {
 function SectionRow5() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
-      <Component7 />
+      <Link to="/work/petit-elin-online" className="no-underline w-full cursor-pointer">
+        <Component7 />
+      </Link>
     </div>
   );
 }
@@ -329,8 +339,8 @@ function Frame7() {
 function Frame17() {
   return (
     <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
-      <p className="relative shrink-0 text-[#e4501d]">운영</p>
-      <p className="relative shrink-0 text-[#8a8a8a]">2013</p>
+      <p className="relative shrink-0 text-[#e4501d]">제안</p>
+      <p className="relative shrink-0 text-[#8a8a8a]">2026</p>
     </div>
   );
 }
@@ -340,8 +350,8 @@ function LeftLabelColumn6() {
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-0 not-italic top-[264px] w-[300.333px]" data-name="left-label-column">
       <Frame17 />
       <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
-        <p className="leading-[normal] mb-0">쁘띠엘린 몰</p>
-        <p className="leading-[normal]">스마트라이크 브랜드 사이트</p>
+        <p className="leading-[normal] mb-0">LS증권</p>
+        <p className="leading-[normal]">사내 업무형 AI플랫폼 구축 제안 시안</p>
       </div>
     </div>
   );
@@ -359,7 +369,9 @@ function Component9() {
 function SectionRow6() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
-      <Component9 />
+      <Link to="/work/ls" className="no-underline w-full cursor-pointer">
+        <Component9 />
+      </Link>
     </div>
   );
 }
