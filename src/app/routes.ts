@@ -33,6 +33,18 @@ export const router = createBrowserRouter([
     Component: WorkDetailIBKPage,
   },
   {
+    path: "/work/all",
+    Component: WorkPage,
+  },
+  {
+    path: "/work/marketing",
+    Component: WorkPage,
+  },
+  {
+    path: "/work/etc",
+    Component: WorkPage,
+  },
+  {
     path: "/work/bk",
     Component: WorkDetailBKPage,
   },
