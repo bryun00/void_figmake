@@ -26,4 +26,16 @@ export const router = createBrowserRouter([
     path: "/work/ibk",
     Component: WorkDetailIBKPage,
   },
+  {
+    path: "/work/all",
+    Component: WorkPage,
+  },
+  {
+    path: "/work/marketing",
+    Component: WorkPage,
+  },
+  {
+    path: "/work/etc",
+    Component: WorkPage,
+  },
 ]);
