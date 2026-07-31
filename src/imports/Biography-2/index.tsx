@@ -50,7 +50,7 @@ function Component() {
 
 function SectionRow() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Component />
     </div>
   );
@@ -89,7 +89,7 @@ function Component1() {
 
 function SectionRow1() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Component1 />
     </div>
   );

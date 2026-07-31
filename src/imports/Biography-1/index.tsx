@@ -67,7 +67,7 @@ function Component() {
 
 function SectionRow() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Component />
     </div>
   );
@@ -117,7 +117,7 @@ function Component1() {
 
 function SectionRow1() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Component1 />
     </div>
   );
@@ -388,7 +388,7 @@ function Component9() {
 
 function SectionRow6() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Component9 />
     </div>
   );
@@ -438,7 +438,7 @@ function Component10() {
 
 function SectionRow7() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Component10 />
     </div>
   );
@@ -486,7 +486,7 @@ function Component11() {
 
 function SectionRow8() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Component11 />
     </div>
   );
@@ -546,7 +546,7 @@ function Component13() {
 
 function SectionRow9() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Component13 />
     </div>
   );
@@ -594,7 +594,7 @@ function Component14() {
 
 function SectionRow10() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Component14 />
     </div>
   );
@@ -644,7 +644,7 @@ function Component15() {
 
 function SectionRow11() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Component15 />
     </div>
   );

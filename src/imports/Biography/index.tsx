@@ -51,7 +51,7 @@ function Component() {
 
 function SectionRow() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Link to="/work/ibk" className="no-underline w-full cursor-pointer">
         <Component />
       </Link>
@@ -101,7 +101,7 @@ function Component2() {
 
 function SectionRow1() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Link to="/work/bk" className="no-underline w-full cursor-pointer">
         <Component2 />
       </Link>
@@ -151,7 +151,7 @@ function Component3() {
 
 function SectionRow2() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Link to="/work/amf" className="no-underline w-full cursor-pointer">
         <Component3 />
       </Link>
@@ -211,7 +211,7 @@ function Component4() {
 
 function SectionRow3() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Link to="/work/b2g" className="no-underline w-full cursor-pointer">
         <Component4 />
       </Link>
@@ -261,7 +261,7 @@ function Component6() {
 
 function SectionRow4() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Link to="/work/petit-elin-brand" className="no-underline w-full cursor-pointer">
         <Component6 />
       </Link>
@@ -311,7 +311,7 @@ function Component7() {
 
 function SectionRow5() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Link to="/work/petit-elin-online" className="no-underline w-full cursor-pointer">
         <Component7 />
       </Link>
