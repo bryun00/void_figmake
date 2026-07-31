@@ -1,5 +1,6 @@
 import WorksType2DetailPage from "@/imports/WorksType2DetailPage/index";
 import WorksListMobile from "@/imports/WorksListMobile/index";
+import DesktopCanvas from "@/app/components/DesktopCanvas";
 
 export default function WorkPage() {
   return (
@@ -10,7 +11,9 @@ export default function WorkPage() {
       </div>
       {/* Desktop: >440px */}
       <div className="max-[440px]:hidden bg-[#fff8e9] min-h-screen w-full">
-        <WorksType2DetailPage />
+        <DesktopCanvas>
+          <WorksType2DetailPage />
+        </DesktopCanvas>
       </div>
     </>
   );

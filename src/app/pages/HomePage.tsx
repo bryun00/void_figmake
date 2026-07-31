@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import ImportedLogoGroup from "@/imports/LogoGroup/index";
 import VoidHomeMobile from "@/imports/VoidHomeMobile/index";
 import Rectangle from "@/imports/Rectangle240649349/index";
+import DesktopCanvas from "@/app/components/DesktopCanvas";
 
 function TopMarquee() {
   const text = "currently open to freelance work · ";
@@ -169,10 +170,12 @@ export default function HomePage() {
         <VoidHomeMobile />
       </div>
       {/* Desktop: >440px */}
-      <div className="max-[440px]:hidden bg-[#fff8e9] flex flex-col items-start min-h-screen w-full">
-        <TopMarquee />
-        <MainContent />
-        <FooterWrapper />
+      <div className="max-[440px]:hidden bg-[#fff8e9] min-h-screen w-full">
+        <DesktopCanvas className="flex flex-col items-start">
+          <TopMarquee />
+          <MainContent />
+          <FooterWrapper />
+        </DesktopCanvas>
       </div>
     </>
   );
