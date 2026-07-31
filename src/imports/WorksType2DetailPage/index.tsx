@@ -1,4 +1,3 @@
-import SiteHeader from '@/app/components/SiteHeader';
 import imgWorksTitle from "@/imports/image-4.png";
 import ImportedContents from "@/imports/Contents/index";
 
@@ -417,7 +416,6 @@ function Contents() {
 function Frame6() {
   return (
     <div className="content-stretch flex flex-col items-start relative w-full">
-      <SiteHeader />
       <Hero />
       <ImportedContents />
     </div>

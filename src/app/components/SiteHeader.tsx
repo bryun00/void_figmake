@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router";
 import svgPaths from "@/imports/LogoGroup-2/svg-3o2zgfa2t5";
 import ScrollToTop from "./ScrollToTop";
+import DesktopCanvas from "./DesktopCanvas";
 
 function LogoSvg() {
   return (
@@ -50,26 +51,28 @@ export default function SiteHeader() {
       }
       data-name="header"
     >
-      <div className="content-stretch flex items-center justify-between px-[80px] py-[24px] relative w-full">
-        <Link to="/" className="no-underline cursor-pointer">
-          <LogoSvg />
-        </Link>
-        <nav
-          className="flex gap-[32px] items-center text-[14px] whitespace-nowrap"
-          style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 500 }}
-        >
-          {navLinks.map(({ label, to }) => (
-            <Link
-              key={label}
-              to={to}
-              className="no-underline hover:opacity-70 transition-opacity"
-              style={{ color: pathname === to || (to !== "/" && pathname.startsWith(to)) ? "#e4501d" : "#161513" }}
-            >
-              {label}
-            </Link>
-          ))}
-        </nav>
-      </div>
+      <DesktopCanvas>
+        <div className="content-stretch flex items-center justify-between px-[80px] py-[24px] relative w-full">
+          <Link to="/" className="no-underline cursor-pointer">
+            <LogoSvg />
+          </Link>
+          <nav
+            className="flex gap-[32px] items-center text-[14px] whitespace-nowrap"
+            style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 500 }}
+          >
+            {navLinks.map(({ label, to }) => (
+              <Link
+                key={label}
+                to={to}
+                className="no-underline hover:opacity-70 transition-opacity"
+                style={{ color: pathname === to || (to !== "/" && pathname.startsWith(to)) ? "#e4501d" : "#161513" }}
+              >
+                {label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+      </DesktopCanvas>
     </div>
     </>
   );

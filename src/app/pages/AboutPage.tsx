@@ -1,6 +1,7 @@
 import AboutDetailPage from "@/imports/AboutDetailPage/index";
 import AboutMobile from "@/imports/AboutMobile-1/index";
 import DesktopCanvas from "@/app/components/DesktopCanvas";
+import SiteHeader from "@/app/components/SiteHeader";
 
 export default function AboutPage() {
   return (
@@ -11,6 +12,7 @@ export default function AboutPage() {
       </div>
       {/* Desktop: >440px */}
       <div className="max-[440px]:hidden bg-[#fff8e9] min-h-screen w-full">
+        <SiteHeader />
         <DesktopCanvas>
           <AboutDetailPage />
         </DesktopCanvas>

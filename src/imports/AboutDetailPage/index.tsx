@@ -1,5 +1,4 @@
 import imgAboutTitle from "@/imports/image-3.png";
-import SiteHeader from "@/app/components/SiteHeader";
 
 
 function IntroBlock() {
@@ -357,7 +356,6 @@ function Footer() {
 export default function AboutDetailPage() {
   return (
     <div className="bg-[#fff8e9] content-stretch flex flex-col items-start relative size-full" data-name="about-detail-page">
-      <SiteHeader />
       <Hero />
       <Biography />
       <Footer />

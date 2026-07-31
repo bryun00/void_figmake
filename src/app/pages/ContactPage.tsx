@@ -1,6 +1,7 @@
 import ContactPage from "@/imports/ContactPage/index";
 import ContactMobile from "@/imports/ContactMobile/index";
 import DesktopCanvas from "@/app/components/DesktopCanvas";
+import SiteHeader from "@/app/components/SiteHeader";
 
 export default function ContactPageRoute() {
   return (
@@ -11,6 +12,7 @@ export default function ContactPageRoute() {
       </div>
       {/* Desktop: >440px */}
       <div className="max-[440px]:hidden bg-[#fff8e9] min-h-screen w-full">
+        <SiteHeader />
         <DesktopCanvas>
           <ContactPage />
         </DesktopCanvas>

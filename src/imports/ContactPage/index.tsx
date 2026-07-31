@@ -1,4 +1,3 @@
-import SiteHeader from "@/app/components/SiteHeader";
 import imgContactTitle from "@/imports/image-5.png";
 
 function IntroBlock() {
@@ -213,7 +212,6 @@ export default function ContactPage() {
   return (
     <div className="bg-[#fff8e9] content-stretch flex flex-col items-start relative size-full" data-name="contact-page">
       <div className="content-stretch flex flex-col items-start relative w-full">
-        <SiteHeader />
         <Hero />
         <Biography />
       </div>
