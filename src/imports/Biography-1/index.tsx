@@ -16,9 +16,12 @@ import { imgImage3958, img200113MtPd1 } from "./svg-y9cr5";
 function MaskGroup() {
   return (
     <div className="absolute contents left-0 top-0" data-name="Mask group">
-      <div className="absolute flex h-[424.397px] items-center justify-center left-[-92px] top-[-7px] w-[480.01px]">
-        <div className="flex-none rotate-[3.4deg]">
-          <div className="h-[397.959px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[92px_7px] mask-size-[296px_240px] relative shadow-[15px_11px_23px_0px_rgba(0,0,0,0.11)] w-[457.193px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="image 3958">
+      <div
+        className="-translate-x-1/2 absolute aspect-[480.0100379140058/424.39699422668855] bottom-[-73.92%] flex items-center justify-center left-[calc(50%+0.01px)] top-[-2.92%]"
+        style={{ containerType: "size" }}
+      >
+        <div className="flex-none h-[hypot(-4.92152cqw,93.605cqh)] rotate-[3.4deg] w-[hypot(95.0785cqw,6.39497cqh)]">
+          <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[92px_7px] mask-size-[296px_240px] relative shadow-[15px_11px_23px_0px_rgba(0,0,0,0.11)] size-full" style={{ maskImage: `url("${imgImage3958}")` }} data-name="image 3958">
             <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage3959} />
           </div>
         </div>
