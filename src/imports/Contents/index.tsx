@@ -1,16 +1,17 @@
 import { Link, useLocation } from "react-router";
-import Biography from "@/imports/Biography/index";
-import Biography1 from "@/imports/Biography-1/index";
-import Biography2 from "@/imports/Biography-2/index";
+import Biography, { productCards } from "@/imports/Biography/index";
+import Biography1, { marketingCards } from "@/imports/Biography-1/index";
+import Biography2, { etcCards } from "@/imports/Biography-2/index";
+import WorkAllList from "@/app/components/WorkAllList";
 
 function NavItem() {
   const { pathname } = useLocation();
 
   const navItems = [
-    { label: "All", count: "1", to: "/work/all" },
-    { label: "Product", count: "6", to: "/work" },
-    { label: "Marketing", count: "88", to: "/work/marketing" },
-    { label: "etc", count: "2", to: "/work/etc" },
+    { label: "All", count: String(productCards.length + marketingCards.length + etcCards.length), to: "/work/all" },
+    { label: "Product", count: String(productCards.length), to: "/work" },
+    { label: "Marketing", count: String(marketingCards.length), to: "/work/marketing" },
+    { label: "etc", count: String(etcCards.length), to: "/work/etc" },
   ];
 
   return (
@@ -40,6 +41,7 @@ export default function Contents() {
   const biographyComponent = () => {
     if (pathname === "/work/marketing") return <Biography1 />;
     if (pathname === "/work/etc") return <Biography2 />;
+    if (pathname === "/work/all") return <WorkAllList />;
     return <Biography />;
   };
 

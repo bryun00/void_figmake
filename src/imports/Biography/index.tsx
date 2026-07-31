@@ -159,16 +159,6 @@ function SectionRow2() {
   );
 }
 
-function Component1() {
-  return (
-    <div className="content-stretch flex gap-[52px] items-center relative shrink-0 w-full" data-name="1">
-      <SectionRow />
-      <SectionRow1 />
-      <SectionRow2 />
-    </div>
-  );
-}
-
 function Img3() {
   return (
     <div className="absolute bg-[#645fbc] h-[240px] left-0 top-[0.5px] w-full" data-name="img">
@@ -319,16 +309,6 @@ function SectionRow5() {
   );
 }
 
-function Component5() {
-  return (
-    <div className="content-stretch flex gap-[52px] items-center relative shrink-0 w-full" data-name="5">
-      <SectionRow3 />
-      <SectionRow4 />
-      <SectionRow5 />
-    </div>
-  );
-}
-
 function Img6() {
   return (
     <div className="absolute bg-[#767676] h-[240px] left-0 top-0 w-full" data-name="img">
@@ -379,20 +359,20 @@ function SectionRow6() {
   );
 }
 
-function Component8() {
-  return (
-    <div className="content-stretch flex gap-[52px] items-center relative shrink-0 w-full" data-name="6">
-      <SectionRow6 />
-    </div>
-  );
-}
+export const productCards = [
+  <SectionRow key="ibk" />,
+  <SectionRow1 key="bk" />,
+  <SectionRow2 key="amf" />,
+  <SectionRow3 key="b2g" />,
+  <SectionRow4 key="petit-elin-brand" />,
+  <SectionRow5 key="petit-elin-online" />,
+  <SectionRow6 key="ls" />,
+];
 
 export default function Biography() {
   return (
-    <div className="content-stretch flex flex-col items-start pb-[100px] pl-[72px] pr-[80px] relative size-full" data-name="biography">
-      <Component1 />
-      <Component5 />
-      <Component8 />
+    <div className="content-stretch flex flex-wrap gap-x-[52px] items-start pb-[100px] pl-[72px] pr-[80px] relative size-full" data-name="biography">
+      {productCards}
     </div>
   );
 }

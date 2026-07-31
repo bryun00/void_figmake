@@ -113,6 +113,8 @@ function Component2() {
   return <div className="content-stretch flex gap-[52px] h-[464px] items-center relative shrink-0 w-[296px]" data-name="1" />;
 }
 
+export const etcCards = [<SectionRow key="ai-icon" />, <SectionRow1 key="printed-matter" />];
+
 export default function Biography() {
   return (
     <div className="content-stretch flex flex-col items-start pb-[100px] pl-[72px] pr-[80px] relative size-full" data-name="biography">

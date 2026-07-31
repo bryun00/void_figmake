@@ -173,16 +173,6 @@ function SectionRow2() {
   );
 }
 
-function Component5() {
-  return (
-    <div className="content-stretch flex gap-[52px] items-center relative shrink-0 w-full" data-name="5">
-      <SectionRow />
-      <SectionRow1 />
-      <SectionRow2 />
-    </div>
-  );
-}
-
 function Img3() {
   return (
     <div className="absolute bg-white h-[240px] left-0 top-[0.5px] w-full" data-name="img">
@@ -336,16 +326,6 @@ function SectionRow5() {
   );
 }
 
-function Component3() {
-  return (
-    <div className="content-stretch flex gap-[52px] items-center relative shrink-0" data-name="1">
-      <SectionRow3 />
-      <SectionRow4 />
-      <SectionRow5 />
-    </div>
-  );
-}
-
 function Img6() {
   return (
     <div className="absolute bg-white h-[240px] left-0 top-0 w-full" data-name="img">
@@ -488,16 +468,6 @@ function SectionRow8() {
   return (
     <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Component11 />
-    </div>
-  );
-}
-
-function Component8() {
-  return (
-    <div className="content-stretch flex gap-[52px] items-center relative shrink-0 w-full" data-name="6">
-      <SectionRow6 />
-      <SectionRow7 />
-      <SectionRow8 />
     </div>
   );
 }
@@ -650,23 +620,25 @@ function SectionRow11() {
   );
 }
 
-function Component12() {
-  return (
-    <div className="content-stretch flex gap-[52px] items-center relative shrink-0 w-full" data-name="7">
-      <SectionRow9 />
-      <SectionRow10 />
-      <SectionRow11 />
-    </div>
-  );
-}
+export const marketingCards = [
+  <SectionRow key="nh-pay" />,
+  <SectionRow1 key="hana-bank" />,
+  <SectionRow2 key="ipnos" />,
+  <SectionRow3 key="petit-elin-warmer" />,
+  <SectionRow4 key="petit-elin-eclave-cushion" />,
+  <SectionRow5 key="petit-elin-superleaves" />,
+  <SectionRow6 key="petit-elin-mobile-app-event" />,
+  <SectionRow7 key="petit-elin-lunar-event" />,
+  <SectionRow8 key="petit-elin-frodogi" />,
+  <SectionRow9 key="petit-elin-etude" />,
+  <SectionRow10 key="petit-elin-evaviva" />,
+  <SectionRow11 key="petit-elin-montraum" />,
+];
 
 export default function Biography() {
   return (
-    <div className="content-stretch flex flex-col items-start pb-[100px] pl-[72px] pr-[80px] relative size-full" data-name="biography">
-      <Component5 />
-      <Component3 />
-      <Component8 />
-      <Component12 />
+    <div className="content-stretch flex flex-wrap gap-x-[52px] items-start pb-[100px] pl-[72px] pr-[80px] relative size-full" data-name="biography">
+      {marketingCards}
     </div>
   );
 }
