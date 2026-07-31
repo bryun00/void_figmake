@@ -13,7 +13,7 @@ function Logo() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[2px] items-baseline not-italic relative shrink-0 text-[#161513] whitespace-nowrap" data-name="logo">
       <p className="font-['TheNightWatch_:Regular',sans-serif] leading-none relative shrink-0 text-[28px]">VOID</p>
-      <p className="font-['Space_Grotesk:Bold',sans-serif] leading-[normal] relative shrink-0 text-[11px]">™</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-bold leading-[normal] relative shrink-0 text-[11px]">™</p>
     </div>
   );
 }
@@ -68,7 +68,7 @@ function BackNav() {
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex gap-[8px] items-center pt-[20px] px-[20px] relative size-full">
           <ArrowLeft />
-          <p className="[word-break:break-word] font-['Space_Grotesk:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[13px] whitespace-nowrap">Back to works</p>
+          <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[13px] whitespace-nowrap">Back to works</p>
         </div>
       </div>
     </div>
@@ -164,7 +164,7 @@ function Frame12() {
 function Frame22() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[24px] items-start not-italic relative shrink-0 w-full whitespace-nowrap">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[20px]">Project overview</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[20px]">Project overview</p>
       <Frame12 />
     </div>
   );
@@ -173,7 +173,7 @@ function Frame22() {
 function Frame5() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-[350px]" data-name="Frame">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[20px] whitespace-nowrap">Concept</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[20px] whitespace-nowrap">Concept</p>
       <div className="font-['Pretendard:Medium',sans-serif] leading-[0] min-w-full relative shrink-0 text-[#8a8a8a] text-[14px] w-[min-content] whitespace-pre-wrap">
         <p className="leading-[1.5] mb-0">{`사용자 중심의 은행앱이 되기위한 리뉴얼을 진행하였습니다. `}</p>
         <p className="leading-[1.5]">{`고객의 금융 이용 경험을 혁신하기 위한 전체 적인 서비스 구조를 재정비 하고,  UI/UX 디자인을 전면 개편, 금융 서비스에 특화된 인터페이스 설계에 집중했습니다. `}</p>
@@ -214,7 +214,7 @@ function Frame11() {
 function Frame23() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start leading-[normal] relative shrink-0 text-[#161513] text-[20px] whitespace-nowrap">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] relative shrink-0">Random game</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0">Random game</p>
       <p className="font-['Pretendard:SemiBold',sans-serif] relative shrink-0">[랜덤게임 3종]</p>
     </div>
   );
@@ -340,7 +340,7 @@ function Frame19() {
 function Frame24() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start leading-[normal] relative shrink-0 text-[#161513] text-[20px] whitespace-nowrap">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] relative shrink-0">chatbot</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0">chatbot</p>
       <p className="font-['Pretendard:SemiBold',sans-serif] relative shrink-0">[챗봇]</p>
     </div>
   );
@@ -414,7 +414,7 @@ function Frame26() {
 function Frame27() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[normal] not-italic relative shrink-0 text-[#161513] text-[20px] whitespace-nowrap">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] relative shrink-0">{`etc `}</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0">{`etc `}</p>
       <p className="font-['Pretendard:SemiBold',sans-serif] relative shrink-0">[알림함, 스플래시, 내정보, vip class, 환율]</p>
     </div>
   );
@@ -483,8 +483,8 @@ function Frame30() {
 function Frame9() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[normal] not-italic relative shrink-0 whitespace-nowrap" data-name="Frame">
-      <p className="font-['Space_Grotesk:Regular',sans-serif] relative shrink-0 text-[#8a8a8a] text-[11px]">NEXT PROJECT</p>
-      <p className="font-['Space_Grotesk:SemiBold','Noto_Sans_KR:Bold',sans-serif] relative shrink-0 text-[#161513] text-[16px]">BK 기업은행 개인스마트뱅킹 APP 제안 시안</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-normal relative shrink-0 text-[#8a8a8a] text-[11px]">NEXT PROJECT</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0 text-[#161513] text-[16px]">BK 기업은행 개인스마트뱅킹 APP 제안 시안</p>
     </div>
   );
 }
@@ -517,7 +517,7 @@ function NextProjectBanner() {
 
 function Frame10() {
   return (
-    <div className="content-stretch flex flex-col font-['Space_Grotesk:Medium',sans-serif] gap-[6px] items-start relative shrink-0 w-full" data-name="Frame">
+    <div className="content-stretch flex flex-col font-['Space_Grotesk',sans-serif] font-medium gap-[6px] items-start relative shrink-0 w-full" data-name="Frame">
       <p className="relative shrink-0 text-[#8a8a8a] text-[11px] tracking-[0.0055px] uppercase">LOCAL TIME</p>
       <p className="relative shrink-0 text-[#161513] text-[13px]">SEOUL, KOREA · 10:41 PM KST</p>
     </div>
@@ -526,7 +526,7 @@ function Frame10() {
 
 function SocialLinks() {
   return (
-    <div className="content-stretch flex font-['Space_Grotesk:SemiBold',sans-serif] gap-[24px] items-start relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase" data-name="social-links">
+    <div className="content-stretch flex font-['Space_Grotesk',sans-serif] font-semibold gap-[24px] items-start relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase" data-name="social-links">
       <p className="relative shrink-0">INSTAGRAM</p>
       <p className="relative shrink-0">LINKEDIN</p>
       <p className="relative shrink-0">READ.CV</p>
@@ -540,7 +540,7 @@ function FooterContent() {
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[24px] items-start leading-[normal] not-italic pb-[32px] pt-[28px] px-[20px] relative size-full whitespace-nowrap">
         <Frame10 />
         <SocialLinks />
-        <p className="font-['Space_Grotesk:Regular',sans-serif] relative shrink-0 text-[#8a8a8a] text-[11px]">© 2026 VOID. All rights reserved.</p>
+        <p className="font-['Space_Grotesk',sans-serif] font-normal relative shrink-0 text-[#8a8a8a] text-[11px]">© 2026 VOID. All rights reserved.</p>
       </div>
     </div>
   );

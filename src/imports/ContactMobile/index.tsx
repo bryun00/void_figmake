@@ -5,7 +5,7 @@ function LogoGroup() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[2px] items-start not-italic relative shrink-0 text-[#161513] whitespace-nowrap" data-name="logo-group">
       <p className="font-['TheNightWatch_:Regular',sans-serif] leading-none relative shrink-0 text-[28px] tracking-[-1px]">VOID</p>
-      <p className="font-['Space_Grotesk:Bold',sans-serif] leading-[normal] relative shrink-0 text-[10px]">™</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-bold leading-[normal] relative shrink-0 text-[10px]">™</p>
     </div>
   );
 }
@@ -59,7 +59,7 @@ function HeroSection() {
 function LabelGroup() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0" data-name="label-group">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px]">Direct Contact</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px]">Direct Contact</p>
       <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px]">직접 연락처</p>
     </div>
   );
@@ -67,7 +67,7 @@ function LabelGroup() {
 
 function LinksGroup() {
   return (
-    <div className="content-stretch flex flex-col font-['Space_Grotesk:SemiBold',sans-serif] gap-[8px] items-start leading-[normal] relative shrink-0 text-[#8a8a8a] text-[18px]" data-name="links-group">
+    <div className="content-stretch flex flex-col font-['Space_Grotesk',sans-serif] font-semibold gap-[8px] items-start leading-[normal] relative shrink-0 text-[#8a8a8a] text-[18px]" data-name="links-group">
       <p className="relative shrink-0">designjstyle@naver.com</p>
       <p className="relative shrink-0">Instagram</p>
     </div>
@@ -95,7 +95,7 @@ function InputBox() {
 function FieldEmail() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="field-Email">
-      <p className="[word-break:break-word] font-['Space_Grotesk:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase whitespace-nowrap">Email</p>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase whitespace-nowrap">Email</p>
       <InputBox />
     </div>
   );
@@ -113,7 +113,7 @@ function InputBox1() {
 function FieldName() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="field-Name">
-      <p className="[word-break:break-word] font-['Space_Grotesk:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase whitespace-nowrap">Name</p>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase whitespace-nowrap">Name</p>
       <InputBox1 />
     </div>
   );
@@ -131,7 +131,7 @@ function InputBox2() {
 function FieldMessage() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="field-Message">
-      <p className="[word-break:break-word] font-['Space_Grotesk:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase whitespace-nowrap">Message</p>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase whitespace-nowrap">Message</p>
       <InputBox2 />
     </div>
   );
@@ -143,7 +143,7 @@ function Btn() {
       <div aria-hidden className="absolute border border-[#e4501d] border-solid inset-0 pointer-events-none rounded-[4px]" />
       <div className="flex flex-col items-center justify-center size-full">
         <div className="content-stretch flex flex-col items-center justify-center p-[16px] relative size-full">
-          <p className="[word-break:break-word] font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[18px] whitespace-nowrap">Send</p>
+          <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[18px] whitespace-nowrap">Send</p>
         </div>
       </div>
     </div>
@@ -184,7 +184,7 @@ function SocialLinks() {
 function FooterContent() {
   return (
     <div className="relative shrink-0 w-full" data-name="footer-content">
-      <div className="[word-break:break-word] content-stretch flex flex-col font-['Space_Grotesk:Medium',sans-serif] gap-[16px] items-start leading-[normal] not-italic px-[20px] py-[24px] relative size-full text-[11px] whitespace-nowrap">
+      <div className="[word-break:break-word] content-stretch flex flex-col font-['Space_Grotesk',sans-serif] font-medium gap-[16px] items-start leading-[normal] not-italic px-[20px] py-[24px] relative size-full text-[11px] whitespace-nowrap">
         <p className="relative shrink-0 text-[#8a8780]">LOCAL TIME · SEOUL, KOREA</p>
         <SocialLinks />
       </div>

@@ -8,7 +8,7 @@ function Logo() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[2px] items-baseline not-italic relative shrink-0 text-[#161513] whitespace-nowrap" data-name="logo">
       <p className="font-['TheNightWatch_:Regular',sans-serif] leading-none relative shrink-0 text-[28px]">VOID</p>
-      <p className="font-['Space_Grotesk:Bold',sans-serif] leading-[normal] relative shrink-0 text-[11px]">™</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-bold leading-[normal] relative shrink-0 text-[11px]">™</p>
     </div>
   );
 }
@@ -61,8 +61,8 @@ function Frame1() {
   return (
     <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
       <div aria-hidden className="absolute border-[#e4501d] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[24px] whitespace-nowrap">All</p>
-      <p className="[word-break:break-word] font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] not-italic relative shrink-0 text-[#8a8a8a] text-[22px] whitespace-nowrap">4</p>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[24px] whitespace-nowrap">All</p>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-normal leading-[1.6] not-italic relative shrink-0 text-[#8a8a8a] text-[22px] whitespace-nowrap">4</p>
     </div>
   );
 }
@@ -70,8 +70,8 @@ function Frame1() {
 function Frame2() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center not-italic relative shrink-0 whitespace-nowrap">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Product</p>
-      <p className="font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">1</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Product</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-normal leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">1</p>
     </div>
   );
 }
@@ -79,8 +79,8 @@ function Frame2() {
 function Frame3() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center not-italic relative shrink-0 whitespace-nowrap">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Marketing</p>
-      <p className="font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">1</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Marketing</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-normal leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">1</p>
     </div>
   );
 }
@@ -88,8 +88,8 @@ function Frame3() {
 function Frame4() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center not-italic relative shrink-0 whitespace-nowrap">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[24px]">etc</p>
-      <p className="font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">2</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[24px]">etc</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-normal leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">2</p>
     </div>
   );
 }
@@ -252,7 +252,7 @@ function WorksGrid() {
 
 function Frame() {
   return (
-    <div className="content-stretch flex flex-col font-['Space_Grotesk:Medium',sans-serif] gap-[6px] items-start relative shrink-0 w-full" data-name="Frame">
+    <div className="content-stretch flex flex-col font-['Space_Grotesk',sans-serif] font-medium gap-[6px] items-start relative shrink-0 w-full" data-name="Frame">
       <p className="relative shrink-0 text-[#8a8a8a] text-[11px] tracking-[0.0055px] uppercase">LOCAL TIME</p>
       <p className="relative shrink-0 text-[#161513] text-[13px]">SEOUL, KOREA · 10:41 PM KST</p>
     </div>
@@ -261,7 +261,7 @@ function Frame() {
 
 function SocialLinks() {
   return (
-    <div className="content-stretch flex font-['Space_Grotesk:SemiBold',sans-serif] gap-[24px] items-start relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase" data-name="social-links">
+    <div className="content-stretch flex font-['Space_Grotesk',sans-serif] font-semibold gap-[24px] items-start relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase" data-name="social-links">
       <p className="relative shrink-0">INSTAGRAM</p>
       <p className="relative shrink-0">LINKEDIN</p>
       <p className="relative shrink-0">READ.CV</p>
@@ -275,7 +275,7 @@ function FooterContent() {
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[24px] items-start leading-[normal] not-italic pb-[32px] pt-[28px] px-[20px] relative size-full whitespace-nowrap">
         <Frame />
         <SocialLinks />
-        <p className="font-['Space_Grotesk:Regular',sans-serif] relative shrink-0 text-[#8a8a8a] text-[11px]">© 2026 VOID. All rights reserved.</p>
+        <p className="font-['Space_Grotesk',sans-serif] font-normal relative shrink-0 text-[#8a8a8a] text-[11px]">© 2026 VOID. All rights reserved.</p>
       </div>
     </div>
   );

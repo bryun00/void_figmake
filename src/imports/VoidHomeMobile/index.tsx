@@ -28,7 +28,7 @@ function TopMarquee() {
 function MetadataDescription() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-name="metadata-description">
-      <p className="font-['Space_Grotesk:Medium',sans-serif] leading-[normal] relative shrink-0 text-[#e4501d] text-[20px] tracking-[-0.5px] w-full">{`uiux designer`}</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-medium leading-[normal] relative shrink-0 text-[#e4501d] text-[20px] tracking-[-0.5px] w-full">{`uiux designer`}</p>
       <p className="font-['PP_Mori:Regular',sans-serif] leading-[1.5] relative shrink-0 text-[#8a8a8a] text-[14px] w-full">Hi, I design and build things on the web. I care about typography, restraint, and the space between elements as much as the elements themselves.</p>
     </div>
   );
@@ -76,7 +76,7 @@ function NavItem2() {
 
 function NavigationList() {
   return (
-    <div className="content-stretch flex flex-col font-['Space_Grotesk:Medium',sans-serif] gap-[12px] items-start leading-[normal] pt-[24px] relative shrink-0 text-[#e4501d] w-[200px]" data-name="navigation-list">
+    <div className="content-stretch flex flex-col font-['Space_Grotesk',sans-serif] font-medium gap-[12px] items-start leading-[normal] pt-[24px] relative shrink-0 text-[#e4501d] w-[200px]" data-name="navigation-list">
       <NavItem />
       <NavItem1 />
       <NavItem2 />
@@ -97,7 +97,7 @@ function MainContent() {
 
 function Frame() {
   return (
-    <div className="content-stretch flex flex-col font-['Space_Grotesk:Medium',sans-serif] gap-[6px] items-start relative shrink-0 w-full" data-name="Frame">
+    <div className="content-stretch flex flex-col font-['Space_Grotesk',sans-serif] font-medium gap-[6px] items-start relative shrink-0 w-full" data-name="Frame">
       <p className="relative shrink-0 text-[#8a8a8a] text-[11px] tracking-[0.0055px] uppercase">LOCAL TIME</p>
       <p className="relative shrink-0 text-[#161513] text-[13px]">SEOUL, KOREA · 10:41 PM KST</p>
     </div>
@@ -106,7 +106,7 @@ function Frame() {
 
 function SocialLinks() {
   return (
-    <div className="content-stretch flex font-['Space_Grotesk:SemiBold',sans-serif] gap-[24px] items-start relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase" data-name="social-links">
+    <div className="content-stretch flex font-['Space_Grotesk',sans-serif] font-semibold gap-[24px] items-start relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase" data-name="social-links">
       <p className="relative shrink-0">INSTAGRAM</p>
       <p className="relative shrink-0">LINKEDIN</p>
       <p className="relative shrink-0">READ.CV</p>
@@ -120,7 +120,7 @@ function FooterContent() {
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[24px] items-start leading-[normal] not-italic pb-[32px] pt-[28px] px-[20px] relative size-full whitespace-nowrap">
         <Frame />
         <SocialLinks />
-        <p className="font-['Space_Grotesk:Regular',sans-serif] relative shrink-0 text-[#8a8a8a] text-[11px]">© 2026 VOID. All rights reserved.</p>
+        <p className="font-['Space_Grotesk',sans-serif] font-normal relative shrink-0 text-[#8a8a8a] text-[11px]">© 2026 VOID. All rights reserved.</p>
       </div>
     </div>
   );

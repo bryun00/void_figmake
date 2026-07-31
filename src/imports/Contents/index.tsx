@@ -21,10 +21,10 @@ function NavItem() {
           <Link key={to} to={to} className="no-underline">
             <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
               {isActive && <div aria-hidden className="absolute border-[#e4501d] border-b border-solid inset-0 pointer-events-none" />}
-              <p className={`[word-break:break-word] font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[24px] whitespace-nowrap ${isActive ? "text-[#e4501d]" : "text-[#161513]"}`}>
+              <p className={`[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[24px] whitespace-nowrap ${isActive ? "text-[#e4501d]" : "text-[#161513]"}`}>
                 {label}
               </p>
-              <p className="[word-break:break-word] font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] not-italic relative shrink-0 text-[#8a8a8a] text-[22px] whitespace-nowrap">
+              <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-normal leading-[1.6] not-italic relative shrink-0 text-[#8a8a8a] text-[22px] whitespace-nowrap">
                 {count}
               </p>
             </div>

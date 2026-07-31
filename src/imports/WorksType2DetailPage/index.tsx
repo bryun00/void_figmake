@@ -39,8 +39,8 @@ function Frame10() {
   return (
     <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
       <div aria-hidden className="absolute border-[#e4501d] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[24px] whitespace-nowrap">All</p>
-      <p className="[word-break:break-word] font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] not-italic relative shrink-0 text-[#8a8a8a] text-[22px] whitespace-nowrap">4</p>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[24px] whitespace-nowrap">All</p>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-normal leading-[1.6] not-italic relative shrink-0 text-[#8a8a8a] text-[22px] whitespace-nowrap">4</p>
     </div>
   );
 }
@@ -48,8 +48,8 @@ function Frame10() {
 function Frame11() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center not-italic relative shrink-0 whitespace-nowrap">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Product</p>
-      <p className="font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">1</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Product</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-normal leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">1</p>
     </div>
   );
 }
@@ -57,8 +57,8 @@ function Frame11() {
 function Frame12() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center not-italic relative shrink-0 whitespace-nowrap">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Marketing</p>
-      <p className="font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">1</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Marketing</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-normal leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">1</p>
     </div>
   );
 }
@@ -66,8 +66,8 @@ function Frame12() {
 function Frame13() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center not-italic relative shrink-0 whitespace-nowrap">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Etc</p>
-      <p className="font-['Space_Grotesk:Regular',sans-serif] leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">2</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[24px]">Etc</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-normal leading-[1.6] relative shrink-0 text-[#8a8a8a] text-[22px]">2</p>
     </div>
   );
 }
@@ -435,7 +435,7 @@ function FooterContent() {
   return (
     <div className="relative shrink-0 w-full" data-name="footer-content">
       <div className="flex flex-row items-center size-full">
-        <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk:Medium',sans-serif] items-center justify-between leading-[normal] not-italic px-[80px] py-[40px] relative size-full text-[12px] whitespace-nowrap">
+        <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk',sans-serif] font-medium items-center justify-between leading-[normal] not-italic px-[80px] py-[40px] relative size-full text-[12px] whitespace-nowrap">
           <p className="relative shrink-0 text-[#8a8780]">LOCAL TIME · SEOUL, KOREA</p>
           <SocialLinks />
         </div>

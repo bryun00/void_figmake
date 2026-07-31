@@ -15,7 +15,7 @@ function LogoGroup() {
   return (
     <div className="content-stretch flex gap-[4px] items-start relative shrink-0 text-[#e4501d]" data-name="logo-group">
       <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['TheNightWatch_:Regular',sans-serif] leading-none relative shrink-0 text-[180px] tracking-[-4px] whitespace-nowrap">VOID</p>
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Space_Grotesk:Bold',sans-serif] leading-[normal] relative shrink-0 text-[40px] w-[23px]">™</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Space_Grotesk',sans-serif] font-bold leading-[normal] relative shrink-0 text-[40px] w-[23px]">™</p>
     </div>
   );
 }
@@ -23,8 +23,8 @@ function LogoGroup() {
 function MetadataDescription() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-name="metadata-description">
-      <p className="font-['Space_Grotesk:Medium',sans-serif] leading-[normal] min-w-full relative shrink-0 text-[#e4501d] text-[32px] tracking-[-1px] w-[min-content]">{`uiux designer `}</p>
-      <div className="font-['Space_Grotesk:Regular',sans-serif] leading-[0] relative shrink-0 text-[#8a8a8a] text-[22px] w-[680px]">
+      <p className="font-['Space_Grotesk',sans-serif] font-medium leading-[normal] min-w-full relative shrink-0 text-[#e4501d] text-[32px] tracking-[-1px] w-[min-content]">{`uiux designer `}</p>
+      <div className="font-['Space_Grotesk',sans-serif] font-normal leading-[0] relative shrink-0 text-[#8a8a8a] text-[22px] w-[680px]">
         <p className="leading-[1.6] mb-0">Hi, I design and build things on the web.</p>
         <p className="leading-[1.6] mb-0">I care about typography, restraint, and the space</p>
         <p className="leading-[1.6]">between elements as much as the elements themselves.</p>
@@ -71,7 +71,7 @@ function NavItem2() {
 
 function NavigationList() {
   return (
-    <div className="content-stretch flex flex-col font-['Space_Grotesk:Medium',sans-serif] gap-[12px] items-start leading-[normal] pt-[24px] relative shrink-0 text-[#e4501d] w-full" data-name="navigation-list">
+    <div className="content-stretch flex flex-col font-['Space_Grotesk',sans-serif] font-medium gap-[12px] items-start leading-[normal] pt-[24px] relative shrink-0 text-[#e4501d] w-full" data-name="navigation-list">
       <NavItem />
       <NavItem1 />
       <NavItem2 />
@@ -103,7 +103,7 @@ function FooterContent() {
   return (
     <div className="relative shrink-0 w-full" data-name="footer-content">
       <div className="flex flex-row items-center size-full">
-        <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk:Medium',sans-serif] items-center justify-between leading-[normal] not-italic px-[160px] py-[40px] relative size-full text-[14px] tracking-[0.007px] uppercase whitespace-nowrap">
+        <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk',sans-serif] font-medium items-center justify-between leading-[normal] not-italic px-[160px] py-[40px] relative size-full text-[14px] tracking-[0.007px] uppercase whitespace-nowrap">
           <p className="relative shrink-0 text-[#8a8a8a]">LOCAL TIME · SEOUL, KOREA</p>
           <SocialLinks />
         </div>

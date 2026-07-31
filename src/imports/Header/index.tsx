@@ -36,7 +36,7 @@ function Logo() {
 
 function Navigation() {
   return (
-    <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk:Medium',sans-serif] gap-[32px] items-center leading-[normal] not-italic relative shrink-0 text-[14px] whitespace-nowrap" data-name="navigation">
+    <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk',sans-serif] font-medium gap-[32px] items-center leading-[normal] not-italic relative shrink-0 text-[14px] whitespace-nowrap" data-name="navigation">
       <p className="relative shrink-0 text-[#e4501d]">about</p>
       <p className="relative shrink-0 text-[#161513]">work</p>
       <p className="relative shrink-0 text-[#161513]">contact</p>

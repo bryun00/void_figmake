@@ -4,7 +4,7 @@ function LogoGroup() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[2px] items-start not-italic relative shrink-0 text-[#161513] whitespace-nowrap" data-name="logo-group">
       <p className="font-['TheNightWatch_:Regular',sans-serif] leading-none relative shrink-0 text-[28px] tracking-[-1px]">VOID</p>
-      <p className="font-['Space_Grotesk:Bold',sans-serif] leading-[normal] relative shrink-0 text-[10px]">™</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-bold leading-[normal] relative shrink-0 text-[10px]">™</p>
     </div>
   );
 }
@@ -35,7 +35,7 @@ function CloseIcon() {
 function BadgeNew() {
   return (
     <div className="bg-[#e4501d] content-stretch flex items-start px-[8px] py-[2px] relative rounded-[4px] shrink-0" data-name="badge-new">
-      <p className="[word-break:break-word] font-['Space_Grotesk:Bold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#fff8e9] text-[10px] whitespace-nowrap">NEW</p>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#fff8e9] text-[10px] whitespace-nowrap">NEW</p>
     </div>
   );
 }
@@ -110,7 +110,7 @@ export default function DrawMenu({ onClose }: DrawMenuProps) {
           </div>
         </div>
         <div className="relative shrink-0 w-full" data-name="footer-content">
-          <div className="[word-break:break-word] content-stretch flex flex-col font-['Space_Grotesk:Medium',sans-serif] gap-[16px] items-start leading-[normal] not-italic px-[20px] py-[24px] relative size-full text-[11px] whitespace-nowrap">
+          <div className="[word-break:break-word] content-stretch flex flex-col font-['Space_Grotesk',sans-serif] font-medium gap-[16px] items-start leading-[normal] not-italic px-[20px] py-[24px] relative size-full text-[11px] whitespace-nowrap">
             <p className="relative shrink-0 text-[#8a8780]">LOCAL TIME · SEOUL, KOREA</p>
             <SocialLinks />
           </div>

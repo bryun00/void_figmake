@@ -27,7 +27,7 @@ function Hero() {
 function LeftLabelColumn() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
       <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
     </div>
   );
@@ -36,7 +36,7 @@ function LeftLabelColumn() {
 function MemberBio() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start leading-[0] not-italic relative shrink-0 w-[480px]" data-name="member-bio">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] relative shrink-0 text-[#e4501d] text-[0px] w-full">
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0 text-[#e4501d] text-[0px] w-full">
         <span className="font-['Pretendard:Regular',sans-serif] leading-[1.6] text-[22px]">윤보람</span>
         <span className="leading-[normal] text-[24px]">{` / Boram Yun`}</span>
       </p>
@@ -81,7 +81,7 @@ function SectionRow() {
 function LeftLabelColumn1() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">My Values</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">My Values</p>
       <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">핵심 가치</p>
     </div>
   );
@@ -119,7 +119,7 @@ function SectionRow1() {
 function LeftLabelColumn2() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Career</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Career</p>
       <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">경력</p>
     </div>
   );
@@ -231,7 +231,7 @@ function SectionRow2() {
 function LeftLabelColumn3() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Stack</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Stack</p>
       <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">사용 툴</p>
     </div>
   );
@@ -272,7 +272,7 @@ function SectionRow3() {
 function LeftLabelColumn4() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Approach</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Approach</p>
       <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">작업할 때 중요하게 생각하는 것</p>
     </div>
   );
@@ -329,7 +329,7 @@ function FooterContent() {
   return (
     <div className="relative shrink-0 w-full" data-name="footer-content">
       <div className="flex flex-row items-center size-full">
-        <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk:Medium',sans-serif] items-center justify-between leading-[normal] not-italic px-[80px] py-[40px] relative size-full text-[12px] whitespace-nowrap">
+        <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk',sans-serif] font-medium items-center justify-between leading-[normal] not-italic px-[80px] py-[40px] relative size-full text-[12px] whitespace-nowrap">
           <p className="relative shrink-0 text-[#8a8780]">LOCAL TIME · SEOUL, KOREA</p>
           <SocialLinks />
         </div>

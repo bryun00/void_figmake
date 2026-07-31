@@ -37,7 +37,7 @@ function Hero() {
 function LeftLabelColumn() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Direct Contact</p>
+      <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Direct Contact</p>
       <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">직접 문의</p>
     </div>
   );
@@ -45,7 +45,7 @@ function LeftLabelColumn() {
 
 function LeftLabelColumn1() {
   return (
-    <div className="content-stretch flex flex-col font-['Space_Grotesk:SemiBold',sans-serif] gap-[12px] items-start leading-[normal] relative shrink-0 text-[#8a8a8a] text-[18px] whitespace-nowrap" data-name="left-label-column">
+    <div className="content-stretch flex flex-col font-['Space_Grotesk',sans-serif] font-semibold gap-[12px] items-start leading-[normal] relative shrink-0 text-[#8a8a8a] text-[18px] whitespace-nowrap" data-name="left-label-column">
       <p className="relative shrink-0">designjstyle@naver.com</p>
       <p className="relative shrink-0">Instagram</p>
     </div>
@@ -135,7 +135,7 @@ function Btn() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center p-[24px] relative shrink-0 w-[180px] cursor-pointer" data-name="btn">
       <div aria-hidden className="absolute border border-[#e4501d] border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Space_Grotesk:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[18px] whitespace-nowrap">Send</p>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[18px] whitespace-nowrap">Send</p>
     </div>
   );
 }
@@ -184,7 +184,7 @@ function FooterContent() {
   return (
     <div className="relative shrink-0 w-full" data-name="footer-content">
       <div className="flex flex-row items-center size-full">
-        <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk:Medium',sans-serif] items-center justify-between leading-[normal] not-italic px-[80px] py-[40px] relative size-full text-[12px] whitespace-nowrap">
+        <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk',sans-serif] font-medium items-center justify-between leading-[normal] not-italic px-[80px] py-[40px] relative size-full text-[12px] whitespace-nowrap">
           <p className="relative shrink-0 text-[#8a8780]">LOCAL TIME · SEOUL, KOREA</p>
           <SocialLinks />
         </div>
