@@ -8,12 +8,12 @@ Source of truth: Figma "Local Text Styles" (18 styles), file `QgZFQvMoDXqPaFzQ9l
 
 | Family | Role | Loaded in code? |
 | --- | --- | --- |
-| Pretendard | Korean headings & body copy, **and now English body/caption too** (H0/Kr, H2–H5 `/Kr-*`, Body/Kr, Caption/Kr-Label, plus what was PP Mori) | ✅ `@fontsource/pretendard` (400/500/600/700) |
+| Pretendard | Korean headings & body copy (H0/Kr, H2–H5 `/Kr-*`, Body/Kr, Caption/Kr-Label) | ✅ `@fontsource/pretendard` (400/500/600/700) |
 | Space Grotesk | English subtitles, nav, UI labels (H1, H2–H5 `/En-*`) | ✅ `@fontsource/space-grotesk` (400/500/600/700) |
-| ~~PP Mori~~ | ~~English body & caption~~ | **Removed.** It's a paid font (Pangram Pangram) whose license doesn't allow redistributing the font file, and this repo is public — committing the `.woff2` would violate the license. Replaced everywhere with Pretendard instead (it covers Latin glyphs fine). |
+| ~~PP Mori~~ | ~~English body & caption~~ | **Removed.** It's a paid font (Pangram Pangram) whose license doesn't allow redistributing the font file, and this repo is public — committing the `.woff2` would violate the license. First replaced with Pretendard, then moved to Manrope per a later decision (see below). |
 | TheNightWatch | Display / logotype ("VOID" wordmark) | ❌ **`@font-face` declared but the font file doesn't exist in the repo** (`/fonts/TheNightWatch.woff2` 404s) — always falls back, needs the actual font file. Same public-repo licensing question applies if it turns out to also be a paid font. |
 | Inter | Misc UI elements | ❌ not loaded |
-| Manrope | Used in places (secondary UI text) | ✅ loaded via Google Fonts (400/600/700) |
+| Manrope | Secondary UI text, and **now also everywhere PP Mori used to be** (marquee text, work-detail labels like Client/Duration/Contribution, mobile nav numbers, contact form placeholders) | ✅ loaded via Google Fonts (400/600/700) |
 | Geist Mono | Used in places (monospace labels) | ✅ loaded via Google Fonts (400/700) |
 | Open Sans, Space Mono | Referenced on some non-production canvases only | not used in the current site code |
 
@@ -27,7 +27,7 @@ Source of truth: Figma "Local Text Styles" (18 styles), file `QgZFQvMoDXqPaFzQ9l
 | --- | --- | --- | --- | --- | --- |
 | Display | TheNightWatch | Regular | 80px | Auto | -2% |
 | H0 / Kr | Pretendard | SemiBold | 40px | Auto | 0% |
-| H1 | PP Mori → Pretendard | Black | 32px | Auto | 0% |
+| H1 | PP Mori → Manrope | Black | 32px | Auto | 0% |
 | H1 | Space Grotesk | Medium | 32px | Auto | 0% |
 | H2 / En-Subtitle | Space Grotesk | SemiBold | 24px | Auto | 0% |
 | H2 / Kr-Subtitle | Pretendard | SemiBold | 24px | Auto | 0% |
@@ -37,11 +37,11 @@ Source of truth: Figma "Local Text Styles" (18 styles), file `QgZFQvMoDXqPaFzQ9l
 | H4 / Kr-subtitle | Pretendard | SemiBold | 20px | Auto | 0% |
 | H5 / En-subtitle | Space Grotesk | SemiBold | 18px | Auto | 0% |
 | H5 / Kr-subtitle | Pretendard | SemiBold | 18px | Auto | 0% |
-| Body / En (16px) | PP Mori → Pretendard | Regular | 16px | 150% | 0% |
-| Body / En (14px) | PP Mori → Pretendard | Semibold | 14px | 150% | 0% |
+| Body / En (16px) | PP Mori → Manrope | Regular | 16px | 150% | 0% |
+| Body / En (14px) | PP Mori → Manrope | Semibold | 14px | 150% | 0% |
 | Body / Kr (16px) | Pretendard | Regular | 16px | 150% | 0% |
 | Body / Kr (14px) | Pretendard | Medium | 14px | 150% | 0% |
-| Caption / En-Label | PP Mori → Pretendard | Regular | 12px | 140% | 0% |
+| Caption / En-Label | PP Mori → Manrope | Regular | 12px | 140% | 0% |
 | Caption / Kr-Label | Pretendard | Regular | 12px | 140% | 0% |
 
 ### Rule: font-family must match a real `@font-face`

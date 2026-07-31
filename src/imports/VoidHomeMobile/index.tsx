@@ -29,7 +29,7 @@ function MetadataDescription() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-name="metadata-description">
       <p className="font-['Space_Grotesk',sans-serif] font-medium leading-[normal] relative shrink-0 text-[#e4501d] text-[20px] tracking-[-0.5px] w-full">{`uiux designer`}</p>
-      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.5] relative shrink-0 text-[#8a8a8a] text-[14px] w-full">Hi, I design and build things on the web. I care about typography, restraint, and the space between elements as much as the elements themselves.</p>
+      <p className="font-['Manrope',sans-serif] font-normal leading-[1.5] relative shrink-0 text-[#8a8a8a] text-[14px] w-full">Hi, I design and build things on the web. I care about typography, restraint, and the space between elements as much as the elements themselves.</p>
     </div>
   );
 }

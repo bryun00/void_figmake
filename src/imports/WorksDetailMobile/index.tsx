@@ -101,7 +101,7 @@ function CaseHeader() {
 function Frame() {
   return (
     <div className="content-stretch flex items-baseline justify-between leading-[1.5] relative shrink-0 w-full" data-name="Frame">
-      <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0 text-[#8a8a8a]">Client</p>
+      <p className="font-['Manrope',sans-serif] font-semibold relative shrink-0 text-[#8a8a8a]">Client</p>
       <p className="font-['Pretendard',sans-serif] font-medium relative shrink-0 text-[#161513]">IBK 기업은행</p>
     </div>
   );
@@ -109,7 +109,7 @@ function Frame() {
 
 function Frame1() {
   return (
-    <div className="content-stretch flex font-['Pretendard',sans-serif] font-semibold items-baseline justify-between leading-[1.5] relative shrink-0 w-full" data-name="Frame">
+    <div className="content-stretch flex font-['Manrope',sans-serif] font-semibold items-baseline justify-between leading-[1.5] relative shrink-0 w-full" data-name="Frame">
       <p className="relative shrink-0 text-[#8a8a8a]">Duration</p>
       <p className="relative shrink-0 text-[#161513]">2025.01-2025.09</p>
     </div>
@@ -119,7 +119,7 @@ function Frame1() {
 function Frame2() {
   return (
     <div className="content-stretch flex items-baseline justify-between relative shrink-0 w-full" data-name="Frame">
-      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#8a8a8a]">Contribution</p>
+      <p className="font-['Manrope',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#8a8a8a]">Contribution</p>
       <div className="font-['Pretendard',sans-serif] font-medium leading-[0] relative shrink-0 text-[#161513] text-right">
         <p className="leading-[1.5] mb-0">디자인 100%</p>
         <p className="leading-[1.5]">(프로젝트 중 기여도 100%작업물만 첨부)</p>
@@ -131,7 +131,7 @@ function Frame2() {
 function Frame3() {
   return (
     <div className="content-stretch flex items-baseline justify-between relative shrink-0 w-full" data-name="Frame">
-      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#8a8a8a]">Role</p>
+      <p className="font-['Manrope',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#8a8a8a]">Role</p>
       <div className="font-['Pretendard',sans-serif] font-medium leading-[0] relative shrink-0 text-[#161513] text-right">
         <p className="leading-[1.5] mb-0">부pl , 디자인 시스템관리,</p>
         <p className="leading-[1.5]">{`제안부터 구축까지 참여 `}</p>
@@ -142,7 +142,7 @@ function Frame3() {
 
 function Frame4() {
   return (
-    <div className="content-stretch flex font-['Pretendard',sans-serif] font-semibold items-baseline justify-between leading-[1.5] relative shrink-0 w-full" data-name="Frame">
+    <div className="content-stretch flex font-['Manrope',sans-serif] font-semibold items-baseline justify-between leading-[1.5] relative shrink-0 w-full" data-name="Frame">
       <p className="relative shrink-0 text-[#8a8a8a]">Tools</p>
       <p className="relative shrink-0 text-[#161513]">Figma , photoshop</p>
     </div>
@@ -245,7 +245,7 @@ function Frame13() {
 function Frame14() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 text-[14px] w-full">
-      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513] whitespace-nowrap">Clients needs</p>
+      <p className="font-['Manrope',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513] whitespace-nowrap">Clients needs</p>
       <Frame13 />
     </div>
   );
@@ -271,7 +271,7 @@ function Frame16() {
 function Frame15() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 text-[14px] w-full whitespace-nowrap">
-      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513]">Main purpose</p>
+      <p className="font-['Manrope',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513]">Main purpose</p>
       <Frame16 />
     </div>
   );
@@ -297,7 +297,7 @@ function Frame18() {
 function Frame17() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 text-[14px] w-full whitespace-nowrap">
-      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513]">Solution</p>
+      <p className="font-['Manrope',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513]">Solution</p>
       <Frame18 />
     </div>
   );
@@ -366,7 +366,7 @@ function Frame25() {
 function Frame20() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 text-[14px] w-full">
-      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513] whitespace-nowrap">Clients needs</p>
+      <p className="font-['Manrope',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513] whitespace-nowrap">Clients needs</p>
       <Frame25 />
     </div>
   );
@@ -435,7 +435,7 @@ function Frame29() {
 function Frame28() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full">
-      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-semibold leading-[1.5] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">Concept</p>
+      <p className="[word-break:break-word] font-['Manrope',sans-serif] font-semibold leading-[1.5] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">Concept</p>
       <Frame29 />
     </div>
   );

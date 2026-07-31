@@ -87,7 +87,7 @@ function InputBox() {
   return (
     <div className="content-stretch flex h-[54px] items-center py-[12px] relative shrink-0 w-full" data-name="input-box">
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Pretendard',sans-serif] font-normal leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">답장 받으실 이메일 주소를 남겨주세요</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Manrope',sans-serif] font-normal leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">답장 받으실 이메일 주소를 남겨주세요</p>
     </div>
   );
 }
@@ -105,7 +105,7 @@ function InputBox1() {
   return (
     <div className="content-stretch flex h-[54px] items-center py-[12px] relative shrink-0 w-full" data-name="input-box">
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Pretendard',sans-serif] font-normal leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">성함을 남겨주세요</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Manrope',sans-serif] font-normal leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">성함을 남겨주세요</p>
     </div>
   );
 }
@@ -123,7 +123,7 @@ function InputBox2() {
   return (
     <div className="content-stretch flex h-[100px] items-center py-[12px] relative shrink-0 w-full" data-name="input-box">
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Pretendard',sans-serif] font-normal leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">어떤 이야기든 편하게 남겨주세요</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Manrope',sans-serif] font-normal leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">어떤 이야기든 편하게 남겨주세요</p>
     </div>
   );
 }
