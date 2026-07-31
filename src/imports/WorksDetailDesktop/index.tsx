@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import svgPaths from "./svg-9lrwavw4py";
-import imgHeroMockup from "./16157e464f9995eabe4b29aedace4290bb468547.png";
+import imgHeroMockup from "./ibk-hero-mockup-v2.png";
 import imgImage3898 from "./96ae625849d030eba35c2edb0dd0648c8134c73f.png";
 import imgImage3865 from "./254af040ededa96a1116e9178aad06c49526fbe0.png";
 import imgImage3864 from "./e0bc596bc97a5e8c6cecf95cae39e8d9553c3cc1.png";

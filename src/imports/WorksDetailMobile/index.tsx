@@ -1,7 +1,7 @@
 import { useState } from "react";
 import svgPaths from "./svg-sgds1891ay";
 import DrawMenu from "@/imports/DrawMenu/index";
-import imgHeroMockup from "./16157e464f9995eabe4b29aedace4290bb468547.png";
+import imgHeroMockup from "./ibk-hero-mockup-v2.png";
 import imgImage3910 from "./dccf75f95eccbed9a6133b0956ac253f93553d01.png";
 import imgImage3909 from "./2e7c08f52afb3d897109b9856a839c428f8655ea.png";
 import imgImage3911 from "./d304ed481b20aaec910b3377fd4d06936f5e127e.png";
