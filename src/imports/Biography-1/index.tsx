@@ -13,27 +13,14 @@ import imgImage3964 from "./98a1167f10b9efb8d570885762949585330cd723.png";
 import img190527AkMtevent3 from "./8979f185b9c9a4d3f1a3353585b34c8a4a9a1327.png";
 import { imgImage3958, img200113MtPd1 } from "./svg-y9cr5";
 
-function MaskGroup() {
-  return (
-    <div className="absolute contents left-0 top-0" data-name="Mask group">
-      <div
-        className="-translate-x-1/2 absolute aspect-[480.0100379140058/424.39699422668855] bottom-[-73.92%] flex items-center justify-center left-[calc(50%+0.01px)] top-[-2.92%]"
-        style={{ containerType: "size" }}
-      >
-        <div className="flex-none h-[hypot(-4.92152cqw,93.605cqh)] rotate-[3.4deg] w-[hypot(95.0785cqw,6.39497cqh)]">
-          <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[92px_7px] mask-size-[296px_240px] relative shadow-[15px_11px_23px_0px_rgba(0,0,0,0.11)] size-full" style={{ maskImage: `url("${imgImage3958}")` }} data-name="image 3958">
-            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage3959} />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function Img() {
   return (
-    <div className="absolute bg-[#569c49] h-[240px] left-0 top-0 w-full" data-name="img">
-      <MaskGroup />
+    <div className="absolute bg-[#569c49] h-[240px] left-0 overflow-clip top-0 w-full" data-name="img">
+      <div className="absolute h-[240px] left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[296px_240px] shadow-[15px_11px_23px_0px_rgba(0,0,0,0.11)] top-0 w-full" style={{ maskImage: `url("${imgImage3958}")` }} data-name="image 3958">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[165.82%] left-[-27.36%] max-w-none top-0 w-[154.46%]" src={imgImage3959} />
+        </div>
+      </div>
     </div>
   );
 }
@@ -79,9 +66,9 @@ function SectionRow() {
 function Img1() {
   return (
     <div className="absolute bg-[#559390] h-[240px] left-0 top-[0.5px] w-full" data-name="img">
-      <div className="absolute inset-[27px_37px_-174px_4px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-4px_-27px] mask-size-[296px_240px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="image 3958">
+      <div className="absolute inset-[27px_37px_0_4px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-4px_-27px] mask-size-[296px_240px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="image 3958">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[132.03%] left-[-101.03%] max-w-none top-[-16.57%] w-[301.62%]" src={imgImage3960} />
+          <img alt="" className="absolute h-[239.89%] left-[-101.03%] max-w-none top-[-30.11%] w-[301.62%]" src={imgImage3960} />
         </div>
       </div>
     </div>
@@ -129,9 +116,9 @@ function SectionRow1() {
 function Img2() {
   return (
     <div className="absolute bg-[#808080] h-[240px] left-0 top-0 w-full" data-name="img">
-      <div className="-translate-x-1/2 absolute h-[462px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-30px] mask-size-[296px_240px] top-[30px] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="0606_브라탑양면_01 1">
+      <div className="-translate-x-1/2 absolute h-[210px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-30px] mask-size-[296px_240px] top-[30px] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="0606_브라탑양면_01 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[168.14%] left-0 max-w-none top-0 w-full" src={img0606011} />
+          <img alt="" className="absolute h-[369.92%] left-0 max-w-none top-0 w-full" src={img0606011} />
         </div>
       </div>
     </div>
@@ -179,9 +166,9 @@ function SectionRow2() {
 function Img3() {
   return (
     <div className="absolute bg-white h-[240px] left-0 top-[0.5px] w-full" data-name="img">
-      <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[445px] left-[calc(50%-0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-50px_-34px] mask-size-[296px_240px] top-[calc(50%+136.5px)] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="에끌레브 1">
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[206px] left-[calc(50%-0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-50px_-34px] mask-size-[296px_240px] top-[calc(50%+17px)] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="에끌레브 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[181.49%] left-0 max-w-none top-0 w-full" src={img1} />
+          <img alt="" className="absolute h-[392.05%] left-0 max-w-none top-0 w-full" src={img1} />
         </div>
       </div>
     </div>
@@ -282,9 +269,9 @@ function SectionRow4() {
 function Img5() {
   return (
     <div className="absolute bg-white h-[240px] left-0 top-0 w-full" data-name="img">
-      <div className="-translate-x-1/2 absolute h-[385px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-27px] mask-size-[296px_240px] top-[27px] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="수퍼리브즈 2">
+      <div className="-translate-x-1/2 absolute h-[213px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-27px] mask-size-[296px_240px] top-[27px] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="수퍼리브즈 2">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[229.66%] left-0 max-w-none top-[-130.66%] w-full" src={img2} />
+          <img alt="" className="absolute h-[415.12%] left-0 max-w-none top-[-236.17%] w-full" src={img2} />
         </div>
       </div>
     </div>
@@ -332,8 +319,10 @@ function SectionRow5() {
 function Img6() {
   return (
     <div className="absolute bg-white h-[240px] left-0 top-0 w-full" data-name="img">
-      <div className="-translate-x-1/2 absolute h-[392px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-49px] mask-size-[296px_240px] top-[49px] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="1901_app 2">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img1901App2} />
+      <div className="-translate-x-1/2 absolute h-[191px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-49px] mask-size-[296px_240px] top-[49px] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="1901_app 2">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[205.24%] left-[-0.01%] max-w-none top-0 w-[100.01%]" src={img1901App2} />
+        </div>
       </div>
     </div>
   );
@@ -380,9 +369,9 @@ function SectionRow6() {
 function Img7() {
   return (
     <div className="absolute bg-white h-[240px] left-0 overflow-clip top-[0.5px] w-full" data-name="img">
-      <div className="-translate-x-1/2 absolute h-[468px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-50px] mask-size-[296px_240px] top-[50px] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="2 923">
+      <div className="-translate-x-1/2 absolute h-[190px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-50px] mask-size-[296px_240px] top-[50px] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="2 923">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[113.07%] left-0 max-w-none top-0 w-full" src={img2923} />
+          <img alt="" className="absolute h-[278.51%] left-0 max-w-none top-0 w-full" src={img2923} />
         </div>
       </div>
     </div>
@@ -430,8 +419,10 @@ function SectionRow7() {
 function Img8() {
   return (
     <div className="absolute bg-white h-[240px] left-0 top-[0.5px] w-full" data-name="img">
-      <div className="-translate-x-1/2 absolute h-[678px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-46.5px] mask-size-[296px_240px] top-[47px] w-[195px]" style={{ maskImage: `url("${img200113MtPd1}")` }} data-name="200113_mt_pd 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img200113MtPd2} />
+      <div className="-translate-x-1/2 absolute h-[194px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-46.5px] mask-size-[296px_240px] top-[47px] w-[195px]" style={{ maskImage: `url("${img200113MtPd1}")` }} data-name="200113_mt_pd 1">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[349.61%] left-0 max-w-none top-[-0.06%] w-full" src={img200113MtPd2} />
+        </div>
       </div>
     </div>
   );
@@ -478,9 +469,9 @@ function SectionRow8() {
 function Img9() {
   return (
     <div className="absolute bg-white h-[240px] left-0 top-0 w-full" data-name="img">
-      <div className="-translate-x-1/2 absolute h-[711px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-36px] mask-size-[296px_240px] top-[36px] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="image 3963">
+      <div className="-translate-x-1/2 absolute h-[204px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-36px] mask-size-[296px_240px] top-[36px] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="image 3963">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[100.04%] left-[-16.02%] max-w-none top-[-0.02%] w-[132.04%]" src={imgImage3963} />
+          <img alt="" className="absolute h-[348.65%] left-[-16.02%] max-w-none top-[-0.06%] w-[132.04%]" src={imgImage3963} />
         </div>
       </div>
     </div>
@@ -528,8 +519,10 @@ function SectionRow9() {
 function Img10() {
   return (
     <div className="absolute bg-white h-[240px] left-0 overflow-clip top-[0.5px] w-full" data-name="img">
-      <div className="-translate-x-1/2 absolute h-[644px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-40px] mask-size-[296px_240px] top-[40px] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="image 3964">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage3964} />
+      <div className="-translate-x-1/2 absolute h-[200px] left-[calc(50%+0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-51px_-40px] mask-size-[296px_240px] top-[40px] w-[195px]" style={{ maskImage: `url("${imgImage3958}")` }} data-name="image 3964">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[322.07%] left-0 max-w-none top-[-0.04%] w-full" src={imgImage3964} />
+        </div>
       </div>
     </div>
   );
@@ -576,9 +569,9 @@ function SectionRow10() {
 function Img11() {
   return (
     <div className="absolute bg-white h-[240px] left-0 top-[0.5px] w-full" data-name="img">
-      <div className="-translate-x-1/2 absolute h-[787px] left-[calc(50%-0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-50px_-39.5px] mask-size-[296px_240px] top-[40px] w-[195px]" style={{ maskImage: `url("${img200113MtPd1}")` }} data-name="190527_ak_mtevent 3">
+      <div className="-translate-x-1/2 absolute h-[200px] left-[calc(50%-0.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-50px_-39.5px] mask-size-[296px_240px] top-[40px] w-[195px]" style={{ maskImage: `url("${img200113MtPd1}")` }} data-name="190527_ak_mtevent 3">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[140.66%] left-0 max-w-none top-0 w-full" src={img190527AkMtevent3} />
+          <img alt="" className="absolute h-[553.48%] left-0 max-w-none top-0 w-full" src={img190527AkMtevent3} />
         </div>
       </div>
     </div>
