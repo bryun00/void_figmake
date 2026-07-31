@@ -83,7 +83,7 @@ function BackNav() {
 
 function Frame19() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Medium',sans-serif] gap-[12px] items-center leading-[1.5] relative shrink-0 text-[14px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-medium gap-[12px] items-center leading-[1.5] relative shrink-0 text-[14px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">구축</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2025</p>
     </div>
@@ -94,7 +94,7 @@ function TitleColumn() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[16px] items-start min-w-px not-italic relative" data-name="title-column">
       <Frame19 />
-      <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[40px] w-full">
+      <div className="font-['Pretendard',sans-serif] font-semibold leading-[0] relative shrink-0 text-[#161513] text-[40px] w-full">
         <p className="leading-[normal] mb-0">IBK 기업은행</p>
         <p className="leading-[normal]">개인스마트뱅킹 APP 3.0전면 개편</p>
       </div>
@@ -129,8 +129,8 @@ function HeroMockupContainer() {
 function Frame20() {
   return (
     <div className="content-stretch flex gap-[2px] items-center justify-end relative shrink-0 text-[#161513] whitespace-nowrap">
-      <p className="font-['PP_Mori:Semibold',sans-serif] relative shrink-0 text-[14px]">IBK</p>
-      <p className="font-['Pretendard:Regular',sans-serif] relative shrink-0 text-[16px]">기업은행</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0 text-[14px]">IBK</p>
+      <p className="font-['Pretendard',sans-serif] font-normal relative shrink-0 text-[16px]">기업은행</p>
     </div>
   );
 }
@@ -138,7 +138,7 @@ function Frame20() {
 function Frame() {
   return (
     <div className="content-stretch flex gap-[16px] items-baseline leading-[1.5] relative shrink-0 w-full" data-name="Frame">
-      <p className="font-['PP_Mori:Semibold',sans-serif] relative shrink-0 text-[#8a8a8a] text-[14px] w-[125px]">Client</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0 text-[#8a8a8a] text-[14px] w-[125px]">Client</p>
       <Frame20 />
     </div>
   );
@@ -146,7 +146,7 @@ function Frame() {
 
 function Frame1() {
   return (
-    <div className="content-stretch flex font-['PP_Mori:Semibold',sans-serif] gap-[16px] items-baseline leading-[1.5] relative shrink-0 text-[14px] w-full" data-name="Frame">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-semibold gap-[16px] items-baseline leading-[1.5] relative shrink-0 text-[14px] w-full" data-name="Frame">
       <p className="relative shrink-0 text-[#8a8a8a] w-[125px]">Duration</p>
       <p className="relative shrink-0 text-[#161513] whitespace-nowrap">2025.01-2025.09</p>
     </div>
@@ -156,8 +156,8 @@ function Frame1() {
 function Frame2() {
   return (
     <div className="content-stretch flex gap-[16px] items-baseline leading-[1.5] relative shrink-0 text-[14px] w-full" data-name="Frame">
-      <p className="font-['PP_Mori:Semibold',sans-serif] relative shrink-0 text-[#8a8a8a] w-[125px]">Contribution</p>
-      <p className="font-['Pretendard:Medium',sans-serif] relative shrink-0 text-[#161513] whitespace-nowrap">디자인 100% (프로젝트 중 기여도 100%작업물만 첨부)</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0 text-[#8a8a8a] w-[125px]">Contribution</p>
+      <p className="font-['Pretendard',sans-serif] font-medium relative shrink-0 text-[#161513] whitespace-nowrap">디자인 100% (프로젝트 중 기여도 100%작업물만 첨부)</p>
     </div>
   );
 }
@@ -165,15 +165,15 @@ function Frame2() {
 function Frame3() {
   return (
     <div className="content-stretch flex gap-[16px] items-baseline leading-[1.5] relative shrink-0 text-[14px] w-full" data-name="Frame">
-      <p className="font-['PP_Mori:Semibold',sans-serif] relative shrink-0 text-[#8a8a8a] w-[125px]">Role</p>
-      <p className="font-['Pretendard:Medium',sans-serif] relative shrink-0 text-[#161513] whitespace-nowrap">{`부pl , 디자인 시스템관리, 제안부터 구축까지 참여 `}</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0 text-[#8a8a8a] w-[125px]">Role</p>
+      <p className="font-['Pretendard',sans-serif] font-medium relative shrink-0 text-[#161513] whitespace-nowrap">{`부pl , 디자인 시스템관리, 제안부터 구축까지 참여 `}</p>
     </div>
   );
 }
 
 function Frame4() {
   return (
-    <div className="content-stretch flex font-['PP_Mori:Semibold',sans-serif] gap-[16px] items-baseline leading-[1.5] relative shrink-0 text-[14px] w-full" data-name="Frame">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-semibold gap-[16px] items-baseline leading-[1.5] relative shrink-0 text-[14px] w-full" data-name="Frame">
       <p className="relative shrink-0 text-[#8a8a8a] w-[125px]">Tools</p>
       <p className="relative shrink-0 text-[#161513] whitespace-nowrap">Figma , photoshop</p>
     </div>
@@ -197,12 +197,12 @@ function Frame5() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[20px] items-start not-italic relative shrink-0 w-full" data-name="Frame">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[24px] whitespace-nowrap">Concept</p>
-      <div className="font-['Pretendard:Medium',sans-serif] leading-[0] min-w-full relative shrink-0 text-[#8a8a8a] text-[14px] w-[min-content] whitespace-pre-wrap">
+      <div className="font-['Pretendard',sans-serif] font-medium leading-[0] min-w-full relative shrink-0 text-[#8a8a8a] text-[14px] w-[min-content] whitespace-pre-wrap">
         <p className="leading-[1.5] mb-0">{`사용자 중심의 은행앱이 되기위한 리뉴얼을 진행하였습니다. `}</p>
         <p>
-          <span className="[word-break:break-word] font-['Pretendard:Medium',sans-serif] leading-[1.5] not-italic">{`고객의 금융 이용 경험을 혁신하기 위한 전체 적인 서비스 구조를 재정비 하고, `}</span>
+          <span className="[word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.5] not-italic">{`고객의 금융 이용 경험을 혁신하기 위한 전체 적인 서비스 구조를 재정비 하고, `}</span>
           <span className="leading-[1.5]">{` `}</span>
-          <span className="[word-break:break-word] font-['Pretendard:Medium',sans-serif] leading-[1.5] not-italic">{`UI/UX 디자인을 전면 개편, 금융 서비스에 특화된 인터페이스 설계에 집중했습니다. `}</span>
+          <span className="[word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.5] not-italic">{`UI/UX 디자인을 전면 개편, 금융 서비스에 특화된 인터페이스 설계에 집중했습니다. `}</span>
         </p>
       </div>
     </div>
@@ -221,14 +221,14 @@ function Frame21() {
   return (
     <div className="content-stretch flex gap-[20px] items-start leading-[normal] relative shrink-0 text-[#161513] text-[24px]">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0">Random game</p>
-      <p className="font-['Pretendard:SemiBold',sans-serif] relative shrink-0">[랜덤게임 3종]</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0">[랜덤게임 3종]</p>
     </div>
   );
 }
 
 function Frame23() {
   return (
-    <div className="content-stretch flex flex-col font-['Pretendard:Medium',sans-serif] gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
+    <div className="content-stretch flex flex-col font-['Pretendard',sans-serif] font-medium gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
       <ul className="block relative shrink-0">
         <li className="list-disc ms-[21px]">
           <span className="leading-[1.5]">게임 진행시 비주얼 위주로 게이미피케이션 적금이라는 것을 강조</span>
@@ -251,7 +251,7 @@ function Frame23() {
 function Frame24() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0">
-      <p className="font-['PP_Mori:Semibold',sans-serif] leading-[1.5] relative shrink-0 text-[#161513]">Clients needs</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513]">Clients needs</p>
       <Frame23 />
     </div>
   );
@@ -259,7 +259,7 @@ function Frame24() {
 
 function Frame26() {
   return (
-    <div className="content-stretch flex flex-col font-['Pretendard:Medium',sans-serif] gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
+    <div className="content-stretch flex flex-col font-['Pretendard',sans-serif] font-medium gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
       <ul className="block relative shrink-0">
         <li className="list-disc ms-[21px]">
           <span className="leading-[1.5]">게이미피케이션 카테고리를 활성화로 고객 유입을 증가</span>
@@ -277,7 +277,7 @@ function Frame26() {
 function Frame25() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0">
-      <p className="font-['PP_Mori:Semibold',sans-serif] leading-[1.5] relative shrink-0 text-[#161513]">Main purpose</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513]">Main purpose</p>
       <Frame26 />
     </div>
   );
@@ -285,7 +285,7 @@ function Frame25() {
 
 function Frame28() {
   return (
-    <div className="content-stretch flex flex-col font-['Pretendard:Medium',sans-serif] gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
+    <div className="content-stretch flex flex-col font-['Pretendard',sans-serif] font-medium gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
       <ul className="block relative shrink-0">
         <li className="list-disc ms-[21px]">
           <span className="leading-[1.5]">{`게이미피케이션 요소를 추가하여 고객참여 유도 `}</span>
@@ -303,7 +303,7 @@ function Frame28() {
 function Frame27() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0">
-      <p className="font-['PP_Mori:Semibold',sans-serif] leading-[1.5] relative shrink-0 text-[#161513]">Solution</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513]">Solution</p>
       <Frame28 />
     </div>
   );
@@ -341,7 +341,7 @@ function Frame17() {
 function Frame31() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0">
-      <div className="[word-break:break-word] font-['Pretendard:Medium',sans-serif] leading-[0] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">
+      <div className="[word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[0] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">
         <p className="leading-[1.5] mb-0">랜덤게임 적금 3종에 관한 페이지들을 작업하였어요</p>
         <p className="leading-[1.5]">이미지요소를 사용하여 게이미피케이션 느낌을 강조하였어요</p>
       </div>
@@ -435,9 +435,9 @@ function Component2() {
       <div className="-translate-y-1/2 absolute aspect-[4096/2863] left-[-134px] right-[-260px] top-[calc(50%+85.5px)]" data-name="image 3892">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage3892} />
       </div>
-      <p className="[word-break:break-word] absolute font-['Pretendard:Medium',sans-serif] leading-[1.5] left-[926px] not-italic text-[14px] text-white top-[589px] whitespace-nowrap">가위바위보</p>
-      <p className="[word-break:break-word] absolute font-['Pretendard:Medium',sans-serif] leading-[1.5] left-[98px] not-italic text-[14px] text-white top-[316px] whitespace-nowrap">참참참</p>
-      <p className="[word-break:break-word] absolute font-['Pretendard:Medium',sans-serif] leading-[1.5] left-[1046px] not-italic text-[14px] text-white top-[95px] whitespace-nowrap">주사위 던지기</p>
+      <p className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[1.5] left-[926px] not-italic text-[14px] text-white top-[589px] whitespace-nowrap">가위바위보</p>
+      <p className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[1.5] left-[98px] not-italic text-[14px] text-white top-[316px] whitespace-nowrap">참참참</p>
+      <p className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[1.5] left-[1046px] not-italic text-[14px] text-white top-[95px] whitespace-nowrap">주사위 던지기</p>
       <div className="absolute flex h-[22px] items-center justify-center left-[855px] top-[599px] w-[56px]">
         <div className="-rotate-90 -scale-y-100 flex-none">
           <div className="h-[56px] opacity-40 relative w-[22px]" data-name="_Main / Flow">
@@ -580,14 +580,14 @@ function Frame32() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[20px] items-start leading-[normal] not-italic relative shrink-0 text-[#161513] text-[24px] whitespace-nowrap">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0">chatbot</p>
-      <p className="font-['Pretendard:SemiBold',sans-serif] relative shrink-0">[챗봇]</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0">[챗봇]</p>
     </div>
   );
 }
 
 function Frame35() {
   return (
-    <div className="content-stretch flex flex-col font-['Pretendard:Medium',sans-serif] gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
+    <div className="content-stretch flex flex-col font-['Pretendard',sans-serif] font-medium gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
       <ul className="block relative shrink-0">
         <li className="list-disc ms-[21px]">
           <span className="leading-[1.5]">솔루션 사용, 촉박한 일정으로 큰 변화를 원하지 않음</span>
@@ -605,7 +605,7 @@ function Frame35() {
 function Frame34() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 text-[14px] whitespace-nowrap">
-      <p className="font-['PP_Mori:Semibold',sans-serif] leading-[1.5] relative shrink-0 text-[#161513]">Clients needs</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513]">Clients needs</p>
       <Frame35 />
     </div>
   );
@@ -630,7 +630,7 @@ function Frame7() {
 
 function Frame37() {
   return (
-    <div className="content-stretch flex flex-col font-['Pretendard:Medium',sans-serif] gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
+    <div className="content-stretch flex flex-col font-['Pretendard',sans-serif] font-medium gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
       <ul className="block relative shrink-0">
         <li className="list-disc ms-[21px]">
           <span className="leading-[1.5]">버튼과 사용자 대화창의 컬러가 동일하여 버튼, 텍스트 버블 구분안가는 ui</span>
@@ -653,7 +653,7 @@ function Frame37() {
 function Txt() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-[794px] not-italic text-[14px] top-[396px] whitespace-nowrap" data-name="txt">
-      <p className="font-['PP_Mori:Semibold',sans-serif] leading-[1.5] relative shrink-0 text-[#161513]">Problem</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513]">Problem</p>
       <Frame37 />
     </div>
   );
@@ -750,8 +750,8 @@ function Txt1() {
   return (
     <div className="absolute bottom-[300px] content-stretch flex flex-col gap-[10px] h-[206px] items-start left-[834px] pl-[24px]" data-name="txt1">
       <div aria-hidden className="absolute border-[rgba(255,255,255,0.6)] border-l-4 border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Pretendard:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">다양한 케이스</p>
-      <p className="[word-break:break-word] font-['Pretendard:Medium',sans-serif] leading-[1.5] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">다양한 케이스를 디자인 작업 하였어요</p>
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">다양한 케이스</p>
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.5] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">다양한 케이스를 디자인 작업 하였어요</p>
     </div>
   );
 }
@@ -795,8 +795,8 @@ function Txt2() {
   return (
     <div className="absolute content-stretch flex flex-col gap-[10px] items-start pl-[24px] right-[52px] top-[468px]" data-name="txt1">
       <div aria-hidden className="absolute border-[rgba(255,255,255,0.6)] border-l-4 border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Pretendard:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">이미지 통일화</p>
-      <ul className="[word-break:break-word] block font-['Pretendard:Medium',sans-serif] leading-[0] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">이미지 통일화</p>
+      <ul className="[word-break:break-word] block font-['Pretendard',sans-serif] font-medium leading-[0] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">
         <li className="list-disc ms-[21px]">
           <span className="leading-[1.5]">이미지 스타일을 동일하게 하여 통일감을 주었어요</span>
         </li>
@@ -812,9 +812,9 @@ function Txt3() {
   return (
     <div className="absolute content-stretch flex flex-col gap-[10px] items-start left-[328px] pl-[24px] top-[832px]" data-name="txt1">
       <div aria-hidden className="absolute border-[rgba(255,255,255,0.6)] border-l-4 border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Pretendard:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">{`버튼&텍스트 버블 수정 `}</p>
-      <p className="[word-break:break-word] font-['Pretendard:Medium',sans-serif] leading-[1.5] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">챗봇 전체 버튼은 가이드에 맞춰 수정하였고, 텍스트 버블만 강조를 하기위해 컬러를 넣었어요</p>
-      <div className="[word-break:break-word] font-['Pretendard:Medium',sans-serif] leading-[0] not-italic relative shrink-0 text-[#88edff] text-[14px] whitespace-nowrap">
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">{`버튼&텍스트 버블 수정 `}</p>
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.5] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">챗봇 전체 버튼은 가이드에 맞춰 수정하였고, 텍스트 버블만 강조를 하기위해 컬러를 넣었어요</p>
+      <div className="[word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[0] not-italic relative shrink-0 text-[#88edff] text-[14px] whitespace-nowrap">
         <p className="leading-[1.5] mb-0">텍스트 버블이 없는 형태로 디자인 하고 싶었지만 솔루션 사용과 개발 이슈, 타이트한 일정으로</p>
         <p className="leading-[1.5]">수정진행을 하지 못한점이 아쉬워요</p>
       </div>
@@ -826,8 +826,8 @@ function Txt4() {
   return (
     <div className="absolute content-stretch flex flex-col gap-[10px] items-start left-[328px] pl-[24px] top-[1274px]" data-name="txt1">
       <div aria-hidden className="absolute border-[rgba(255,255,255,0.6)] border-l-4 border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Pretendard:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">{`버튼 수정 `}</p>
-      <p className="[word-break:break-word] font-['Pretendard:Medium',sans-serif] leading-[1.5] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">버튼은 가이드에 맞춰 disabled 의 케이스도 수정하였어요</p>
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">{`버튼 수정 `}</p>
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.5] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">버튼은 가이드에 맞춰 disabled 의 케이스도 수정하였어요</p>
     </div>
   );
 }
@@ -868,7 +868,7 @@ function Frame38() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[20px] items-start leading-[normal] not-italic relative shrink-0 text-[#161513] text-[24px] whitespace-nowrap">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0">{`etc `}</p>
-      <p className="font-['Pretendard:SemiBold',sans-serif] relative shrink-0">[알림함, 스플래시, 내정보, vip class, 환율]</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0">[알림함, 스플래시, 내정보, vip class, 환율]</p>
     </div>
   );
 }
@@ -876,7 +876,7 @@ function Frame38() {
 function Frame41() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0">
-      <ul className="[word-break:break-word] block font-['Pretendard:Medium',sans-serif] leading-[0] not-italic relative shrink-0 text-[#8a8a8a] text-[14px] whitespace-nowrap">
+      <ul className="[word-break:break-word] block font-['Pretendard',sans-serif] font-medium leading-[0] not-italic relative shrink-0 text-[#8a8a8a] text-[14px] whitespace-nowrap">
         <li className="list-disc ms-[21px]">
           <span className="leading-[1.5]">디자인시스템을 준수하고 기업은행의 아이덴티티를 담아냄</span>
         </li>
@@ -888,7 +888,7 @@ function Frame41() {
 function Frame40() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0">
-      <p className="[word-break:break-word] font-['PP_Mori:Semibold',sans-serif] leading-[1.5] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">Concept</p>
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-semibold leading-[1.5] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">Concept</p>
       <Frame41 />
     </div>
   );
@@ -914,7 +914,7 @@ function Frame8() {
 function Frame12() {
   return (
     <div className="absolute bg-[#aeaeae] content-stretch flex items-center justify-center left-[451px] px-[20px] py-[4px] rounded-[20px] top-[139px]">
-      <p className="[word-break:break-word] font-['Pretendard:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap">알림함</p>
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap">알림함</p>
     </div>
   );
 }
@@ -923,7 +923,7 @@ function Txt5() {
   return (
     <div className="absolute content-stretch flex flex-col gap-[10px] items-end left-[149px] pr-[24px] top-[350px]" data-name="txt1">
       <div aria-hidden className="absolute border-[#161513] border-r-4 border-solid inset-0 pointer-events-none" />
-      <div className="[word-break:break-word] font-['Pretendard:Medium',sans-serif] leading-[0] not-italic relative shrink-0 text-[#161513] text-[14px] text-right whitespace-nowrap">
+      <div className="[word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[0] not-italic relative shrink-0 text-[#161513] text-[14px] text-right whitespace-nowrap">
         <p className="leading-[1.5] mb-0">플랫아이콘들을 활용하여</p>
         <p className="leading-[1.5]">{`단순화 되보이도록 페이지를 디자인하였어요 `}</p>
       </div>
@@ -963,7 +963,7 @@ function Component8() {
 function Frame13() {
   return (
     <div className="absolute bg-white content-stretch flex items-center justify-center left-[60px] px-[20px] py-[4px] rounded-[20px] top-[157px]">
-      <p className="[word-break:break-word] font-['Pretendard:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#161513] text-[18px] whitespace-nowrap">스플래시</p>
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#161513] text-[18px] whitespace-nowrap">스플래시</p>
     </div>
   );
 }
@@ -971,7 +971,7 @@ function Frame13() {
 function Frame14() {
   return (
     <div className="absolute bg-white content-stretch flex items-center justify-center left-[358px] px-[20px] py-[4px] rounded-[20px] top-[92px]">
-      <p className="[word-break:break-word] font-['Pretendard:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#161513] text-[18px] whitespace-nowrap">내정보 메뉴</p>
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#161513] text-[18px] whitespace-nowrap">내정보 메뉴</p>
     </div>
   );
 }
@@ -979,7 +979,7 @@ function Frame14() {
 function Frame15() {
   return (
     <div className="absolute bg-white content-stretch flex items-center justify-center left-[666px] px-[20px] py-[4px] rounded-[20px] top-[197px]">
-      <p className="[word-break:break-word] font-['Pretendard:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#161513] text-[18px] whitespace-nowrap">{`회원 등급 메뉴 `}</p>
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#161513] text-[18px] whitespace-nowrap">{`회원 등급 메뉴 `}</p>
     </div>
   );
 }
@@ -987,7 +987,7 @@ function Frame15() {
 function Frame16() {
   return (
     <div className="absolute bg-white content-stretch flex items-center justify-center left-[974px] px-[20px] py-[4px] rounded-[20px] top-[132px]">
-      <p className="[word-break:break-word] font-['Pretendard:SemiBold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#161513] text-[18px] whitespace-nowrap">환전,외환 메뉴</p>
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#161513] text-[18px] whitespace-nowrap">환전,외환 메뉴</p>
     </div>
   );
 }
@@ -1068,7 +1068,7 @@ function Frame9() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[6px] items-start leading-[normal] not-italic relative shrink-0 whitespace-nowrap" data-name="Frame">
       <p className="font-['Space_Grotesk',sans-serif] font-medium relative shrink-0 text-[#8a8a8a] text-[12px] tracking-[0.006px] uppercase">NEXT PROJECT</p>
-      <p className="font-['Pretendard:SemiBold',sans-serif] relative shrink-0 text-[#161513] text-[20px]">BK 기업은행 개인스마트뱅킹 APP 제안 시안</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0 text-[#161513] text-[20px]">BK 기업은행 개인스마트뱅킹 APP 제안 시안</p>
     </div>
   );
 }

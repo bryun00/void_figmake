@@ -23,11 +23,11 @@ export default function WorkDetailPlaceholder({ tag, year, title, subtitle }: Wo
         <div className="flex flex-col gap-2">
           <h1
             className="text-[#161513] text-[40px] max-[440px]:text-[28px] tracking-[-1px]"
-            style={{ fontFamily: "'Pretendard:SemiBold', sans-serif" }}
+            style={{ fontFamily: "'Pretendard', sans-serif", fontWeight: 600 }}
           >
             {title}
           </h1>
-          <p className="text-[#8a8a8a] text-[20px] max-[440px]:text-[16px]" style={{ fontFamily: "'Pretendard:Regular', sans-serif" }}>
+          <p className="text-[#8a8a8a] text-[20px] max-[440px]:text-[16px]" style={{ fontFamily: "'Pretendard', sans-serif", fontWeight: 400 }}>
             {subtitle}
           </p>
         </div>

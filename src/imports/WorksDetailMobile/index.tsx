@@ -77,7 +77,7 @@ function BackNav() {
 
 function Frame21() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Medium',sans-serif] gap-[12px] items-start leading-[1.5] relative shrink-0 text-[14px] whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-medium gap-[12px] items-start leading-[1.5] relative shrink-0 text-[14px] whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">구축</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2025</p>
     </div>
@@ -89,7 +89,7 @@ function CaseHeader() {
     <div className="relative shrink-0 w-full" data-name="case-header">
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic pb-[32px] pt-[24px] px-[20px] relative size-full">
         <Frame21 />
-        <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] min-w-full relative shrink-0 text-[#161513] text-[24px] w-[min-content]">
+        <div className="font-['Pretendard',sans-serif] font-semibold leading-[0] min-w-full relative shrink-0 text-[#161513] text-[24px] w-[min-content]">
           <p className="leading-[normal] mb-0">IBK 기업은행</p>
           <p className="leading-[normal]">개인스마트뱅킹 APP 3.0전면 개편</p>
         </div>
@@ -101,15 +101,15 @@ function CaseHeader() {
 function Frame() {
   return (
     <div className="content-stretch flex items-baseline justify-between leading-[1.5] relative shrink-0 w-full" data-name="Frame">
-      <p className="font-['PP_Mori:Semibold',sans-serif] relative shrink-0 text-[#8a8a8a]">Client</p>
-      <p className="font-['Pretendard:Medium',sans-serif] relative shrink-0 text-[#161513]">IBK 기업은행</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0 text-[#8a8a8a]">Client</p>
+      <p className="font-['Pretendard',sans-serif] font-medium relative shrink-0 text-[#161513]">IBK 기업은행</p>
     </div>
   );
 }
 
 function Frame1() {
   return (
-    <div className="content-stretch flex font-['PP_Mori:Semibold',sans-serif] items-baseline justify-between leading-[1.5] relative shrink-0 w-full" data-name="Frame">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-semibold items-baseline justify-between leading-[1.5] relative shrink-0 w-full" data-name="Frame">
       <p className="relative shrink-0 text-[#8a8a8a]">Duration</p>
       <p className="relative shrink-0 text-[#161513]">2025.01-2025.09</p>
     </div>
@@ -119,8 +119,8 @@ function Frame1() {
 function Frame2() {
   return (
     <div className="content-stretch flex items-baseline justify-between relative shrink-0 w-full" data-name="Frame">
-      <p className="font-['PP_Mori:Semibold',sans-serif] leading-[1.5] relative shrink-0 text-[#8a8a8a]">Contribution</p>
-      <div className="font-['Pretendard:Medium',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-right">
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#8a8a8a]">Contribution</p>
+      <div className="font-['Pretendard',sans-serif] font-medium leading-[0] relative shrink-0 text-[#161513] text-right">
         <p className="leading-[1.5] mb-0">디자인 100%</p>
         <p className="leading-[1.5]">(프로젝트 중 기여도 100%작업물만 첨부)</p>
       </div>
@@ -131,8 +131,8 @@ function Frame2() {
 function Frame3() {
   return (
     <div className="content-stretch flex items-baseline justify-between relative shrink-0 w-full" data-name="Frame">
-      <p className="font-['PP_Mori:Semibold',sans-serif] leading-[1.5] relative shrink-0 text-[#8a8a8a]">Role</p>
-      <div className="font-['Pretendard:Medium',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-right">
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#8a8a8a]">Role</p>
+      <div className="font-['Pretendard',sans-serif] font-medium leading-[0] relative shrink-0 text-[#161513] text-right">
         <p className="leading-[1.5] mb-0">부pl , 디자인 시스템관리,</p>
         <p className="leading-[1.5]">{`제안부터 구축까지 참여 `}</p>
       </div>
@@ -142,7 +142,7 @@ function Frame3() {
 
 function Frame4() {
   return (
-    <div className="content-stretch flex font-['PP_Mori:Semibold',sans-serif] items-baseline justify-between leading-[1.5] relative shrink-0 w-full" data-name="Frame">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-semibold items-baseline justify-between leading-[1.5] relative shrink-0 w-full" data-name="Frame">
       <p className="relative shrink-0 text-[#8a8a8a]">Tools</p>
       <p className="relative shrink-0 text-[#161513]">Figma , photoshop</p>
     </div>
@@ -174,7 +174,7 @@ function Frame5() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-[350px]" data-name="Frame">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[20px] whitespace-nowrap">Concept</p>
-      <div className="font-['Pretendard:Medium',sans-serif] leading-[0] min-w-full relative shrink-0 text-[#8a8a8a] text-[14px] w-[min-content] whitespace-pre-wrap">
+      <div className="font-['Pretendard',sans-serif] font-medium leading-[0] min-w-full relative shrink-0 text-[#8a8a8a] text-[14px] w-[min-content] whitespace-pre-wrap">
         <p className="leading-[1.5] mb-0">{`사용자 중심의 은행앱이 되기위한 리뉴얼을 진행하였습니다. `}</p>
         <p className="leading-[1.5]">{`고객의 금융 이용 경험을 혁신하기 위한 전체 적인 서비스 구조를 재정비 하고,  UI/UX 디자인을 전면 개편, 금융 서비스에 특화된 인터페이스 설계에 집중했습니다. `}</p>
       </div>
@@ -215,14 +215,14 @@ function Frame23() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start leading-[normal] relative shrink-0 text-[#161513] text-[20px] whitespace-nowrap">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0">Random game</p>
-      <p className="font-['Pretendard:SemiBold',sans-serif] relative shrink-0">[랜덤게임 3종]</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0">[랜덤게임 3종]</p>
     </div>
   );
 }
 
 function Frame13() {
   return (
-    <div className="content-stretch flex flex-col font-['Pretendard:Medium',sans-serif] gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a] w-full">
+    <div className="content-stretch flex flex-col font-['Pretendard',sans-serif] font-medium gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a] w-full">
       <ul className="block relative shrink-0 w-full">
         <li className="list-disc ms-[21px] whitespace-pre-wrap">
           <span className="leading-[1.5]">{`게임 진행시 비주얼 위주로 게이미피케이션                            적금이라는 것을 강조`}</span>
@@ -245,7 +245,7 @@ function Frame13() {
 function Frame14() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 text-[14px] w-full">
-      <p className="font-['PP_Mori:Semibold',sans-serif] leading-[1.5] relative shrink-0 text-[#161513] whitespace-nowrap">Clients needs</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513] whitespace-nowrap">Clients needs</p>
       <Frame13 />
     </div>
   );
@@ -253,7 +253,7 @@ function Frame14() {
 
 function Frame16() {
   return (
-    <div className="content-stretch flex flex-col font-['Pretendard:Medium',sans-serif] gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
+    <div className="content-stretch flex flex-col font-['Pretendard',sans-serif] font-medium gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
       <ul className="block relative shrink-0">
         <li className="list-disc ms-[21px]">
           <span className="leading-[1.5]">게이미피케이션 카테고리를 활성화로 고객 유입을 증가</span>
@@ -271,7 +271,7 @@ function Frame16() {
 function Frame15() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 text-[14px] w-full whitespace-nowrap">
-      <p className="font-['PP_Mori:Semibold',sans-serif] leading-[1.5] relative shrink-0 text-[#161513]">Main purpose</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513]">Main purpose</p>
       <Frame16 />
     </div>
   );
@@ -279,7 +279,7 @@ function Frame15() {
 
 function Frame18() {
   return (
-    <div className="content-stretch flex flex-col font-['Pretendard:Medium',sans-serif] gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
+    <div className="content-stretch flex flex-col font-['Pretendard',sans-serif] font-medium gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a]">
       <ul className="block relative shrink-0">
         <li className="list-disc ms-[21px]">
           <span className="leading-[1.5]">{`게이미피케이션 요소를 추가하여 고객참여 유도 `}</span>
@@ -297,7 +297,7 @@ function Frame18() {
 function Frame17() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 text-[14px] w-full whitespace-nowrap">
-      <p className="font-['PP_Mori:Semibold',sans-serif] leading-[1.5] relative shrink-0 text-[#161513]">Solution</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513]">Solution</p>
       <Frame18 />
     </div>
   );
@@ -341,14 +341,14 @@ function Frame24() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start leading-[normal] relative shrink-0 text-[#161513] text-[20px] whitespace-nowrap">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0">chatbot</p>
-      <p className="font-['Pretendard:SemiBold',sans-serif] relative shrink-0">[챗봇]</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0">[챗봇]</p>
     </div>
   );
 }
 
 function Frame25() {
   return (
-    <div className="content-stretch flex flex-col font-['Pretendard:Medium',sans-serif] gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a] w-full">
+    <div className="content-stretch flex flex-col font-['Pretendard',sans-serif] font-medium gap-[4px] items-start leading-[0] relative shrink-0 text-[#8a8a8a] w-full">
       <ul className="block relative shrink-0 w-full">
         <li className="list-disc ms-[21px]">
           <span className="leading-[1.5]">솔루션 사용, 촉박한 일정으로 큰 변화를 원하지 않음</span>
@@ -366,7 +366,7 @@ function Frame25() {
 function Frame20() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 text-[14px] w-full">
-      <p className="font-['PP_Mori:Semibold',sans-serif] leading-[1.5] relative shrink-0 text-[#161513] whitespace-nowrap">Clients needs</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#161513] whitespace-nowrap">Clients needs</p>
       <Frame25 />
     </div>
   );
@@ -415,7 +415,7 @@ function Frame27() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[normal] not-italic relative shrink-0 text-[#161513] text-[20px] whitespace-nowrap">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0">{`etc `}</p>
-      <p className="font-['Pretendard:SemiBold',sans-serif] relative shrink-0">[알림함, 스플래시, 내정보, vip class, 환율]</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0">[알림함, 스플래시, 내정보, vip class, 환율]</p>
     </div>
   );
 }
@@ -423,7 +423,7 @@ function Frame27() {
 function Frame29() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full">
-      <ul className="[word-break:break-word] block font-['Pretendard:Medium',sans-serif] leading-[0] not-italic relative shrink-0 text-[#8a8a8a] text-[14px] w-full">
+      <ul className="[word-break:break-word] block font-['Pretendard',sans-serif] font-medium leading-[0] not-italic relative shrink-0 text-[#8a8a8a] text-[14px] w-full">
         <li className="list-disc ms-[21px]">
           <span className="leading-[1.5]">디자인시스템을 준수하고 기업은행의 아이덴티티를 담아냄</span>
         </li>
@@ -435,7 +435,7 @@ function Frame29() {
 function Frame28() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full">
-      <p className="[word-break:break-word] font-['PP_Mori:Semibold',sans-serif] leading-[1.5] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">Concept</p>
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-semibold leading-[1.5] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">Concept</p>
       <Frame29 />
     </div>
   );

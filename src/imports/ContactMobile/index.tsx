@@ -47,7 +47,7 @@ function HeroSection() {
     <div className="relative shrink-0 w-full" data-name="hero-section">
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start not-italic pb-[32px] pt-[40px] px-[20px] relative size-full text-[#161513]">
         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['TheNightWatch_:Regular',sans-serif] leading-[normal] relative shrink-0 text-[52px] tracking-[-1.04px] w-full">contact</p>
-        <div className="font-['Pretendard:Regular',sans-serif] leading-[0] relative shrink-0 text-[22px] w-full">
+        <div className="font-['Pretendard',sans-serif] font-normal leading-[0] relative shrink-0 text-[22px] w-full">
           <p className="leading-[1.6] mb-0">새로운 프로젝트문의</p>
           <p className="leading-[1.6]">아래폼으로 남겨주시면 답장드리겠습니다.</p>
         </div>
@@ -60,7 +60,7 @@ function LabelGroup() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0" data-name="label-group">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px]">Direct Contact</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px]">직접 연락처</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px]">직접 연락처</p>
     </div>
   );
 }
@@ -87,7 +87,7 @@ function InputBox() {
   return (
     <div className="content-stretch flex h-[54px] items-center py-[12px] relative shrink-0 w-full" data-name="input-box">
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['PP_Mori:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">답장 받으실 이메일 주소를 남겨주세요</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Pretendard',sans-serif] font-normal leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">답장 받으실 이메일 주소를 남겨주세요</p>
     </div>
   );
 }
@@ -105,7 +105,7 @@ function InputBox1() {
   return (
     <div className="content-stretch flex h-[54px] items-center py-[12px] relative shrink-0 w-full" data-name="input-box">
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['PP_Mori:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">성함을 남겨주세요</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Pretendard',sans-serif] font-normal leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">성함을 남겨주세요</p>
     </div>
   );
 }
@@ -123,7 +123,7 @@ function InputBox2() {
   return (
     <div className="content-stretch flex h-[100px] items-center py-[12px] relative shrink-0 w-full" data-name="input-box">
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['PP_Mori:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">어떤 이야기든 편하게 남겨주세요</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Pretendard',sans-serif] font-normal leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">어떤 이야기든 편하게 남겨주세요</p>
     </div>
   );
 }

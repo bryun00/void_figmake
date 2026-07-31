@@ -23,7 +23,7 @@ function Img() {
 
 function Frame() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">개인작업</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2024</p>
     </div>
@@ -34,7 +34,7 @@ function LeftLabelColumn() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-0 not-italic top-[264px] w-[296px]" data-name="left-label-column">
       <Frame />
-      <p className="font-['Pretendard:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Ai - icon</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Ai - icon</p>
     </div>
   );
 }
@@ -62,7 +62,7 @@ function Img1() {
 
 function Frame1() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">시각</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2023</p>
     </div>
@@ -73,7 +73,7 @@ function LeftLabelColumn1() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-0 not-italic top-[263.5px] w-[296px]" data-name="left-label-column">
       <Frame1 />
-      <p className="font-['Pretendard:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">인쇄물</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">인쇄물</p>
     </div>
   );
 }

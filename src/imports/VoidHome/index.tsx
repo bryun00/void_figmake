@@ -3,7 +3,7 @@ function TopMarquee() {
     <div className="bg-[#fff8e9] relative shrink-0 w-full" data-name="top-marquee">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[40px] py-[16px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['PP_Mori:Regular',sans-serif] leading-[1.5] min-w-px not-italic overflow-hidden relative text-[#8a8a8a] text-[14px] text-ellipsis whitespace-nowrap">{`currently open to freelance work · currently open to freelance work · currently open to freelance work · currently open to freelance work · currently open to freelance work · currently open to freelance work · `}</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Pretendard',sans-serif] font-normal leading-[1.5] min-w-px not-italic overflow-hidden relative text-[#8a8a8a] text-[14px] text-ellipsis whitespace-nowrap">{`currently open to freelance work · currently open to freelance work · currently open to freelance work · currently open to freelance work · currently open to freelance work · currently open to freelance work · `}</p>
         </div>
       </div>
       <div aria-hidden className="absolute border border-[#e5e0d0] border-solid inset-0 pointer-events-none" />

@@ -21,7 +21,7 @@ function Img() {
 
 function Frame() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">구축</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2025</p>
     </div>
@@ -32,7 +32,7 @@ function LeftLabelColumn() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-0 not-italic top-[265px] w-[296px]" data-name="left-label-column">
       <Frame />
-      <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
+      <div className="font-['Pretendard',sans-serif] font-semibold leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
         <p className="leading-[normal] mb-0">IBK 기업은행</p>
         <p className="leading-[normal]">개인스마트뱅킹 APP 3.0전면 개편</p>
       </div>
@@ -71,7 +71,7 @@ function Img1() {
 
 function Frame1() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">제안</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2024</p>
     </div>
@@ -82,7 +82,7 @@ function LeftLabelColumn1() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-0 not-italic top-[264px] w-[296px]" data-name="left-label-column">
       <Frame1 />
-      <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
+      <div className="font-['Pretendard',sans-serif] font-semibold leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
         <p className="leading-[normal] mb-0">BK 기업은행</p>
         <p className="leading-[normal]">개인스마트뱅킹 APP 제안 시안</p>
       </div>
@@ -121,7 +121,7 @@ function Img2() {
 
 function Frame2() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">구축</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2020</p>
     </div>
@@ -132,7 +132,7 @@ function LeftLabelColumn2() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-0 not-italic top-[264px] w-[296px]" data-name="left-label-column">
       <Frame2 />
-      <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
+      <div className="font-['Pretendard',sans-serif] font-semibold leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
         <p className="leading-[normal] mb-0">AMF Fantasy</p>
         <p className="leading-[normal]">글로벌 사이트</p>
       </div>
@@ -181,7 +181,7 @@ function Img3() {
 
 function Frame3() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">제안</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2020</p>
     </div>
@@ -192,7 +192,7 @@ function LeftLabelColumn3() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-0 not-italic top-[263.5px] w-[296px]" data-name="left-label-column">
       <Frame3 />
-      <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
+      <div className="font-['Pretendard',sans-serif] font-semibold leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
         <p className="leading-[normal] mb-0">B2G 게임즈</p>
         <p className="leading-[normal]">승부예측 커뮤니티사이트</p>
       </div>
@@ -231,7 +231,7 @@ function Img4() {
 
 function Frame4() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">운영</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2016</p>
     </div>
@@ -242,7 +242,7 @@ function LeftLabelColumn4() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-0 not-italic top-[264px] w-[300.333px]" data-name="left-label-column">
       <Frame4 />
-      <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
+      <div className="font-['Pretendard',sans-serif] font-semibold leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
         <p className="leading-[normal] mb-0">쁘띠엘린 몰</p>
         <p className="leading-[normal]">스마트라이크 브랜드 사이트</p>
       </div>
@@ -281,7 +281,7 @@ function Img5() {
 
 function Frame5() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">제안</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2019</p>
     </div>
@@ -292,7 +292,7 @@ function LeftLabelColumn5() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-0 not-italic top-[264px] w-[300.333px]" data-name="left-label-column">
       <Frame5 />
-      <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full whitespace-pre-wrap">
+      <div className="font-['Pretendard',sans-serif] font-semibold leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full whitespace-pre-wrap">
         <p className="leading-[normal] mb-0">{`쁘띠엘린 몰 `}</p>
         <p className="leading-[normal]">온라인몰 제안 시안</p>
       </div>
@@ -341,7 +341,7 @@ function Img6() {
 
 function Frame6() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">제안</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2026</p>
     </div>
@@ -352,7 +352,7 @@ function LeftLabelColumn6() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-0 not-italic top-[264px] w-[300.333px]" data-name="left-label-column">
       <Frame6 />
-      <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
+      <div className="font-['Pretendard',sans-serif] font-semibold leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
         <p className="leading-[normal] mb-0">LS증권</p>
         <p className="leading-[normal]">사내 업무형 AI플랫폼 구축 제안 시안</p>
       </div>

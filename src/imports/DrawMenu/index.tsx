@@ -75,14 +75,14 @@ export default function DrawMenu({ onClose }: DrawMenuProps) {
           <div className="content-stretch flex flex-col gap-[36px] items-start pt-[60px] px-[32px] relative size-full">
             <Link to="/about" onClick={onClose} className="no-underline w-full">
               <div className="[word-break:break-word] content-stretch flex gap-[12px] items-center not-italic relative shrink-0 w-full" data-name="nav-item-about">
-                <p className="font-['PP_Mori:Semibold',sans-serif] leading-[1.5] relative shrink-0 text-[#8a8a8a] text-[14px] whitespace-nowrap">01</p>
+                <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#8a8a8a] text-[14px] whitespace-nowrap">01</p>
                 <p className="flex-[1_0_0] font-['TheNightWatch_:Regular',sans-serif] leading-none min-w-px relative text-[#161513] text-[48px] tracking-[-1.44px]">ABOUT</p>
               </div>
             </Link>
 
             <Link to="/work" onClick={onClose} className="no-underline w-full">
               <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="nav-item-collection">
-                <p className="[word-break:break-word] font-['PP_Mori:Semibold',sans-serif] leading-[1.5] not-italic relative shrink-0 text-[#8a8a8a] text-[14px] whitespace-nowrap">02</p>
+                <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-semibold leading-[1.5] not-italic relative shrink-0 text-[#8a8a8a] text-[14px] whitespace-nowrap">02</p>
                 <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
                   <p className="[word-break:break-word] font-['TheNightWatch_:Regular',sans-serif] leading-none not-italic relative shrink-0 text-[#161513] text-[48px] tracking-[-1.44px] whitespace-nowrap">work</p>
                   <BadgeNew />
@@ -92,7 +92,7 @@ export default function DrawMenu({ onClose }: DrawMenuProps) {
 
             <Link to="/contact" onClick={onClose} className="no-underline w-full">
               <div className="[word-break:break-word] content-stretch flex gap-[12px] items-center not-italic relative shrink-0 text-[#e4501d] w-full" data-name="nav-item-contact">
-                <p className="font-['PP_Mori:Semibold',sans-serif] leading-[1.5] relative shrink-0 text-[14px] whitespace-nowrap">03</p>
+                <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[14px] whitespace-nowrap">03</p>
                 <p className="flex-[1_0_0] font-['TheNightWatch_:Regular',sans-serif] leading-none min-w-px relative text-[48px] tracking-[-1.44px]">CONTACT</p>
               </div>
             </Link>

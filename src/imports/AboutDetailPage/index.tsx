@@ -4,7 +4,7 @@ import imgAboutTitle from "@/imports/image-3.png";
 function IntroBlock() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px relative" data-name="intro-block">
-      <div className="[word-break:break-word] font-['Pretendard:Regular',sans-serif] leading-[0] not-italic relative shrink-0 text-[#e4501d] text-[22px] w-full">
+      <div className="[word-break:break-word] font-['Pretendard',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#e4501d] text-[22px] w-full">
         <p className="leading-[1.6] mb-0" style={{ color: "var(--color-ink)" }}>{`우리는, 고객사와 '함께 고민하고, 함께 쓰는'`}</p>
         <p className="leading-[1.6]" style={{ color: "var(--color-ink)" }}>Web/Creative 파트너입니다.</p>
       </div>
@@ -28,7 +28,7 @@ function LeftLabelColumn() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
     </div>
   );
 }
@@ -37,10 +37,10 @@ function MemberBio() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start leading-[0] not-italic relative shrink-0 w-[480px]" data-name="member-bio">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0 text-[#e4501d] text-[0px] w-full">
-        <span className="font-['Pretendard:Regular',sans-serif] leading-[1.6] text-[22px]">윤보람</span>
+        <span className="font-['Pretendard',sans-serif] font-normal leading-[1.6] text-[22px]">윤보람</span>
         <span className="leading-[normal] text-[24px]">{` / Boram Yun`}</span>
       </p>
-      <div className="font-['Pretendard:Regular',sans-serif] relative shrink-0 text-[#161513] text-[14px] w-full">
+      <div className="font-['Pretendard',sans-serif] font-normal relative shrink-0 text-[#161513] text-[14px] w-full">
         <p className="leading-[1.7] mb-0">인간 중심적 가치를 탐구하는 웹 디자이너이자 디렉터입니다.</p>
         <p className="leading-[1.7] mb-0">에이전시 및 스타트업에서의 다양한 경험을 거쳐,</p>
         <p className="leading-[1.7] mb-0">2022년 maithi 스튜디오를 설립하였습니다.</p>
@@ -82,7 +82,7 @@ function LeftLabelColumn1() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">My Values</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">핵심 가치</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">핵심 가치</p>
     </div>
   );
 }
@@ -91,8 +91,8 @@ function RightContentColumn1() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative" data-name="right-content-column">
       <p className="font-['Geist_Mono:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#8a8a8a] text-[12px] uppercase w-full">Atmosphere</p>
-      <p className="font-['Pretendard:Bold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#161513] text-[18px] w-full">무엇보다 신뢰와 교감을 소중히 여깁니다.\n지속적이고 건강한 소통을 통해 고객사와의 깊은 이해를 넓히고 방향성을 공유합니다.</p>
-      <div className="font-['Pretendard:Regular',sans-serif] leading-[0] not-italic relative shrink-0 text-[#161513] text-[14px] w-full whitespace-pre-wrap">
+      <p className="font-['Pretendard',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#161513] text-[18px] w-full">무엇보다 신뢰와 교감을 소중히 여깁니다.\n지속적이고 건강한 소통을 통해 고객사와의 깊은 이해를 넓히고 방향성을 공유합니다.</p>
+      <div className="font-['Pretendard',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#161513] text-[14px] w-full whitespace-pre-wrap">
         <p className="leading-[1.7] mb-0">끊임없이 발전하고 변화하는 웹 생태계와 트렌드 속에서,</p>
         <p className="leading-[1.7] mb-0">단순히 기술의 속도를 쫓아가는 것에 그치지 않고 본질적인 가치를 지켜내며 유연하게 적응하는 것은 매우 중요한 경쟁력입니다.</p>
         <p className="leading-[1.7] mb-0">우리는 쉽게 타협하거나 한계에 갇히지 않는 유연하고 열정적인 자세를 지향하며,</p>
@@ -120,7 +120,7 @@ function LeftLabelColumn2() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Career</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">경력</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">경력</p>
     </div>
   );
 }
@@ -232,7 +232,7 @@ function LeftLabelColumn3() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Stack</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">사용 툴</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">사용 툴</p>
     </div>
   );
 }
@@ -240,13 +240,13 @@ function LeftLabelColumn3() {
 function Frame2() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[4px] items-start leading-[normal] relative shrink-0 text-[#161513] whitespace-nowrap">
-      <p className="font-['Pretendard:SemiBold',sans-serif] not-italic relative shrink-0 text-[18px]">Figma</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold not-italic relative shrink-0 text-[18px]">Figma</p>
       <p className="font-['Manrope:Regular',sans-serif] font-normal relative shrink-0 text-[16px]">·</p>
-      <p className="font-['Pretendard:SemiBold',sans-serif] not-italic relative shrink-0 text-[18px]">Adobe</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold not-italic relative shrink-0 text-[18px]">Adobe</p>
       <p className="font-['Manrope:Regular',sans-serif] font-normal relative shrink-0 text-[16px]">·</p>
-      <p className="font-['Pretendard:SemiBold',sans-serif] not-italic relative shrink-0 text-[18px]">Sketch</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold not-italic relative shrink-0 text-[18px]">Sketch</p>
       <p className="font-['Manrope:Regular',sans-serif] font-normal relative shrink-0 text-[16px]">·</p>
-      <p className="font-['Pretendard:SemiBold',sans-serif] not-italic relative shrink-0 text-[18px]">Claude Code</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold not-italic relative shrink-0 text-[18px]">Claude Code</p>
     </div>
   );
 }
@@ -273,7 +273,7 @@ function LeftLabelColumn4() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-[180px]" data-name="left-label-column">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Approach</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">작업할 때 중요하게 생각하는 것</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">작업할 때 중요하게 생각하는 것</p>
     </div>
   );
 }
@@ -281,8 +281,8 @@ function LeftLabelColumn4() {
 function RightContentColumn4() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[#161513]" data-name="right-content-column">
-      <p className="font-['Pretendard:Bold',sans-serif] leading-[normal] relative shrink-0 text-[18px] w-full">Web·홈페이지를 통해 새로운 가치를 만들어내고, 문제를 해결하는 것.</p>
-      <div className="font-['Pretendard:Regular',sans-serif] leading-[0] relative shrink-0 text-[14px] w-full">
+      <p className="font-['Pretendard',sans-serif] font-bold leading-[normal] relative shrink-0 text-[18px] w-full">Web·홈페이지를 통해 새로운 가치를 만들어내고, 문제를 해결하는 것.</p>
+      <div className="font-['Pretendard',sans-serif] font-normal leading-[0] relative shrink-0 text-[14px] w-full">
         <p className="leading-[1.7] mb-0">웹사이트가 지닌 역할과 목적은 비즈니스의 형태와 환경에 따라 언제나 유기적이고 다양하게 변화합니다.</p>
         <p className="leading-[1.7] mb-0">하지만 그 본질적인 지향점은 늘 동일합니다. 바로 고객사가 바라는 미래의 방향성과 가치, 그리고 생생한 열망을 오롯이 담아내는 일입니다.</p>
         <p className="leading-[1.7] mb-0">우리는 다양한 프로젝트의 깊이 있는 경험과 전문적인 통찰력을 바탕으로,</p>

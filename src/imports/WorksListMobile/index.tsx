@@ -51,7 +51,7 @@ function Hero() {
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start not-italic px-[20px] py-[40px] relative size-full text-[#161513]">
         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['TheNightWatch_:Regular',sans-serif] leading-[normal] relative shrink-0 text-[52px] tracking-[-1.04px] w-full">Works</p>
-        <p className="font-['Pretendard:Regular',sans-serif] leading-[1.6] relative shrink-0 text-[22px] w-full">우리의 상상력은 정교한 설계와 단순한 아름다움을 만나 현실이 됩니다.</p>
+        <p className="font-['Pretendard',sans-serif] font-normal leading-[1.6] relative shrink-0 text-[22px] w-full">우리의 상상력은 정교한 설계와 단순한 아름다움을 만나 현실이 됩니다.</p>
       </div>
     </div>
   );
@@ -111,7 +111,7 @@ function NavItem() {
 
 function Frame5() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">이벤트</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2023</p>
     </div>
@@ -122,7 +122,7 @@ function LeftLabelColumn() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-full" data-name="left-label-column">
       <Frame5 />
-      <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full whitespace-pre-wrap">
+      <div className="font-['Pretendard',sans-serif] font-semibold leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full whitespace-pre-wrap">
         <p className="leading-[normal] mb-0">하나은행 기업뱅킹 app</p>
         <p className="leading-[normal]">{`개편안내  `}</p>
       </div>
@@ -143,7 +143,7 @@ function WorkCard1() {
 
 function Frame6() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">랜딩페이지</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2024</p>
     </div>
@@ -154,7 +154,7 @@ function LeftLabelColumn1() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-full" data-name="left-label-column">
       <Frame6 />
-      <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full whitespace-pre-wrap">
+      <div className="font-['Pretendard',sans-serif] font-semibold leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full whitespace-pre-wrap">
         <p className="leading-[normal] mb-0">하나은행 기업뱅킹 모바일 웹</p>
         <p className="leading-[normal]">{`법인비대면계좌개설  `}</p>
       </div>
@@ -175,7 +175,7 @@ function WorkCard2() {
 
 function Frame7() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">이벤트</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2023</p>
     </div>
@@ -186,7 +186,7 @@ function LeftLabelColumn2() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-full" data-name="left-label-column">
       <Frame7 />
-      <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
+      <div className="font-['Pretendard',sans-serif] font-semibold leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
         <p className="leading-[normal] mb-0">하나은행 기업뱅킹</p>
         <p className="leading-[normal]">비대면 계좌개설 이벤트</p>
       </div>
@@ -207,7 +207,7 @@ function WorkCard3() {
 
 function Frame8() {
   return (
-    <div className="content-stretch flex font-['Pretendard:Regular',sans-serif] items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
+    <div className="content-stretch flex font-['Pretendard',sans-serif] font-normal items-center justify-between leading-[1.4] relative shrink-0 text-[12px] w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#e4501d]">이벤트</p>
       <p className="relative shrink-0 text-[#8a8a8a]">2023</p>
     </div>
@@ -218,7 +218,7 @@ function LeftLabelColumn3() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-full" data-name="left-label-column">
       <Frame8 />
-      <div className="font-['Pretendard:SemiBold',sans-serif] leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
+      <div className="font-['Pretendard',sans-serif] font-semibold leading-[0] relative shrink-0 text-[#161513] text-[18px] w-full">
         <p className="leading-[normal] mb-0">하나은행 기업뱅킹</p>
         <p className="leading-[normal]">비대면 계좌개설 이벤트</p>
       </div>

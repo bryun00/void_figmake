@@ -3,7 +3,7 @@ import imgContactTitle from "@/imports/image-5.png";
 function IntroBlock() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px relative" data-name="intro-block">
-      <div className="[word-break:break-word] font-['Pretendard:Regular',sans-serif] leading-[0] not-italic relative shrink-0 text-[#161513] text-[22px] w-full whitespace-pre-wrap">
+      <div className="[word-break:break-word] font-['Pretendard',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#161513] text-[22px] w-full whitespace-pre-wrap">
         <p className="leading-[1.6] mb-0">{`새로운 프로젝트문의  `}</p>
         <p className="leading-[1.6]">{`아래폼으로 남겨주시면 답장드리겠습니다. `}</p>
       </div>
@@ -38,7 +38,7 @@ function LeftLabelColumn() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-[180px]" data-name="left-label-column">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Direct Contact</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">직접 문의</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">직접 문의</p>
     </div>
   );
 }

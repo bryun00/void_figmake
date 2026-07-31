@@ -4,7 +4,7 @@ import ImportedContents from "@/imports/Contents/index";
 function IntroBlock() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px relative" data-name="intro-block">
-      <div className="[word-break:break-word] font-['Pretendard:Regular',sans-serif] leading-[0] not-italic relative shrink-0 text-[#161513] text-[22px] w-full">
+      <div className="[word-break:break-word] font-['Pretendard',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#161513] text-[22px] w-full">
         <p className="leading-[1.6] mb-0">{`우리는, 고객사와 '함께 고민하고, 함께 쓰는'`}</p>
         <p className="leading-[1.6]">Web/Creative 파트너입니다.</p>
       </div>
@@ -90,8 +90,8 @@ function Frame4() {
 function Frame5() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full">
-      <p className="font-['Pretendard:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
     </div>
   );
 }
@@ -99,7 +99,7 @@ function Frame5() {
 function LeftLabelColumn() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
       <Frame5 />
     </div>
   );
@@ -121,8 +121,8 @@ function Frame7() {
 function Frame8() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full">
-      <p className="font-['Pretendard:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
     </div>
   );
 }
@@ -130,7 +130,7 @@ function Frame8() {
 function LeftLabelColumn1() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
       <Frame8 />
     </div>
   );
@@ -152,8 +152,8 @@ function Frame9() {
 function Frame14() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full">
-      <p className="font-['Pretendard:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
     </div>
   );
 }
@@ -161,7 +161,7 @@ function Frame14() {
 function LeftLabelColumn2() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
       <Frame14 />
     </div>
   );
@@ -193,8 +193,8 @@ function Frame15() {
 function Frame16() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full">
-      <p className="font-['Pretendard:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
     </div>
   );
 }
@@ -202,7 +202,7 @@ function Frame16() {
 function LeftLabelColumn3() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
       <Frame16 />
     </div>
   );
@@ -224,8 +224,8 @@ function Frame17() {
 function Frame18() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full">
-      <p className="font-['Pretendard:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
     </div>
   );
 }
@@ -233,7 +233,7 @@ function Frame18() {
 function LeftLabelColumn4() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
       <Frame18 />
     </div>
   );
@@ -255,8 +255,8 @@ function Frame19() {
 function Frame20() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full">
-      <p className="font-['Pretendard:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
     </div>
   );
 }
@@ -264,7 +264,7 @@ function Frame20() {
 function LeftLabelColumn5() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
       <Frame20 />
     </div>
   );
@@ -296,8 +296,8 @@ function Frame21() {
 function Frame22() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full">
-      <p className="font-['Pretendard:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
     </div>
   );
 }
@@ -305,7 +305,7 @@ function Frame22() {
 function LeftLabelColumn6() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
       <Frame22 />
     </div>
   );
@@ -327,8 +327,8 @@ function Frame23() {
 function Frame24() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full">
-      <p className="font-['Pretendard:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
     </div>
   );
 }
@@ -336,7 +336,7 @@ function Frame24() {
 function LeftLabelColumn7() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
       <Frame24 />
     </div>
   );
@@ -358,8 +358,8 @@ function Frame25() {
 function Frame26() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full">
-      <p className="font-['Pretendard:SemiBold',sans-serif] leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">Profile</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
     </div>
   );
 }
@@ -367,7 +367,7 @@ function Frame26() {
 function LeftLabelColumn8() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 w-[180px]" data-name="left-label-column">
-      <p className="font-['Pretendard:Regular',sans-serif] leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#8a8a8a] text-[12px] w-full">프로필</p>
       <Frame26 />
     </div>
   );
