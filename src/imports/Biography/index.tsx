@@ -371,7 +371,7 @@ function Component9() {
 
 function SectionRow6() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px py-[64px] relative" data-name="section-row">
+    <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
       <Link to="/work/ls" className="no-underline w-full cursor-pointer">
         <Component9 />
       </Link>
