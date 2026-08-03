@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import SiteHeader from "./SiteHeader";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 interface WorkDetailPlaceholderProps {
   tag: string;
@@ -58,6 +59,7 @@ export default function WorkDetailPlaceholder({ tag, year, title, subtitle }: Wo
           <p>LINKEDIN</p>
         </div>
       </div>
+      <ScrollToTopButton />
     </div>
   );
 }
