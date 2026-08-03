@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import svgPaths from "./svg-9lrwavw4py";
 import imgHeroMockup from "./ibk-hero-mockup-v2.png";
@@ -1122,9 +1123,30 @@ function FooterContent() {
 }
 
 function Up() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setVisible(window.scrollY > 400);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <div className="absolute left-[1312px] size-[48px] top-[1363px]" data-name="up">
-      <svg className="absolute block inset-0 size-full" fill="none" height="48" preserveAspectRatio="none" viewBox="0 0 48 48" width="48">
+    <button
+      type="button"
+      aria-label="Scroll to top"
+      onClick={scrollToTop}
+      data-name="up"
+      className={`fixed right-[80px] bottom-[40px] size-[48px] z-50 cursor-pointer transition-opacity duration-300 ${
+        visible ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+      }`}
+    >
+      <svg className="block size-full" fill="none" height="48" preserveAspectRatio="none" viewBox="0 0 48 48" width="48">
         <g id="up">
           <foreignObject height="64" width="64" x="-8" y="-8">
             <div style={{ backdropFilter: "blur(4px)", clipPath: "url(#bgblur_0_42_1186_clip_path)", height: "100%", width: "100%" }} xmlns="http://www.w3.org/1999/xhtml" />
@@ -1140,7 +1162,7 @@ function Up() {
           </clipPath>
         </defs>
       </svg>
-    </div>
+    </button>
   );
 }
 
