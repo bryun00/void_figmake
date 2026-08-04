@@ -1,13 +1,9 @@
 import { useState } from "react";
 import DrawMenu from "@/imports/DrawMenu/index";
+import MobileLogo from "@/app/components/MobileLogo";
 
 function LogoGroup() {
-  return (
-    <div className="[word-break:break-word] content-stretch flex gap-[2px] items-start not-italic relative shrink-0 text-[#161513] whitespace-nowrap" data-name="logo-group">
-      <p className="font-['TheNightWatch_:Regular',sans-serif] leading-none relative shrink-0 text-[28px] tracking-[-1px]">VOID</p>
-      <p className="font-['Space_Grotesk',sans-serif] font-bold leading-[normal] relative shrink-0 text-[10px]">™</p>
-    </div>
-  );
+  return <MobileLogo />;
 }
 
 function Hamburger() {

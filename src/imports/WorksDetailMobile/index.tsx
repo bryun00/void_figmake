@@ -1,6 +1,7 @@
 import { useState } from "react";
 import svgPaths from "./svg-sgds1891ay";
 import DrawMenu from "@/imports/DrawMenu/index";
+import MobileLogo from "@/app/components/MobileLogo";
 import imgHeroMockup from "./ibk-hero-mockup-v2.png";
 import imgImage3910 from "./dccf75f95eccbed9a6133b0956ac253f93553d01.png";
 import imgImage3909 from "./2e7c08f52afb3d897109b9856a839c428f8655ea.png";
@@ -10,12 +11,7 @@ import imgImage3913 from "./c2a3b3cfc95920a9a87d3289d74589bbc1319482.png";
 import imgImage3914 from "./c6df23ed3e93e30cfff4e02f6e69279f4b045728.png";
 
 function Logo() {
-  return (
-    <div className="[word-break:break-word] content-stretch flex gap-[2px] items-baseline not-italic relative shrink-0 text-[#161513] whitespace-nowrap" data-name="logo">
-      <p className="font-['TheNightWatch_:Regular',sans-serif] leading-none relative shrink-0 text-[28px]">VOID</p>
-      <p className="font-['Space_Grotesk',sans-serif] font-bold leading-[normal] relative shrink-0 text-[11px]">™</p>
-    </div>
-  );
+  return <MobileLogo />;
 }
 
 function Hamburger() {

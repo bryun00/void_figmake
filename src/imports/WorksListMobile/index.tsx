@@ -3,14 +3,10 @@ import imgProjectMockup from "./5feedae39629b36880c2b033096a12abbf624b76.png";
 import imgProjectMockup1 from "./e355088863662242ab2796cf85ef43a5fb3ba2cb.png";
 import imgProjectMockup2 from "./57317e361b4588416742b30ac8e1ee04301a9821.png";
 import DrawMenu from "@/imports/DrawMenu/index";
+import MobileLogo from "@/app/components/MobileLogo";
 
 function Logo() {
-  return (
-    <div className="[word-break:break-word] content-stretch flex gap-[2px] items-baseline not-italic relative shrink-0 text-[#161513] whitespace-nowrap" data-name="logo">
-      <p className="font-['TheNightWatch_:Regular',sans-serif] leading-none relative shrink-0 text-[28px]">VOID</p>
-      <p className="font-['Space_Grotesk',sans-serif] font-bold leading-[normal] relative shrink-0 text-[11px]">™</p>
-    </div>
-  );
+  return <MobileLogo />;
 }
 
 function Hamburger() {
