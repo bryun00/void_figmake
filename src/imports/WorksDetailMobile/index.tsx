@@ -203,7 +203,7 @@ function ProjectMetaBox() {
 function Frame11() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
-      <div className="h-[240px] relative shrink-0 w-full" data-name="hero-mockup">
+      <div className="aspect-[2560/1120] relative shrink-0 w-full" data-name="hero-mockup">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHeroMockup} />
       </div>
       <ProjectMetaBox />
