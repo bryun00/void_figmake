@@ -205,13 +205,13 @@ function SplashSection() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
       <SectionHeading en="Splash" kr="[스플래시 , 앱구동]" />
-      <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
-        <div className="flex gap-[48px] items-start flex-wrap">
-          <div className="flex flex-col gap-[16px] items-start">
+      <div className="bg-white rounded-[20px] p-[64px] flex flex-col items-start w-full">
+        <div className="flex gap-[104px] items-start flex-wrap">
+          <div className="flex flex-col gap-[48px] items-start">
             <Badge>스플래시</Badge>
             <ImageCard src={imgSplash1} width={236} height={506} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[48px] items-start">
             <div className="flex items-center gap-[16px]">
               <Badge>앱구동</Badge>
               <p className="font-['Pretendard',sans-serif] font-medium text-[13px] text-[#8a8a8a] max-w-[420px] leading-[1.5]">
@@ -234,32 +234,32 @@ function MainSection() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
       <SectionHeading en="Main" kr="[메인]" />
-      <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
-        <div className="flex gap-[48px] items-start flex-wrap">
-          <div className="flex flex-col gap-[16px] items-start">
+      <div className="bg-white rounded-[20px] p-[64px] flex flex-col items-start w-full">
+        <div className="flex gap-[100px] items-start flex-wrap">
+          <div className="flex flex-col gap-[48px] items-start">
             <Badge>기존 유저</Badge>
             <ImageCard src={imgMainExisting1} width={262} height={716} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[48px] items-start">
             <Badge>메인 알림</Badge>
             <ImageCard src={imgMainExisting3} width={266} height={448} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[48px] items-start">
             <Badge>신규 유저</Badge>
             <ImageCard src={imgMainExisting2} width={262} height={713} />
           </div>
         </div>
       </div>
-      <div className="bg-[#322768] rounded-[20px] p-[40px] flex flex-col items-start w-full">
-        <div className="flex gap-[48px] items-start flex-wrap">
-          <div className="flex flex-col gap-[16px] items-start">
+      <div className="bg-[#322768] rounded-[20px] p-[64px] flex flex-col items-start w-full">
+        <div className="flex gap-[100px] items-start flex-wrap">
+          <div className="flex flex-col gap-[48px] items-start">
             <p className="font-['Pretendard',sans-serif] font-medium text-[14px] text-white">계좌 펼치기</p>
             <ImageCard src={imgMainNew3} width={230} height={585} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[48px] items-start">
             <ImageCard src={imgMainNew1} width={262} height={734} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[48px] items-start">
             <p className="font-['Pretendard',sans-serif] font-medium text-[14px] text-white">알림 펼치기</p>
             <ImageCard src={imgMainNew2} width={245} height={407} />
           </div>
@@ -285,18 +285,18 @@ function AISection() {
         </div>
       </div>
       <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
-        <div className="flex gap-[48px] items-start flex-wrap">
-          <div className="flex flex-col gap-[16px] items-start">
-            <ImageCard src={imgSharedImage3924} width={280} height={563} />
+        <div className="flex gap-[24px] items-start flex-wrap">
+          <div className="flex flex-col gap-[28px] items-start">
+            <ImageCard src={imgSharedImage3924} width={220} height={442} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[28px] items-start">
             <Badge>AI 홈-금융비서</Badge>
             <div className="flex gap-[16px] items-start">
               <ImageCard src={imgAi1} width={220} height={641} />
               <ImageCard src={imgAi2} width={220} height={825} />
             </div>
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[28px] items-start">
             <Badge>AI 대화형 뱅킹</Badge>
             <div className="flex gap-[16px] items-start">
               <ImageCard src={imgAi3} width={220} height={476} />
@@ -321,15 +321,15 @@ function ProductMainSection() {
         </div>
       </div>
       <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
-        <div className="flex gap-[48px] items-start flex-wrap">
-          <div className="flex flex-col gap-[16px] items-start">
-            <ImageCard src={imgSharedImage3924} width={280} height={563} />
+        <div className="flex gap-[24px] items-start flex-wrap">
+          <div className="flex flex-col gap-[28px] items-start">
+            <ImageCard src={imgSharedImage3924} width={220} height={442} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[28px] items-start">
             <Badge>상품 홈</Badge>
             <ImageCard src={imgProduct1} width={220} height={651} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[28px] items-start">
             <Badge>상품 상세</Badge>
             <div className="flex gap-[16px] items-start">
               <ImageCard src={imgProduct2} width={220} height={476} />
@@ -354,19 +354,19 @@ function RoungeSection() {
         </div>
       </div>
       <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
-        <div className="flex gap-[48px] items-start flex-wrap">
-          <div className="flex flex-col gap-[16px] items-start">
-            <ImageCard src={imgSharedImage3924} width={280} height={563} />
+        <div className="flex gap-[24px] items-start flex-wrap">
+          <div className="flex flex-col gap-[28px] items-start">
+            <ImageCard src={imgSharedImage3924} width={220} height={442} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[28px] items-start">
             <Badge>라운지 홈</Badge>
             <ImageCard src={imgLounge1} width={220} height={404} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[28px] items-start">
             <ImageCard src={imgLounge2} width={220} height={404} />
             <ImageCard src={imgLounge5} width={220} height={367} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[28px] items-start">
             <ImageCard src={imgLounge3} width={220} height={350} />
             <ImageCard src={imgLounge4} width={220} height={367} />
           </div>
@@ -387,22 +387,22 @@ function MyAssetSection() {
         </ul>
       </div>
       <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
-        <div className="flex gap-[48px] items-start flex-wrap">
-          <div className="flex flex-col gap-[16px] items-start">
-            <ImageCard src={imgSharedImage3924} width={280} height={563} />
+        <div className="flex gap-[24px] items-start flex-wrap">
+          <div className="flex flex-col gap-[28px] items-start">
+            <ImageCard src={imgSharedImage3924} width={220} height={442} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[28px] items-start">
             <Badge>패밀리 뱅킹</Badge>
             <ImageCard src={imgAsset1} width={220} height={477} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[28px] items-start">
             <ImageCard src={imgAsset2} width={210} height={736} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[28px] items-start">
             <ImageCard src={imgAsset3} width={210} height={402} />
             <ImageCard src={imgAsset4} width={210} height={436} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[28px] items-start">
             <ImageCard src={imgAsset5} width={210} height={600} />
           </div>
         </div>
@@ -416,22 +416,22 @@ function EtcSection() {
     <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
       <SectionHeading en="etc" kr="[패밀리 금융관리, 송금, 전체메뉴]" />
       <div className="bg-[#322768] rounded-[20px] p-[40px] flex flex-col items-start w-full">
-        <div className="flex gap-[48px] items-start flex-wrap">
-          <div className="flex flex-col gap-[16px] items-start">
+        <div className="flex gap-[24px] items-start flex-wrap">
+          <div className="flex flex-col gap-[28px] items-start">
             <Badge light>패밀리금융</Badge>
             <div className="flex gap-[16px] items-start">
               <ImageCard src={imgEtc1} width={220} height={750} />
               <ImageCard src={imgEtc2} width={220} height={629} />
             </div>
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[28px] items-start">
             <Badge light>송금</Badge>
-            <div className="flex gap-[16px] items-start">
-              <ImageCard src={imgEtc3} width={220} height={476} />
-              <ImageCard src={imgEtc4} width={220} height={476} />
-            </div>
+            <ImageCard src={imgEtc3} width={220} height={476} />
           </div>
-          <div className="flex flex-col gap-[16px] items-start">
+          <div className="flex flex-col gap-[28px] items-start pt-[44px]">
+            <ImageCard src={imgEtc4} width={220} height={476} />
+          </div>
+          <div className="flex flex-col gap-[28px] items-start">
             <Badge light>전체메뉴</Badge>
             <ImageCard src={imgEtc5} width={220} height={523} />
           </div>
