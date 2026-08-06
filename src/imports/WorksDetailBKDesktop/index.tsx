@@ -237,7 +237,10 @@ function MainSection() {
       <div className="bg-white rounded-[20px] p-[64px] flex flex-col items-start w-full">
         <div className="flex gap-[100px] items-start flex-wrap">
           <div className="flex flex-col gap-[48px] items-start">
-            <Badge>기존 유저</Badge>
+            <div className="flex flex-col gap-[8px] items-start">
+              <Badge>기존 유저</Badge>
+              <p className="font-['Pretendard',sans-serif] font-medium text-[13px] text-[#8a8a8a] leading-[1.5]">기존 유저의 경우 추천금융 배너가 최상단 배치</p>
+            </div>
             <ImageCard src={imgMainExisting1} width={262} height={716} />
           </div>
           <div className="flex flex-col gap-[48px] items-start">
