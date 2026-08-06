@@ -204,22 +204,30 @@ function ImageCard({ src, height, width = 220 }: { src: string; height: number; 
   );
 }
 
-const CONNECTOR_WIDTH = 24;
+// Dashed highlight box marking the tap target that triggers the next screen
+// (matches Figma's dashed-rect annotation over a bottom-nav icon / button).
+function TapBox({ style }: { style: React.CSSProperties }) {
+  return <div className="absolute border-[1.5px] border-dashed border-[#3c54bb] rounded-[10px] pointer-events-none z-10" style={style} />;
+}
 
-function FlowArrow({ direction = "right" }: { direction?: "left" | "right" }) {
+// Straight blue flow connector (dot -> line -> arrowhead), floating in the
+// margin gap to the right of its relatively-positioned parent. `top` is the
+// y position (px, from the parent's top) to align with the source screen's
+// interaction point (usually the bottom-nav row).
+function StraightConnector({ width = 40, top, direction = "right" }: { width?: number; top: number; direction?: "left" | "right" }) {
   return (
-    <div className="flex items-center justify-center self-center shrink-0" style={{ width: CONNECTOR_WIDTH, height: 16 }}>
-      <svg width={CONNECTOR_WIDTH} height="16" viewBox={`0 0 ${CONNECTOR_WIDTH} 16`} fill="none">
+    <div className="absolute" style={{ width, height: 16, top, left: "100%", marginLeft: 8 }}>
+      <svg width={width} height="16" viewBox={`0 0 ${width} 16`} fill="none">
         {direction === "right" ? (
           <>
             <circle cx="3" cy="8" r="2.5" fill="#3c54bb" />
-            <line x1="5.5" y1="8" x2={CONNECTOR_WIDTH - 8} y2="8" stroke="#3c54bb" strokeWidth="2" />
-            <path d={`M${CONNECTOR_WIDTH - 9} 2L${CONNECTOR_WIDTH - 1} 8L${CONNECTOR_WIDTH - 9} 14`} stroke="#3c54bb" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+            <line x1="5.5" y1="8" x2={width - 8} y2="8" stroke="#3c54bb" strokeWidth="2" />
+            <path d={`M${width - 9} 2L${width - 1} 8L${width - 9} 14`} stroke="#3c54bb" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
           </>
         ) : (
           <>
-            <circle cx={CONNECTOR_WIDTH - 3} cy="8" r="2.5" fill="#3c54bb" />
-            <line x1="8" y1="8" x2={CONNECTOR_WIDTH - 5.5} y2="8" stroke="#3c54bb" strokeWidth="2" />
+            <circle cx={width - 3} cy="8" r="2.5" fill="#3c54bb" />
+            <line x1="8" y1="8" x2={width - 5.5} y2="8" stroke="#3c54bb" strokeWidth="2" />
             <path d="M9 2L1 8L9 14" stroke="#3c54bb" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
           </>
         )}
@@ -228,8 +236,24 @@ function FlowArrow({ direction = "right" }: { direction?: "left" | "right" }) {
   );
 }
 
-function Spacer() {
-  return <div className="shrink-0" style={{ width: CONNECTOR_WIDTH, height: 1 }} />;
+// L-shaped ("dip down, across, up") blue flow connector for cases where the
+// source and destination screens sit at different heights, matching Figma's
+// bent connector style. `fromBottom`/`toTop` are px offsets (from the shared
+// parent row's top) for the source's bottom and destination's top.
+function BentConnector({ fromBottom, toTop, width = 44, dip = 22 }: { fromBottom: number; toTop: number; width?: number; dip?: number }) {
+  const bendY = fromBottom + dip;
+  const leftX = 6;
+  const rightX = width - 6;
+  return (
+    <div className="absolute" style={{ left: "100%", marginLeft: 8, top: 0, width, height: bendY + 4 }}>
+      <div className="absolute bg-[#3c54bb]" style={{ left: leftX, width: 2, top: fromBottom, height: dip }} />
+      <div className="absolute bg-[#3c54bb]" style={{ left: leftX, width: rightX - leftX + 2, height: 2, top: bendY }} />
+      <div className="absolute bg-[#3c54bb]" style={{ left: rightX, width: 2, top: toTop, height: bendY - toTop }} />
+      <svg className="absolute" style={{ left: rightX - 5, top: toTop - 7 }} width="12" height="9" viewBox="0 0 12 9" fill="none">
+        <path d="M1 8L6 1L11 8" stroke="#3c54bb" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    </div>
+  );
 }
 
 function SplashSection() {
@@ -285,16 +309,16 @@ function MainSection() {
         </div>
       </div>
       <div className="bg-[#322768] rounded-[20px] p-[64px] flex flex-col items-start w-full">
-        <div className="flex gap-[88px] items-start flex-wrap">
-          <div className="flex flex-col gap-[48px] items-start">
+        <div className="flex items-start flex-wrap gap-[80px]">
+          <div className="flex flex-col gap-[48px] items-start relative">
             <p className="font-['Pretendard',sans-serif] font-medium text-[14px] text-white">계좌 펼치기</p>
             <ImageCard src={imgMainNew3} width={230} height={585} />
+            <StraightConnector direction="left" width={64} top={260} />
           </div>
-          <FlowArrow direction="left" />
-          <div className="flex flex-col gap-[48px] items-start">
+          <div className="flex flex-col gap-[48px] items-start relative">
             <ImageCard src={imgMainNew1} width={262} height={734} />
+            <StraightConnector direction="right" width={64} top={200} />
           </div>
-          <FlowArrow direction="right" />
           <div className="flex flex-col gap-[48px] items-start">
             <p className="font-['Pretendard',sans-serif] font-medium text-[14px] text-white">알림 펼치기</p>
             <ImageCard src={imgMainNew2} width={245} height={407} />
@@ -322,21 +346,23 @@ function AISection() {
       </div>
       <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
         <div className="flex items-start flex-wrap">
-          <div className="flex flex-col gap-[28px] items-start">
+          <div className="flex flex-col gap-[28px] items-start relative mr-[36px]">
             <ImageCard src={imgSharedImage3924} width={220} height={442} />
+            <TapBox style={{ left: 108, top: 396, width: 50, height: 36 }} />
+            <StraightConnector top={404} width={26} />
           </div>
-          <FlowArrow direction="right" />
-          <div className="flex flex-col gap-[28px] items-start">
+          <div className="flex flex-col gap-[28px] items-start relative mr-[40px]">
             <Badge>AI 홈-금융비서</Badge>
-            <div className="flex gap-[16px] items-start">
+            <div className="flex gap-[8px] items-start">
               <ImageCard src={imgAi1} width={220} height={641} />
               <ImageCard src={imgAi2} width={220} height={825} />
             </div>
+            <TapBox style={{ left: 244, top: 843, width: 190, height: 32 }} />
+            <BentConnector fromBottom={883} toTop={54} width={30} />
           </div>
-          <FlowArrow direction="right" />
           <div className="flex flex-col gap-[28px] items-start">
             <Badge>AI 대화형 뱅킹</Badge>
-            <div className="flex gap-[16px] items-start">
+            <div className="flex gap-[8px] items-start">
               <ImageCard src={imgAi3} width={220} height={476} />
               <ImageCard src={imgAi4} width={220} height={476} />
             </div>
@@ -360,23 +386,27 @@ function ProductMainSection() {
       </div>
       <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
         <div className="flex items-start flex-wrap">
-          <div className="flex flex-col gap-[28px] items-start">
+          <div className="flex flex-col gap-[28px] items-start relative mr-[24px]">
             <ImageCard src={imgSharedImage3924} width={220} height={442} />
+            <TapBox style={{ left: 108, top: 396, width: 50, height: 36 }} />
+            <StraightConnector top={404} width={16} />
           </div>
-          <FlowArrow direction="right" />
-          <div className="flex flex-col gap-[28px] items-start">
+          <div className="flex flex-col gap-[28px] items-start relative mr-[28px]">
             <Badge>상품 홈</Badge>
             <ImageCard src={imgProduct1} width={220} height={651} />
+            <TapBox style={{ left: 65, top: 611, width: 90, height: 34 }} />
+            <BentConnector fromBottom={709} toTop={54} width={20} />
           </div>
-          <FlowArrow direction="right" />
           <div className="flex flex-col gap-[28px] items-start">
             <Badge>상품 상세</Badge>
             <div className="flex items-start">
-              <div className="mr-[16px]">
+              <div className="mr-[8px]">
                 <ImageCard src={imgProduct2} width={220} height={476} />
               </div>
-              <ImageCard src={imgProduct3} width={220} height={476} />
-              <FlowArrow direction="right" />
+              <div className="relative mr-[30px]">
+                <ImageCard src={imgProduct3} width={220} height={476} />
+                <StraightConnector top={220} width={22} />
+              </div>
               <ImageCard src={imgProduct4} width={220} height={476} />
             </div>
           </div>
@@ -398,10 +428,11 @@ function RoungeSection() {
       </div>
       <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
         <div className="flex items-start flex-wrap">
-          <div className="flex flex-col gap-[28px] items-start">
+          <div className="flex flex-col gap-[28px] items-start relative mr-[64px]">
             <ImageCard src={imgSharedImage3924} width={220} height={442} />
+            <TapBox style={{ left: 108, top: 396, width: 50, height: 36 }} />
+            <StraightConnector top={404} width={48} />
           </div>
-          <FlowArrow direction="right" />
           <div className="flex flex-col gap-[28px] items-start mr-[24px]">
             <Badge>라운지 홈</Badge>
             <ImageCard src={imgLounge1} width={220} height={404} />
@@ -432,10 +463,11 @@ function MyAssetSection() {
       </div>
       <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
         <div className="flex items-start flex-wrap">
-          <div className="flex flex-col gap-[28px] items-start">
+          <div className="flex flex-col gap-[28px] items-start relative mr-[40px]">
             <ImageCard src={imgSharedImage3924} width={220} height={442} />
+            <TapBox style={{ left: 108, top: 396, width: 50, height: 36 }} />
+            <BentConnector fromBottom={442} toTop={54} width={24} />
           </div>
-          <FlowArrow direction="right" />
           <div className="flex flex-col gap-[28px] items-start mr-[24px]">
             <Badge>패밀리 뱅킹</Badge>
             <ImageCard src={imgAsset1} width={220} height={477} />
