@@ -195,7 +195,10 @@ function Badge({ children, light }: { children: string; light?: boolean }) {
 
 function ImageCard({ src, height, width = 220 }: { src: string; height: number; width?: number }) {
   return (
-    <div className="border border-[#ededed] rounded-[20px] shrink-0 overflow-hidden bg-white" style={{ width, height }}>
+    <div
+      className="border-2 border-[#ededed] rounded-[20px] shrink-0 overflow-hidden bg-white shadow-[4px_6px_19px_-1px_rgba(0,0,0,0.08)]"
+      style={{ width, height }}
+    >
       <img alt="" className="w-full h-full object-cover object-top" src={src} />
     </div>
   );
