@@ -204,6 +204,34 @@ function ImageCard({ src, height, width = 220 }: { src: string; height: number; 
   );
 }
 
+const CONNECTOR_WIDTH = 24;
+
+function FlowArrow({ direction = "right" }: { direction?: "left" | "right" }) {
+  return (
+    <div className="flex items-center justify-center self-center shrink-0" style={{ width: CONNECTOR_WIDTH, height: 16 }}>
+      <svg width={CONNECTOR_WIDTH} height="16" viewBox={`0 0 ${CONNECTOR_WIDTH} 16`} fill="none">
+        {direction === "right" ? (
+          <>
+            <circle cx="3" cy="8" r="2.5" fill="#3c54bb" />
+            <line x1="5.5" y1="8" x2={CONNECTOR_WIDTH - 8} y2="8" stroke="#3c54bb" strokeWidth="2" />
+            <path d={`M${CONNECTOR_WIDTH - 9} 2L${CONNECTOR_WIDTH - 1} 8L${CONNECTOR_WIDTH - 9} 14`} stroke="#3c54bb" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+          </>
+        ) : (
+          <>
+            <circle cx={CONNECTOR_WIDTH - 3} cy="8" r="2.5" fill="#3c54bb" />
+            <line x1="8" y1="8" x2={CONNECTOR_WIDTH - 5.5} y2="8" stroke="#3c54bb" strokeWidth="2" />
+            <path d="M9 2L1 8L9 14" stroke="#3c54bb" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+          </>
+        )}
+      </svg>
+    </div>
+  );
+}
+
+function Spacer() {
+  return <div className="shrink-0" style={{ width: CONNECTOR_WIDTH, height: 1 }} />;
+}
+
 function SplashSection() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
@@ -257,14 +285,16 @@ function MainSection() {
         </div>
       </div>
       <div className="bg-[#322768] rounded-[20px] p-[64px] flex flex-col items-start w-full">
-        <div className="flex gap-[100px] items-start flex-wrap">
+        <div className="flex gap-[88px] items-start flex-wrap">
           <div className="flex flex-col gap-[48px] items-start">
             <p className="font-['Pretendard',sans-serif] font-medium text-[14px] text-white">계좌 펼치기</p>
             <ImageCard src={imgMainNew3} width={230} height={585} />
           </div>
+          <FlowArrow direction="left" />
           <div className="flex flex-col gap-[48px] items-start">
             <ImageCard src={imgMainNew1} width={262} height={734} />
           </div>
+          <FlowArrow direction="right" />
           <div className="flex flex-col gap-[48px] items-start">
             <p className="font-['Pretendard',sans-serif] font-medium text-[14px] text-white">알림 펼치기</p>
             <ImageCard src={imgMainNew2} width={245} height={407} />
@@ -291,10 +321,11 @@ function AISection() {
         </div>
       </div>
       <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
-        <div className="flex gap-[24px] items-start flex-wrap">
+        <div className="flex items-start flex-wrap">
           <div className="flex flex-col gap-[28px] items-start">
             <ImageCard src={imgSharedImage3924} width={220} height={442} />
           </div>
+          <FlowArrow direction="right" />
           <div className="flex flex-col gap-[28px] items-start">
             <Badge>AI 홈-금융비서</Badge>
             <div className="flex gap-[16px] items-start">
@@ -302,6 +333,7 @@ function AISection() {
               <ImageCard src={imgAi2} width={220} height={825} />
             </div>
           </div>
+          <FlowArrow direction="right" />
           <div className="flex flex-col gap-[28px] items-start">
             <Badge>AI 대화형 뱅킹</Badge>
             <div className="flex gap-[16px] items-start">
@@ -327,19 +359,24 @@ function ProductMainSection() {
         </div>
       </div>
       <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
-        <div className="flex gap-[24px] items-start flex-wrap">
+        <div className="flex items-start flex-wrap">
           <div className="flex flex-col gap-[28px] items-start">
             <ImageCard src={imgSharedImage3924} width={220} height={442} />
           </div>
+          <FlowArrow direction="right" />
           <div className="flex flex-col gap-[28px] items-start">
             <Badge>상품 홈</Badge>
             <ImageCard src={imgProduct1} width={220} height={651} />
           </div>
+          <FlowArrow direction="right" />
           <div className="flex flex-col gap-[28px] items-start">
             <Badge>상품 상세</Badge>
-            <div className="flex gap-[16px] items-start">
-              <ImageCard src={imgProduct2} width={220} height={476} />
+            <div className="flex items-start">
+              <div className="mr-[16px]">
+                <ImageCard src={imgProduct2} width={220} height={476} />
+              </div>
               <ImageCard src={imgProduct3} width={220} height={476} />
+              <FlowArrow direction="right" />
               <ImageCard src={imgProduct4} width={220} height={476} />
             </div>
           </div>
@@ -360,15 +397,16 @@ function RoungeSection() {
         </div>
       </div>
       <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
-        <div className="flex gap-[24px] items-start flex-wrap">
+        <div className="flex items-start flex-wrap">
           <div className="flex flex-col gap-[28px] items-start">
             <ImageCard src={imgSharedImage3924} width={220} height={442} />
           </div>
-          <div className="flex flex-col gap-[28px] items-start">
+          <FlowArrow direction="right" />
+          <div className="flex flex-col gap-[28px] items-start mr-[24px]">
             <Badge>라운지 홈</Badge>
             <ImageCard src={imgLounge1} width={220} height={404} />
           </div>
-          <div className="flex flex-col gap-[28px] items-start">
+          <div className="flex flex-col gap-[28px] items-start mr-[24px]">
             <ImageCard src={imgLounge2} width={220} height={404} />
             <ImageCard src={imgLounge5} width={220} height={367} />
           </div>
@@ -393,18 +431,19 @@ function MyAssetSection() {
         </ul>
       </div>
       <div className="bg-white rounded-[20px] p-[40px] flex flex-col items-start w-full">
-        <div className="flex gap-[24px] items-start flex-wrap">
+        <div className="flex items-start flex-wrap">
           <div className="flex flex-col gap-[28px] items-start">
             <ImageCard src={imgSharedImage3924} width={220} height={442} />
           </div>
-          <div className="flex flex-col gap-[28px] items-start">
+          <FlowArrow direction="right" />
+          <div className="flex flex-col gap-[28px] items-start mr-[24px]">
             <Badge>패밀리 뱅킹</Badge>
             <ImageCard src={imgAsset1} width={220} height={477} />
           </div>
-          <div className="flex flex-col gap-[28px] items-start">
+          <div className="flex flex-col gap-[28px] items-start mr-[24px]">
             <ImageCard src={imgAsset2} width={210} height={736} />
           </div>
-          <div className="flex flex-col gap-[28px] items-start">
+          <div className="flex flex-col gap-[28px] items-start mr-[24px]">
             <ImageCard src={imgAsset3} width={210} height={402} />
             <ImageCard src={imgAsset4} width={210} height={436} />
           </div>
