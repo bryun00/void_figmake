@@ -108,7 +108,7 @@ function ProjectMetaRow({ label, value }: { label: string; value: React.ReactNod
   return (
     <div className="content-stretch flex gap-[16px] items-baseline leading-[1.5] relative shrink-0 text-[14px] w-full">
       <p className="font-['Manrope',sans-serif] font-semibold relative shrink-0 text-[#8a8a8a] w-[125px]">{label}</p>
-      <div className="font-['Pretendard',sans-serif] font-normal not-italic relative shrink-0 text-[#161513]">{value}</div>
+      <div className="font-['Pretendard',sans-serif] font-medium not-italic relative shrink-0 text-[#161513]">{value}</div>
     </div>
   );
 }
