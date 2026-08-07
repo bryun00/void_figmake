@@ -3,26 +3,14 @@ import MobileLogo from "@/app/components/MobileLogo";
 import imgAbout from "@/imports/mobile-titles/menu-about.svg";
 import imgWork from "@/imports/mobile-titles/menu-work.svg";
 import imgContact from "@/imports/mobile-titles/menu-contact.svg";
-
-function Cross() {
-  return (
-    <div className="h-[16.971px] relative shrink-0 w-[17.941px]" data-name="cross">
-      <div className="absolute inset-[-6.25%_-5.91%_-6.25%_0]">
-        <svg className="block size-full" fill="none" height="19.0919" preserveAspectRatio="none" viewBox="0 0 19.0018 19.0919" width="19.0018">
-          <g id="cross">
-            <line id="Line" stroke="var(--stroke-0, #161513)" strokeWidth="1.5" x1="1.5009" x2="18.4715" y1="0.53033" y2="17.5009" />
-            <line id="Line_2" stroke="var(--stroke-0, #161513)" strokeWidth="1.5" x1="17.5009" x2="0.53033" y1="1.59099" y2="18.5616" />
-          </g>
-        </svg>
-      </div>
-    </div>
-  );
-}
+import imgCross from "./close-cross.svg";
 
 function CloseIcon() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center overflow-clip relative shrink-0 size-[24px]" data-name="close-icon">
-      <Cross />
+      <div className="h-[18.092px] relative shrink-0 w-[18.061px]" data-name="cross">
+        <img alt="" src={imgCross} className="absolute block inset-0 max-w-none size-full" />
+      </div>
     </div>
   );
 }
