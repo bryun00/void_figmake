@@ -1,8 +1,8 @@
 import { useState } from "react";
 import svgPaths from "./svg-hffbpgdq2x";
-import imgMemberPortrait from "./7141806a1e74f7972c04338b914fc893c70dfca8.png";
 import DrawMenu from "@/imports/DrawMenu/index";
 import imgAboutTitle from "@/imports/mobile-titles/page-about.svg";
+import imgProfileHalftone from "./profile-halftone.png";
 
 function Logo() {
   return (
@@ -54,10 +54,9 @@ function Hero() {
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start not-italic px-[20px] py-[40px] relative size-full text-[#161513]">
         <img src={imgAboutTitle} alt="ABOUT" className="block h-[36.608px] w-[191.904px] max-w-full shrink-0" />
-        <div className="font-['Pretendard',sans-serif] font-normal leading-[0] relative shrink-0 text-[22px] w-full">
-          <p className="leading-[1.6] mb-0">{`우리는, 고객사와 '함께 고민하고,`}</p>
-          <p className="leading-[1.6]">{`함께 쓰는' Web/Creative 파트너입니다.`}</p>
-        </div>
+        <p className="font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] relative shrink-0 text-[20px] w-full">
+          what color are you?
+        </p>
       </div>
     </div>
   );
@@ -80,7 +79,12 @@ function MemberBio() {
         <span className="leading-[normal] text-[24px]">{` `}</span>
         <span className="leading-[normal] text-[#8a8a8a] text-[16px]">/ Boram Yun</span>
       </p>
-      <p className="font-['Pretendard',sans-serif] font-medium leading-[1.5] relative shrink-0 text-[#161513] text-[14px] w-full">인간 중심적 가치를 탐구하는 웹 디자이너이자 디렉터입니다. 에이전시 및 스타트업에서의 다양한 경험을 거쳐, 2022년 maithi 스튜디오를 설립하였습니다. 클라이언트의 비전과 철학이 조화를 이루는 최상의 완성도를 지향하며, 구조적으로 아름답고 깊이 있는 웹 경험을 일구어가고 있습니다.</p>
+      <div className="font-['Pretendard',sans-serif] font-medium leading-[0] relative shrink-0 text-[#161513] text-[14px] w-full whitespace-pre-wrap">
+        <p className="leading-[1.5] mb-0">{`어디에나 스며들고, 무엇이든 선명하게 만드는 '무채색' 같은 사람`}</p>
+        <p className="leading-[1.5] mb-0">{`어떤 색과 섞여도 이질감이 없고, `}</p>
+        <p className="leading-[1.5] mb-0">동시에 곁에 있는 다른 색들을 더욱 돋보이게 만드는 무채색.</p>
+        <p className="leading-[1.5]">{`저는 저 자신을 화려한 원색보다는, 팀의 조화와 본질에 집중하는 '무채색의 협력자' 라 정의합니다.`}</p>
+      </div>
     </div>
   );
 }
@@ -88,8 +92,8 @@ function MemberBio() {
 function Frame1() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full" data-name="Frame">
-      <div className="h-[380px] relative rounded-[16px] shrink-0 w-full" data-name="member-portrait">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[16px] size-full" src={imgMemberPortrait} />
+      <div className="h-[380px] relative rounded-[16px] shrink-0 w-full overflow-hidden" data-name="member-portrait">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[16px] size-full" src={imgProfileHalftone} />
       </div>
       <MemberBio />
     </div>
@@ -120,8 +124,24 @@ function ValuesSection() {
     <div className="content-stretch flex flex-col gap-[16px] items-start py-[32px] relative shrink-0 w-full" data-name="values-section">
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
       <Frame2 />
-      <p className="[word-break:break-word] font-['Geist_Mono:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#8a8a8a] text-[11px] uppercase w-full">Atmosphere</p>
-      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-bold leading-[1.4] not-italic relative shrink-0 text-[#161513] text-[15px] w-full">무엇보다 신뢰와 교감을 소중히 여깁니다. 지속적이고 건강한 소통을 통해 고객사와의 깊은 이해를 넓히고 방향성을 공유합니다.</p>
+      <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full">
+        <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full">
+          <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-bold leading-[1.4] not-italic relative shrink-0 text-[#161513] text-[15px] w-full">
+            침묵 속에 흐르는 단단한 책임감
+          </p>
+          <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.5] not-italic relative shrink-0 text-[#161513] text-[14px] w-full">
+            저는 먼저 나서서 목소리를 높이는 적극적인 타입은 아닙니다. 내향적인 성향은 저에게 타인의 의견을 더 깊이 경청하고, 상황을 객관적으로 파악하는 힘을 주었습니다. 화려한 말솜씨보다는 묵묵한 행동과 완벽한 업무 완수로 제 가치를 증명합니다. 맡은 바 책임을 다하는 것은 저에게 당연한 원칙이며, 그 성실함은 팀원들에게 신뢰라는 이름으로 기억됩니다
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full">
+          <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-bold leading-[1.4] not-italic relative shrink-0 text-[#161513] text-[15px] w-full">
+            화려한 색깔로 시선을 끄는 사람은 아닐지 모릅니다.
+          </p>
+          <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.5] not-italic relative shrink-0 text-[#161513] text-[14px] w-full">
+            하지만 어떤 프로젝트에서도 배경이 되어 팀을 지탱하고, 때로는 가장 날카로운 직선이 되어 문제를 해결할 준비가 되어 있습니다. 저는 당신의 팀에서 어떤 색으로 존재하게 될까요?
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
@@ -130,87 +150,53 @@ function Frame3() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[normal] not-italic relative shrink-0 w-full whitespace-nowrap" data-name="Frame">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0 text-[#161513] text-[18px]">Career</p>
-      <p className="font-['Pretendard',sans-serif] font-normal relative shrink-0 text-[#8a8a8a] text-[11px]">경력 및 수상</p>
+      <p className="font-['Pretendard',sans-serif] font-normal relative shrink-0 text-[#8a8a8a] text-[11px]">경력</p>
     </div>
   );
 }
 
-function Frame5() {
+function CareerItem({
+  year,
+  org,
+  title,
+  detail,
+  border = true,
+}: {
+  year: string;
+  org: string;
+  title: string;
+  detail: string;
+  border?: boolean;
+}) {
   return (
-    <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk',sans-serif] font-normal items-center justify-between leading-[normal] not-italic relative shrink-0 text-[#8a8a8a] w-full whitespace-nowrap" data-name="Frame">
-      <p className="relative shrink-0 text-[12px]">2025</p>
-      <p className="relative shrink-0 text-[11px] uppercase">Awwwards</p>
+    <div className="content-stretch flex flex-col gap-[4px] items-start py-[12px] relative shrink-0 w-full" data-name="Frame">
+      {border && <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />}
+      <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk',sans-serif] font-normal items-center justify-between leading-[normal] not-italic relative shrink-0 text-[#8a8a8a] w-full whitespace-nowrap">
+        <p className="relative shrink-0 text-[12px]">{year}</p>
+        <p className="relative shrink-0 text-[11px] uppercase">{org}</p>
+      </div>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">{title}</p>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#8a8a8a] text-[13px] whitespace-nowrap">{detail}</p>
     </div>
   );
 }
 
-function Frame4() {
+function CareerJobItem() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start py-[12px] relative shrink-0 w-full" data-name="Frame">
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <Frame5 />
-      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">Honorable Mention</p>
-      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#8a8a8a] text-[13px] whitespace-nowrap">PATRICK DRUIN S03</p>
-    </div>
-  );
-}
-
-function Frame7() {
-  return (
-    <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk',sans-serif] font-normal items-center justify-between leading-[normal] not-italic relative shrink-0 text-[#8a8a8a] w-full whitespace-nowrap" data-name="Frame">
-      <p className="relative shrink-0 text-[12px]">2025</p>
-      <p className="relative shrink-0 text-[11px] uppercase">Awwwards</p>
-    </div>
-  );
-}
-
-function Frame6() {
-  return (
-    <div className="content-stretch flex flex-col gap-[4px] items-start py-[12px] relative shrink-0 w-full" data-name="Frame">
-      <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <Frame7 />
-      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">Honorable Mention</p>
-      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#8a8a8a] text-[13px] whitespace-nowrap">REMISE PIGAUT</p>
-    </div>
-  );
-}
-
-function Frame9() {
-  return (
-    <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk',sans-serif] font-normal items-center justify-between leading-[normal] not-italic relative shrink-0 text-[#8a8a8a] w-full whitespace-nowrap" data-name="Frame">
-      <p className="relative shrink-0 text-[12px]">2024</p>
-      <p className="relative shrink-0 text-[11px] uppercase">Awwwards</p>
-    </div>
-  );
-}
-
-function Frame8() {
-  return (
-    <div className="content-stretch flex flex-col gap-[4px] items-start py-[12px] relative shrink-0 w-full" data-name="Frame">
-      <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <Frame9 />
-      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">Honorable Mention</p>
-      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#8a8a8a] text-[13px] whitespace-nowrap">PLANKTON STUDY</p>
-    </div>
-  );
-}
-
-function Frame11() {
-  return (
-    <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk',sans-serif] font-normal items-center justify-between leading-[normal] not-italic relative shrink-0 text-[#8a8a8a] w-full whitespace-nowrap" data-name="Frame">
-      <p className="relative shrink-0 text-[12px]">2024</p>
-      <p className="relative shrink-0 text-[11px] uppercase">CSSDA</p>
-    </div>
-  );
-}
-
-function Frame10() {
-  return (
-    <div className="content-stretch flex flex-col gap-[4px] items-start py-[12px] relative shrink-0 w-full" data-name="Frame">
-      <div aria-hidden className="absolute border-0 border-[#e5e0d0] border-solid inset-0 pointer-events-none" />
-      <Frame11 />
-      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">Website of Day</p>
-      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#8a8a8a] text-[13px] whitespace-nowrap">PARIS MANAGEMENT</p>
+      <div className="[word-break:break-word] content-stretch flex font-['Space_Grotesk',sans-serif] font-normal items-center justify-between leading-[normal] not-italic relative shrink-0 text-[#8a8a8a] w-full whitespace-nowrap">
+        <p className="relative shrink-0 text-[12px]">2022.12-</p>
+      </div>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#161513] text-[14px] whitespace-nowrap">
+        미디어포스얼라이언스
+      </p>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#8a8a8a] text-[13px]">
+        제안부서 디자인 시안담당
+      </p>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#8a8a8a] text-[13px]">
+        IBK기업은행
+      </p>
     </div>
   );
 }
@@ -218,10 +204,12 @@ function Frame10() {
 function TimelineList() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="timeline-list">
-      <Frame4 />
-      <Frame6 />
-      <Frame8 />
-      <Frame10 />
+      <CareerJobItem />
+      <CareerItem year="2025" org="Awwwards" title="Honorable Mention" detail="REMISE PIGAUT" />
+      <CareerItem year="2024" org="Awwwards" title="Honorable Mention" detail="PLANKTON" />
+      <CareerItem year="2024" org="CSS Design Awards" title="Website of the Day" detail="PARIS MANAGEMENT" />
+      <CareerItem year="2023" org="Awwwards" title="Honorable Mention" detail="PARIS MANAGEMENT" />
+      <CareerItem year="2023" org="Awwwards" title="Mobile Excellence" detail="PARIS MANAGEMENT" border={false} />
     </div>
   );
 }
@@ -240,7 +228,7 @@ function Frame12() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[normal] not-italic relative shrink-0 w-full whitespace-nowrap" data-name="Frame">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0 text-[#161513] text-[18px]">Stack</p>
-      <p className="font-['Pretendard',sans-serif] font-normal relative shrink-0 text-[#8a8a8a] text-[11px]">사용 기술 및 도구</p>
+      <p className="font-['Pretendard',sans-serif] font-normal relative shrink-0 text-[#8a8a8a] text-[11px]">사용 툴</p>
     </div>
   );
 }
@@ -269,9 +257,39 @@ function RightContentColumn() {
 
 function StackSection() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start pt-[32px] relative shrink-0 w-full" data-name="stack-section">
+    <div className="content-stretch flex flex-col gap-[16px] items-start py-[32px] relative shrink-0 w-full" data-name="stack-section">
+      <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
       <Frame12 />
       <RightContentColumn />
+    </div>
+  );
+}
+
+function ApproachSection() {
+  return (
+    <div className="content-stretch flex flex-col gap-[16px] items-start pt-[32px] relative shrink-0 w-full" data-name="approach-section">
+      <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[normal] not-italic relative shrink-0 w-full whitespace-nowrap">
+        <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0 text-[#161513] text-[18px]">Approach</p>
+        <p className="font-['Pretendard',sans-serif] font-normal relative shrink-0 text-[#8a8a8a] text-[11px]">작업할 때 중요하게 생각하는 것</p>
+      </div>
+      <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full">
+        <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full">
+          <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-bold leading-[1.4] not-italic relative shrink-0 text-[#161513] text-[15px] w-full">
+            합리와 납득을 바탕으로 한 유연한 소통
+          </p>
+          <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.5] not-italic relative shrink-0 text-[#161513] text-[14px] w-full">
+            좋은 게 좋은 것이라는 마음으로 동료들을 배려하고 포용하지만, 제가 지키는 선은 명확합니다. 자신의 이득을 위해 근거 없이 타 팀을 비난하거나, 업무의 본질을 흐리는 비합리적인 상황 앞에서는 무채색이 가진 특유의 차가운 선명함을 드러냅니다. 무조건적인 수용이 아닌, 올바른 가치관 위에서 협업하기에 제 배려에는 무게가 있고 제 약속에는 힘이 있습니다.
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full">
+          <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-bold leading-[1.4] not-italic relative shrink-0 text-[#161513] text-[15px] w-full">
+            합리와 납득을 바탕으로 한 유연한 소통
+          </p>
+          <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.5] not-italic relative shrink-0 text-[#161513] text-[14px] w-full">
+            진정한 협업은 서로에 대한 이해와 논리적인 &apos;납득&apos;에서 시작된다고 믿습니다. 감정적인 대립보다는 대화를 통해 접점을 찾고, 공동의 목표를 위해 최선의 효율을 내는 소통 방식을 지향합니다. 덕분에 지금까지 다양한 팀과 협업하며 마찰 없이 매끄러운 관계를 유지해 왔습니다.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
@@ -284,6 +302,7 @@ function Biography() {
         <ValuesSection />
         <CareerSection />
         <StackSection />
+        <ApproachSection />
       </div>
     </div>
   );
