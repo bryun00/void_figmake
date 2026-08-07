@@ -1,4 +1,5 @@
 import imgContactTitle from "@/imports/image-5.png";
+import ContactForm from "@/app/components/ContactForm";
 
 function IntroBlock() {
   return (
@@ -61,102 +62,12 @@ function Frame6() {
   );
 }
 
-function Frame5() {
-  return (
-    <div className="content-stretch flex items-center py-[20px] relative shrink-0 w-full">
-      <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Manrope:SemiBold','Noto_Sans_KR:Bold',sans-serif] font-semibold leading-[normal] overflow-hidden relative shrink-0 text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">답장 받으실 이메일 주소를 남겨주세요</p>
-    </div>
-  );
-}
-
-function AwardRow() {
-  return (
-    <div className="content-stretch flex flex-col gap-[24px] items-start justify-center py-[16px] relative shrink-0 w-full" data-name="award-row">
-      <p className="[word-break:break-word] font-['Geist_Mono:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#161513] text-[14px] w-[80px]">Email</p>
-      <Frame5 />
-    </div>
-  );
-}
-
-function AwardsTable() {
-  return (
-    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="awards-table">
-      <AwardRow />
-    </div>
-  );
-}
-
-function Frame8() {
-  return (
-    <div className="content-stretch flex items-center py-[20px] relative shrink-0 w-full">
-      <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Manrope:SemiBold','Noto_Sans_KR:Bold',sans-serif] font-semibold leading-[normal] overflow-hidden relative shrink-0 text-[#bfbbad] text-[14px] text-ellipsis w-[180px] whitespace-nowrap">성함을 남겨주세요</p>
-    </div>
-  );
-}
-
-function AwardRow1() {
-  return (
-    <div className="content-stretch flex flex-col gap-[24px] items-start justify-center py-[16px] relative shrink-0 w-full" data-name="award-row">
-      <p className="[word-break:break-word] font-['Geist_Mono:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#161513] text-[14px] w-[80px]">Name</p>
-      <Frame8 />
-    </div>
-  );
-}
-
-function AwardsTable1() {
-  return (
-    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="awards-table">
-      <AwardRow1 />
-    </div>
-  );
-}
-
-function Frame9() {
-  return (
-    <div className="content-stretch flex h-[200px] items-start py-[20px] relative shrink-0 w-full">
-      <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Manrope:SemiBold','Noto_Sans_KR:Bold',sans-serif] font-semibold leading-[normal] overflow-hidden relative shrink-0 text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">{`어떤 이야기든 편하게 남겨주세요 `}</p>
-    </div>
-  );
-}
-
-function AwardRow2() {
-  return (
-    <div className="content-stretch flex flex-col gap-[24px] items-start justify-center py-[16px] relative shrink-0 w-full" data-name="award-row">
-      <p className="[word-break:break-word] font-['Geist_Mono:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#161513] text-[14px] w-[80px]">Message</p>
-      <Frame9 />
-    </div>
-  );
-}
-
-function Btn() {
-  return (
-    <div className="content-stretch flex flex-col items-center justify-center p-[24px] relative shrink-0 w-[180px] cursor-pointer" data-name="btn">
-      <div aria-hidden className="absolute border border-[#e4501d] border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[18px] whitespace-nowrap">Send</p>
-    </div>
-  );
-}
-
-function Frame7() {
-  return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col gap-[32px] items-start justify-center min-w-px relative">
-      <AwardsTable />
-      <AwardsTable1 />
-      <AwardRow2 />
-      <Btn />
-    </div>
-  );
-}
-
 function SectionRow() {
   return (
     <div className="content-stretch flex gap-[121px] items-start justify-center pb-[120px] pt-[64px] relative shrink-0 w-full" data-name="section-row">
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
       <Frame6 />
-      <Frame7 />
+      <ContactForm variant="desktop" />
     </div>
   );
 }

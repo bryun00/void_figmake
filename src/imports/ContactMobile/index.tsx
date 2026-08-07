@@ -1,6 +1,7 @@
 import { useState } from "react";
 import DrawMenu from "@/imports/DrawMenu/index";
 import MobileLogo from "@/app/components/MobileLogo";
+import ContactForm from "@/app/components/ContactForm";
 
 function LogoGroup() {
   return <MobileLogo />;
@@ -79,90 +80,12 @@ function DirectContact() {
   );
 }
 
-function InputBox() {
-  return (
-    <div className="content-stretch flex h-[54px] items-center py-[12px] relative shrink-0 w-full" data-name="input-box">
-      <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Manrope',sans-serif] font-normal leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">답장 받으실 이메일 주소를 남겨주세요</p>
-    </div>
-  );
-}
-
-function FieldEmail() {
-  return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="field-Email">
-      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase whitespace-nowrap">Email</p>
-      <InputBox />
-    </div>
-  );
-}
-
-function InputBox1() {
-  return (
-    <div className="content-stretch flex h-[54px] items-center py-[12px] relative shrink-0 w-full" data-name="input-box">
-      <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Manrope',sans-serif] font-normal leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">성함을 남겨주세요</p>
-    </div>
-  );
-}
-
-function FieldName() {
-  return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="field-Name">
-      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase whitespace-nowrap">Name</p>
-      <InputBox1 />
-    </div>
-  );
-}
-
-function InputBox2() {
-  return (
-    <div className="content-stretch flex h-[100px] items-center py-[12px] relative shrink-0 w-full" data-name="input-box">
-      <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Manrope',sans-serif] font-normal leading-[normal] min-w-px not-italic overflow-hidden relative text-[#bfbbad] text-[14px] text-ellipsis whitespace-nowrap">어떤 이야기든 편하게 남겨주세요</p>
-    </div>
-  );
-}
-
-function FieldMessage() {
-  return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="field-Message">
-      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#161513] text-[12px] tracking-[0.006px] uppercase whitespace-nowrap">Message</p>
-      <InputBox2 />
-    </div>
-  );
-}
-
-function Btn() {
-  return (
-    <div className="relative rounded-[4px] shrink-0 w-full" data-name="btn">
-      <div aria-hidden className="absolute border border-[#e4501d] border-solid inset-0 pointer-events-none rounded-[4px]" />
-      <div className="flex flex-col items-center justify-center size-full">
-        <div className="content-stretch flex flex-col items-center justify-center p-[16px] relative size-full">
-          <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[18px] whitespace-nowrap">Send</p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function ContactForm() {
-  return (
-    <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-name="contact-form">
-      <FieldEmail />
-      <FieldName />
-      <FieldMessage />
-      <Btn />
-    </div>
-  );
-}
-
 function BiographyStack() {
   return (
     <div className="relative shrink-0 w-full" data-name="biography-stack">
       <div className="content-stretch flex flex-col gap-[40px] items-start pb-[48px] pt-[32px] px-[20px] relative size-full">
         <DirectContact />
-        <ContactForm />
+        <ContactForm variant="mobile" />
       </div>
     </div>
   );
