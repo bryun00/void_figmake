@@ -1,13 +1,12 @@
 import imgAboutTitle from "@/imports/image-3.png";
-
+import imgProfileHalftone from "./profile-halftone.png";
 
 function IntroBlock() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px relative" data-name="intro-block">
-      <div className="[word-break:break-word] font-['Pretendard',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#e4501d] text-[22px] w-full">
-        <p className="leading-[1.6] mb-0" style={{ color: "var(--color-ink)" }}>{`우리는, 고객사와 '함께 고민하고, 함께 쓰는'`}</p>
-        <p className="leading-[1.6]" style={{ color: "var(--color-ink)" }}>Web/Creative 파트너입니다.</p>
-      </div>
+      <p className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[24px] text-[#161513] w-full">
+        what color are you?
+      </p>
     </div>
   );
 }
@@ -35,17 +34,16 @@ function LeftLabelColumn() {
 
 function MemberBio() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start leading-[0] not-italic relative shrink-0 w-[480px]" data-name="member-bio">
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start leading-[0] not-italic relative shrink-0 w-full" data-name="member-bio">
       <p className="font-['Space_Grotesk',sans-serif] font-semibold relative shrink-0 text-[#e4501d] text-[0px] w-full">
         <span className="font-['Pretendard',sans-serif] font-normal leading-[1.6] text-[22px]">윤보람</span>
         <span className="leading-[normal] text-[24px]">{` / Boram Yun`}</span>
       </p>
-      <div className="font-['Pretendard',sans-serif] font-normal relative shrink-0 text-[#161513] text-[14px] w-full">
-        <p className="leading-[1.7] mb-0">인간 중심적 가치를 탐구하는 웹 디자이너이자 디렉터입니다.</p>
-        <p className="leading-[1.7] mb-0">에이전시 및 스타트업에서의 다양한 경험을 거쳐,</p>
-        <p className="leading-[1.7] mb-0">2022년 maithi 스튜디오를 설립하였습니다.</p>
-        <p className="leading-[1.7] mb-0">클라이언트의 비전과 철학이 조화를 이루는 최상의 완성도를 지향하며,</p>
-        <p className="leading-[1.7]">구조적으로 아름답고 깊이 있는 웹 경험을 일구어가고 있습니다.</p>
+      <div className="font-['Pretendard',sans-serif] font-medium relative shrink-0 text-[#161513] text-[14px] w-[574px] max-w-full whitespace-pre-wrap">
+        <p className="leading-[1.5] mb-0">{`어디에나 스며들고, 무엇이든 선명하게 만드는 '무채색' 같은 사람`}</p>
+        <p className="leading-[1.5] mb-0">{`어떤 색과 섞여도 이질감이 없고, `}</p>
+        <p className="leading-[1.5] mb-0">동시에 곁에 있는 다른 색들을 더욱 돋보이게 만드는 무채색.</p>
+        <p className="leading-[1.5]">{`저는 저 자신을 화려한 원색보다는, 팀의 조화와 본질에 집중하는 '무채색의 협력자' 라 정의합니다.`}</p>
       </div>
     </div>
   );
@@ -54,7 +52,14 @@ function MemberBio() {
 function MemberProfile() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-name="member-profile">
-      <div className="bg-white h-[600px] relative rounded-[12px] shrink-0 w-[480px]" data-name="member-portrait" />
+      <div className="h-[281px] relative shrink-0 w-[342px] overflow-hidden" data-name="Rectangle · halftone · halftone">
+        <img
+          alt=""
+          src={imgProfileHalftone}
+          className="absolute max-w-none pointer-events-none"
+          style={{ height: "147.78%", width: "121.21%", left: "-10.91%", top: "-21.67%" }}
+        />
+      </div>
       <MemberBio />
     </div>
   );
@@ -87,28 +92,47 @@ function LeftLabelColumn1() {
   );
 }
 
+function ValueBlock({ title, lines }: { title: string; lines: string[] }) {
+  return (
+    <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-name="right-content-column">
+      <p className="font-['Pretendard',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#161513] text-[18px] w-full">{title}</p>
+      <div className="font-['Pretendard',sans-serif] font-medium leading-[0] relative shrink-0 text-[#161513] text-[14px] w-full whitespace-pre-wrap">
+        {lines.map((line, i) => (
+          <p key={line} className={`leading-[1.5] ${i < lines.length - 1 ? "mb-0" : ""}`}>
+            {line}
+          </p>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function RightContentColumn1() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative" data-name="right-content-column">
-      <p className="font-['Geist_Mono:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#8a8a8a] text-[12px] uppercase w-full">Atmosphere</p>
-      <p className="font-['Pretendard',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#161513] text-[18px] w-full">무엇보다 신뢰와 교감을 소중히 여깁니다.\n지속적이고 건강한 소통을 통해 고객사와의 깊은 이해를 넓히고 방향성을 공유합니다.</p>
-      <div className="font-['Pretendard',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#161513] text-[14px] w-full whitespace-pre-wrap">
-        <p className="leading-[1.7] mb-0">끊임없이 발전하고 변화하는 웹 생태계와 트렌드 속에서,</p>
-        <p className="leading-[1.7] mb-0">단순히 기술의 속도를 쫓아가는 것에 그치지 않고 본질적인 가치를 지켜내며 유연하게 적응하는 것은 매우 중요한 경쟁력입니다.</p>
-        <p className="leading-[1.7] mb-0">우리는 쉽게 타협하거나 한계에 갇히지 않는 유연하고 열정적인 자세를 지향하며,</p>
-        <p className="leading-[1.7] mb-0">서로 다른 생각과 가치가 건강하게 조화되고 어우러질 수 있도록 넓고 깊은 마음으로 늘 경청하고 소통하겠습니다.</p>
-        <p className="leading-[1.7] mb-0">프로젝트의 시작부터 마침표를 찍는 순간까지 모든 단계에서 따뜻한 온기가 느껴지는 세심한 배려와 깊은 진정성을 약속드립니다.</p>
-        <p className="leading-[1.7] mb-0">​</p>
-        <p className="leading-[1.7] mb-0">우리가 만드는 웹 서비스와 디자인이 수많은 이들의 마음에 깊은 울림을 전하고,</p>
-        <p className="leading-[1.7]">더 나은 내일로 연결되는 단단한 징검다리가 될 수 있도록 정성을 기울여 한 걸음씩 묵묵히 나아갈 것입니다.</p>
-      </div>
+    <div className="content-stretch flex flex-col gap-[40px] items-start relative shrink-0 text-[#161513] w-[736px] max-w-full">
+      <ValueBlock
+        title="침묵 속에 흐르는 단단한 책임감"
+        lines={[
+          "저는 먼저 나서서 목소리를 높이는 적극적인 타입은 아닙니다. 내향적인 성향은 저에게 타인의 의견을 더 깊이 경청하고, ",
+          "상황을 객관적으로 파악하는 힘을 주었습니다. ",
+          "화려한 말솜씨보다는 묵묵한 행동과 완벽한 업무 완수로 제 가치를 증명합니다. 맡은 바 책임을 다하는 것은 저에게 당연한 원칙이며, ",
+          "그 성실함은 팀원들에게 신뢰라는 이름으로 기억됩니다",
+        ]}
+      />
+      <ValueBlock
+        title="화려한 색깔로 시선을 끄는 사람은 아닐지 모릅니다."
+        lines={[
+          "하지만 어떤 프로젝트에서도 배경이 되어 팀을 지탱하고, 때로는 가장 날카로운 직선이 되어 문제를 해결할 준비가 되어 있습니다. ",
+          "저는 당신의 팀에서 어떤 색으로 존재하게 될까요?",
+        ]}
+      />
     </div>
   );
 }
 
 function SectionRow1() {
   return (
-    <div className="content-stretch flex gap-[24px] items-start py-[64px] relative shrink-0 w-full" data-name="section-row">
+    <div className="[word-break:break-word] content-stretch flex gap-[24px] items-start not-italic py-[64px] relative shrink-0 w-full" data-name="section-row">
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
       <LeftLabelColumn1 />
       <RightContentColumn1 />
@@ -125,74 +149,40 @@ function LeftLabelColumn2() {
   );
 }
 
-function AwardRow() {
+function CareerJobRow() {
   return (
-    <div className="content-stretch flex gap-[24px] items-center py-[16px] relative shrink-0 w-full" data-name="award-row">
+    <div className="content-stretch flex gap-[24px] items-start py-[16px] relative shrink-0 w-full" data-name="award-row">
       <div aria-hidden className="absolute border-[rgba(0,0,0,0.1)] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Geist_Mono:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] w-[80px]">2025</p>
-      <p className="[word-break:break-word] font-['Manrope:SemiBold',sans-serif] font-semibold leading-[normal] overflow-hidden relative shrink-0 text-[#161513] text-[14px] text-ellipsis w-[180px] whitespace-nowrap">Honorable Mention</p>
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Manrope:Regular',sans-serif] font-normal leading-[normal] min-w-px overflow-hidden relative text-[#161513] text-[14px] text-ellipsis whitespace-nowrap">PATRICK DRUIN S03 LOOKBOOK</p>
-      <p className="[word-break:break-word] font-['Manrope:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] text-right w-[150px]">Awwwards</p>
+      <p className="[word-break:break-word] font-['Geist_Mono',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] w-[80px]">2022.12-</p>
+      <p className="[word-break:break-word] font-['Pretendard',sans-serif] font-medium leading-[1.5] not-italic overflow-hidden relative shrink-0 text-[#161513] text-[14px] text-ellipsis w-[180px] whitespace-nowrap">
+        미디어포스얼라이언스
+      </p>
+      <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-['Pretendard',sans-serif] font-medium gap-[10px] items-start leading-[1.5] min-w-px not-italic relative text-[14px] text-[#161513]">
+        <p className="overflow-hidden relative shrink-0 text-ellipsis w-full whitespace-nowrap">제안부서 디자인 시안담당</p>
+        <p className="overflow-hidden relative shrink-0 text-ellipsis w-full whitespace-nowrap">IBK기업은행</p>
+      </div>
     </div>
   );
 }
 
-function AwardRow1() {
+function AwardRow({
+  year,
+  title,
+  project,
+  org,
+}: {
+  year: string;
+  title: string;
+  project: string;
+  org: string;
+}) {
   return (
     <div className="content-stretch flex gap-[24px] items-center py-[16px] relative shrink-0 w-full" data-name="award-row">
       <div aria-hidden className="absolute border-[rgba(0,0,0,0.1)] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Geist_Mono:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] w-[80px]">2025</p>
-      <p className="[word-break:break-word] font-['Manrope:SemiBold',sans-serif] font-semibold leading-[normal] overflow-hidden relative shrink-0 text-[#161513] text-[14px] text-ellipsis w-[180px] whitespace-nowrap">Honorable Mention</p>
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Manrope:Regular',sans-serif] font-normal leading-[normal] min-w-px overflow-hidden relative text-[#161513] text-[14px] text-ellipsis whitespace-nowrap">REMISE PIGAUT</p>
-      <p className="[word-break:break-word] font-['Manrope:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] text-right w-[150px]">Awwwards</p>
-    </div>
-  );
-}
-
-function AwardRow2() {
-  return (
-    <div className="content-stretch flex gap-[24px] items-center py-[16px] relative shrink-0 w-full" data-name="award-row">
-      <div aria-hidden className="absolute border-[rgba(0,0,0,0.1)] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Geist_Mono:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] w-[80px]">2024</p>
-      <p className="[word-break:break-word] font-['Manrope:SemiBold',sans-serif] font-semibold leading-[normal] overflow-hidden relative shrink-0 text-[#161513] text-[14px] text-ellipsis w-[180px] whitespace-nowrap">Honorable Mention</p>
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Manrope:Regular',sans-serif] font-normal leading-[normal] min-w-px overflow-hidden relative text-[#161513] text-[14px] text-ellipsis whitespace-nowrap">PLANKTON</p>
-      <p className="[word-break:break-word] font-['Manrope:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] text-right w-[150px]">Awwwards</p>
-    </div>
-  );
-}
-
-function AwardRow3() {
-  return (
-    <div className="content-stretch flex gap-[24px] items-center py-[16px] relative shrink-0 w-full" data-name="award-row">
-      <div aria-hidden className="absolute border-[rgba(0,0,0,0.1)] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Geist_Mono:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] w-[80px]">2024</p>
-      <p className="[word-break:break-word] font-['Manrope:SemiBold',sans-serif] font-semibold leading-[normal] overflow-hidden relative shrink-0 text-[#161513] text-[14px] text-ellipsis w-[180px] whitespace-nowrap">Website of the Day</p>
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Manrope:Regular',sans-serif] font-normal leading-[normal] min-w-px overflow-hidden relative text-[#161513] text-[14px] text-ellipsis whitespace-nowrap">PARIS MANAGEMENT</p>
-      <p className="[word-break:break-word] font-['Manrope:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] text-right w-[150px]">CSS Design Awards</p>
-    </div>
-  );
-}
-
-function AwardRow4() {
-  return (
-    <div className="content-stretch flex gap-[24px] items-center py-[16px] relative shrink-0 w-full" data-name="award-row">
-      <div aria-hidden className="absolute border-[rgba(0,0,0,0.1)] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Geist_Mono:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] w-[80px]">2023</p>
-      <p className="[word-break:break-word] font-['Manrope:SemiBold',sans-serif] font-semibold leading-[normal] overflow-hidden relative shrink-0 text-[#161513] text-[14px] text-ellipsis w-[180px] whitespace-nowrap">Honorable Mention</p>
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Manrope:Regular',sans-serif] font-normal leading-[normal] min-w-px overflow-hidden relative text-[#161513] text-[14px] text-ellipsis whitespace-nowrap">PARIS MANAGEMENT</p>
-      <p className="[word-break:break-word] font-['Manrope:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] text-right w-[150px]">Awwwards</p>
-    </div>
-  );
-}
-
-function AwardRow5() {
-  return (
-    <div className="content-stretch flex gap-[24px] items-center py-[16px] relative shrink-0 w-full" data-name="award-row">
-      <div aria-hidden className="absolute border-[rgba(0,0,0,0.1)] border-b border-solid inset-0 pointer-events-none" />
-      <p className="[word-break:break-word] font-['Geist_Mono:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] w-[80px]">2023</p>
-      <p className="[word-break:break-word] font-['Manrope:SemiBold',sans-serif] font-semibold leading-[normal] overflow-hidden relative shrink-0 text-[#161513] text-[14px] text-ellipsis w-[180px] whitespace-nowrap">Mobile Excellence</p>
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Manrope:Regular',sans-serif] font-normal leading-[normal] min-w-px overflow-hidden relative text-[#161513] text-[14px] text-ellipsis whitespace-nowrap">PARIS MANAGEMENT</p>
-      <p className="[word-break:break-word] font-['Manrope:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] text-right w-[150px]">Awwwards</p>
+      <p className="[word-break:break-word] font-['Geist_Mono',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] w-[80px]">{year}</p>
+      <p className="[word-break:break-word] font-['Manrope',sans-serif] font-semibold leading-[normal] overflow-hidden relative shrink-0 text-[#161513] text-[14px] text-ellipsis w-[180px] whitespace-nowrap">{title}</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Manrope',sans-serif] font-normal leading-[normal] min-w-px overflow-hidden relative text-[#161513] text-[14px] text-ellipsis whitespace-nowrap">{project}</p>
+      <p className="[word-break:break-word] font-['Manrope',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#8a8a8a] text-[14px] text-right w-[150px]">{org}</p>
     </div>
   );
 }
@@ -200,12 +190,12 @@ function AwardRow5() {
 function AwardsTable() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="awards-table">
-      <AwardRow />
-      <AwardRow1 />
-      <AwardRow2 />
-      <AwardRow3 />
-      <AwardRow4 />
-      <AwardRow5 />
+      <CareerJobRow />
+      <AwardRow year="2025" title="Honorable Mention" project="REMISE PIGAUT" org="Awwwards" />
+      <AwardRow year="2024" title="Honorable Mention" project="PLANKTON" org="Awwwards" />
+      <AwardRow year="2024" title="Website of the Day" project="PARIS MANAGEMENT" org="CSS Design Awards" />
+      <AwardRow year="2023" title="Honorable Mention" project="PARIS MANAGEMENT" org="Awwwards" />
+      <AwardRow year="2023" title="Mobile Excellence" project="PARIS MANAGEMENT" org="Awwwards" />
     </div>
   );
 }
@@ -241,11 +231,11 @@ function Frame2() {
   return (
     <div className="[word-break:break-word] content-stretch flex gap-[4px] items-start leading-[normal] relative shrink-0 text-[#161513] whitespace-nowrap">
       <p className="font-['Pretendard',sans-serif] font-semibold not-italic relative shrink-0 text-[18px]">Figma</p>
-      <p className="font-['Manrope:Regular',sans-serif] font-normal relative shrink-0 text-[16px]">·</p>
+      <p className="font-['Manrope',sans-serif] font-normal relative shrink-0 text-[16px]">·</p>
       <p className="font-['Pretendard',sans-serif] font-semibold not-italic relative shrink-0 text-[18px]">Adobe</p>
-      <p className="font-['Manrope:Regular',sans-serif] font-normal relative shrink-0 text-[16px]">·</p>
+      <p className="font-['Manrope',sans-serif] font-normal relative shrink-0 text-[16px]">·</p>
       <p className="font-['Pretendard',sans-serif] font-semibold not-italic relative shrink-0 text-[18px]">Sketch</p>
-      <p className="font-['Manrope:Regular',sans-serif] font-normal relative shrink-0 text-[16px]">·</p>
+      <p className="font-['Manrope',sans-serif] font-normal relative shrink-0 text-[16px]">·</p>
       <p className="font-['Pretendard',sans-serif] font-semibold not-italic relative shrink-0 text-[18px]">Claude Code</p>
     </div>
   );
@@ -280,15 +270,23 @@ function LeftLabelColumn4() {
 
 function RightContentColumn4() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[#161513]" data-name="right-content-column">
-      <p className="font-['Pretendard',sans-serif] font-bold leading-[normal] relative shrink-0 text-[18px] w-full">Web·홈페이지를 통해 새로운 가치를 만들어내고, 문제를 해결하는 것.</p>
-      <div className="font-['Pretendard',sans-serif] font-normal leading-[0] relative shrink-0 text-[14px] w-full">
-        <p className="leading-[1.7] mb-0">웹사이트가 지닌 역할과 목적은 비즈니스의 형태와 환경에 따라 언제나 유기적이고 다양하게 변화합니다.</p>
-        <p className="leading-[1.7] mb-0">하지만 그 본질적인 지향점은 늘 동일합니다. 바로 고객사가 바라는 미래의 방향성과 가치, 그리고 생생한 열망을 오롯이 담아내는 일입니다.</p>
-        <p className="leading-[1.7] mb-0">우리는 다양한 프로젝트의 깊이 있는 경험과 전문적인 통찰력을 바탕으로,</p>
-        <p className="leading-[1.7] mb-0">창의적인 아이디어와 정교한 설계를 정밀하게 조합하고 융합하여 언제나 최적의 맞춤형 솔루션을 제안합니다.</p>
-        <p className="leading-[1.7]">단순히 미적인 완성을 넘어 비즈니스의 실질적인 성장을 이끌어내고, 당면한 핵심 문제를 주도적으로 해결하는 혁신적인 웹 경험을 설계하겠습니다.</p>
-      </div>
+    <div className="content-stretch flex flex-col gap-[40px] items-start relative shrink-0 text-[#161513] w-[736px] max-w-full">
+      <ValueBlock
+        title="합리와 납득을 바탕으로 한 유연한 소통"
+        lines={[
+          "좋은 게 좋은 것이라는 마음으로 동료들을 배려하고 포용하지만, 제가 지키는 선은 명확합니다. ",
+          "자신의 이득을 위해 근거 없이 타 팀을 비난하거나, 업무의 본질을 흐리는 비합리적인 상황 앞에서는 무채색이 가진 특유의 차가운",
+          "선명함을 드러냅니다. 무조건적인 수용이 아닌, 올바른 가치관 위에서 협업하기에 제 배려에는 무게가 있고 제 약속에는 힘이 있습니다.",
+        ]}
+      />
+      <ValueBlock
+        title="합리와 납득을 바탕으로 한 유연한 소통"
+        lines={[
+          "진정한 협업은 서로에 대한 이해와 논리적인 '납득'에서 시작된다고 믿습니다. ",
+          "감정적인 대립보다는 대화를 통해 접점을 찾고, 공동의 목표를 위해 최선의 효율을 내는 소통 방식을 지향합니다. ",
+          "덕분에 지금까지 다양한 팀과 협업하며 마찰 없이 매끄러운 관계를 유지해 왔습니다.",
+        ]}
+      />
     </div>
   );
 }
