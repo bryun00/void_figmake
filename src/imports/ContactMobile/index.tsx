@@ -2,6 +2,7 @@ import { useState } from "react";
 import DrawMenu from "@/imports/DrawMenu/index";
 import MobileLogo from "@/app/components/MobileLogo";
 import ContactForm from "@/app/components/ContactForm";
+import imgContactTitle from "@/imports/mobile-titles/page-contact.svg";
 
 function LogoGroup() {
   return <MobileLogo />;
@@ -43,7 +44,7 @@ function HeroSection() {
   return (
     <div className="relative shrink-0 w-full" data-name="hero-section">
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start not-italic pb-[32px] pt-[40px] px-[20px] relative size-full text-[#161513]">
-        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['TheNightWatch_:Regular',sans-serif] leading-[normal] relative shrink-0 text-[52px] tracking-[-1.04px] w-full">contact</p>
+        <img src={imgContactTitle} alt="contact" className="block h-[36.712px] w-[262.927px] max-w-full shrink-0" />
         <div className="font-['Pretendard',sans-serif] font-normal leading-[0] relative shrink-0 text-[22px] w-full">
           <p className="leading-[1.6] mb-0">새로운 프로젝트문의</p>
           <p className="leading-[1.6]">아래폼으로 남겨주시면 답장드리겠습니다.</p>

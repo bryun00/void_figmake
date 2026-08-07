@@ -2,6 +2,7 @@ import { useState } from "react";
 import svgPaths from "./svg-hffbpgdq2x";
 import imgMemberPortrait from "./7141806a1e74f7972c04338b914fc893c70dfca8.png";
 import DrawMenu from "@/imports/DrawMenu/index";
+import imgAboutTitle from "@/imports/mobile-titles/page-about.svg";
 
 function Logo() {
   return (
@@ -52,7 +53,7 @@ function Hero() {
     <div className="relative shrink-0 w-full" data-name="hero">
       <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start not-italic px-[20px] py-[40px] relative size-full text-[#161513]">
-        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['TheNightWatch_:Regular',sans-serif] leading-[normal] relative shrink-0 text-[52px] tracking-[-1.04px] w-full">About</p>
+        <img src={imgAboutTitle} alt="ABOUT" className="block h-[36.608px] w-[191.904px] max-w-full shrink-0" />
         <div className="font-['Pretendard',sans-serif] font-normal leading-[0] relative shrink-0 text-[22px] w-full">
           <p className="leading-[1.6] mb-0">{`우리는, 고객사와 '함께 고민하고,`}</p>
           <p className="leading-[1.6]">{`함께 쓰는' Web/Creative 파트너입니다.`}</p>

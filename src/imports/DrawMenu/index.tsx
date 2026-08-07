@@ -1,13 +1,8 @@
 import { Link } from "react-router";
-
-function LogoGroup() {
-  return (
-    <div className="[word-break:break-word] content-stretch flex gap-[2px] items-start not-italic relative shrink-0 text-[#161513] whitespace-nowrap" data-name="logo-group">
-      <p className="font-['TheNightWatch_:Regular',sans-serif] leading-none relative shrink-0 text-[28px] tracking-[-1px]">VOID</p>
-      <p className="font-['Space_Grotesk',sans-serif] font-bold leading-[normal] relative shrink-0 text-[10px]">™</p>
-    </div>
-  );
-}
+import MobileLogo from "@/app/components/MobileLogo";
+import imgAbout from "@/imports/mobile-titles/menu-about.svg";
+import imgWork from "@/imports/mobile-titles/menu-work.svg";
+import imgContact from "@/imports/mobile-titles/menu-contact.svg";
 
 function Cross() {
   return (
@@ -56,51 +51,50 @@ interface DrawMenuProps {
 export default function DrawMenu({ onClose }: DrawMenuProps) {
   return (
     <div className="bg-[#fff8e9] content-stretch flex flex-col items-start justify-between relative size-full" data-name="draw menu">
-      {/* Header */}
       <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
         <div className="relative shrink-0 w-full" data-name="header">
           <div aria-hidden className="absolute border-[#e5e0d0] border-b border-solid inset-0 pointer-events-none" />
           <div className="flex flex-row items-center size-full">
             <div className="content-stretch flex items-center justify-between px-[20px] py-[16px] relative size-full">
-              <LogoGroup />
-              <button onClick={onClose} className="content-stretch flex items-center relative shrink-0 bg-transparent border-none p-0 cursor-pointer" data-name="navigation-xbtn">
+              <Link to="/" onClick={onClose} className="no-underline">
+                <MobileLogo />
+              </Link>
+              <button onClick={onClose} className="content-stretch flex items-center relative shrink-0 bg-transparent border-none p-0 cursor-pointer" data-name="navigation-xbtn" aria-label="Close menu">
                 <CloseIcon />
               </button>
             </div>
           </div>
         </div>
 
-        {/* Menu Body */}
         <div className="relative shrink-0 w-full" data-name="menu-body">
           <div className="content-stretch flex flex-col gap-[36px] items-start pt-[60px] px-[32px] relative size-full">
             <Link to="/about" onClick={onClose} className="no-underline w-full">
-              <div className="[word-break:break-word] content-stretch flex gap-[12px] items-center not-italic relative shrink-0 w-full" data-name="nav-item-about">
+              <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="nav-item-about">
                 <p className="font-['Manrope',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#8a8a8a] text-[14px] whitespace-nowrap">01</p>
-                <p className="flex-[1_0_0] font-['TheNightWatch_:Regular',sans-serif] leading-none min-w-px relative text-[#161513] text-[48px] tracking-[-1.44px]">ABOUT</p>
+                <img src={imgAbout} alt="ABOUT" className="block h-[33.792px] w-[175.221px] max-w-none shrink-0" />
               </div>
             </Link>
 
             <Link to="/work" onClick={onClose} className="no-underline w-full">
               <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="nav-item-collection">
-                <p className="[word-break:break-word] font-['Manrope',sans-serif] font-semibold leading-[1.5] not-italic relative shrink-0 text-[#8a8a8a] text-[14px] whitespace-nowrap">02</p>
+                <p className="font-['Manrope',sans-serif] font-semibold leading-[1.5] not-italic relative shrink-0 text-[#8a8a8a] text-[14px] whitespace-nowrap">02</p>
                 <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
-                  <p className="[word-break:break-word] font-['TheNightWatch_:Regular',sans-serif] leading-none not-italic relative shrink-0 text-[#161513] text-[48px] tracking-[-1.44px] whitespace-nowrap">work</p>
+                  <img src={imgWork} alt="work" className="block h-[33.792px] w-[135.946px] max-w-none shrink-0" />
                   <BadgeNew />
                 </div>
               </div>
             </Link>
 
             <Link to="/contact" onClick={onClose} className="no-underline w-full">
-              <div className="[word-break:break-word] content-stretch flex gap-[12px] items-center not-italic relative shrink-0 text-[#e4501d] w-full" data-name="nav-item-contact">
-                <p className="font-['Manrope',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[14px] whitespace-nowrap">03</p>
-                <p className="flex-[1_0_0] font-['TheNightWatch_:Regular',sans-serif] leading-none min-w-px relative text-[48px] tracking-[-1.44px]">CONTACT</p>
+              <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="nav-item-contact">
+                <p className="font-['Manrope',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#e4501d] text-[14px] whitespace-nowrap">03</p>
+                <img src={imgContact} alt="CONTACT" className="block h-[33.888px] w-[239.82px] max-w-none shrink-0" />
               </div>
             </Link>
           </div>
         </div>
       </div>
 
-      {/* Footer */}
       <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="footer">
         <div className="h-0 relative shrink-0 w-full" data-name="Line">
           <div className="absolute inset-[-1px_0_0_0]">
