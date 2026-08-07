@@ -1,9 +1,21 @@
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import MobileLogo from "@/app/components/MobileLogo";
-import imgAbout from "@/imports/mobile-titles/menu-about.svg";
-import imgWork from "@/imports/mobile-titles/menu-work.svg";
-import imgContact from "@/imports/mobile-titles/menu-contact.svg";
+import imgAboutOff from "@/imports/mobile-titles/menu-about.svg";
+import imgAboutOn from "@/imports/mobile-titles/menu-about-on.svg";
+import imgWorkOff from "@/imports/mobile-titles/menu-work.svg";
+import imgWorkOn from "@/imports/mobile-titles/menu-work-on.svg";
+import imgContactOn from "@/imports/mobile-titles/menu-contact.svg";
+import imgContactOff from "@/imports/mobile-titles/menu-contact-off.svg";
 import imgCross from "./close-cross.svg";
+
+type ActiveItem = "about" | "work" | "contact" | null;
+
+function getActiveItem(pathname: string): ActiveItem {
+  if (pathname.startsWith("/about")) return "about";
+  if (pathname.startsWith("/work")) return "work";
+  if (pathname.startsWith("/contact")) return "contact";
+  return null;
+}
 
 function CloseIcon() {
   return (
@@ -32,11 +44,26 @@ function SocialLinks() {
   );
 }
 
+function NavNumber({ children, active }: { children: string; active: boolean }) {
+  return (
+    <p
+      className={`font-['Manrope',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[14px] whitespace-nowrap ${
+        active ? "text-[#e4501d]" : "text-[#8a8a8a]"
+      }`}
+    >
+      {children}
+    </p>
+  );
+}
+
 interface DrawMenuProps {
   onClose: () => void;
 }
 
 export default function DrawMenu({ onClose }: DrawMenuProps) {
+  const { pathname } = useLocation();
+  const active = getActiveItem(pathname);
+
   return (
     <div className="bg-[#fff8e9] content-stretch flex flex-col items-start justify-between relative size-full" data-name="draw menu">
       <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
@@ -58,16 +85,24 @@ export default function DrawMenu({ onClose }: DrawMenuProps) {
           <div className="content-stretch flex flex-col gap-[36px] items-start pt-[60px] px-[32px] relative size-full">
             <Link to="/about" onClick={onClose} className="no-underline w-full">
               <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="nav-item-about">
-                <p className="font-['Manrope',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#8a8a8a] text-[14px] whitespace-nowrap">01</p>
-                <img src={imgAbout} alt="ABOUT" className="block h-[33.792px] w-[175.221px] max-w-none shrink-0" />
+                <NavNumber active={active === "about"}>01</NavNumber>
+                <img
+                  src={active === "about" ? imgAboutOn : imgAboutOff}
+                  alt="ABOUT"
+                  className="block h-[33.792px] w-[175.221px] max-w-none shrink-0"
+                />
               </div>
             </Link>
 
             <Link to="/work" onClick={onClose} className="no-underline w-full">
               <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="nav-item-collection">
-                <p className="font-['Manrope',sans-serif] font-semibold leading-[1.5] not-italic relative shrink-0 text-[#8a8a8a] text-[14px] whitespace-nowrap">02</p>
+                <NavNumber active={active === "work"}>02</NavNumber>
                 <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
-                  <img src={imgWork} alt="work" className="block h-[33.792px] w-[135.946px] max-w-none shrink-0" />
+                  <img
+                    src={active === "work" ? imgWorkOn : imgWorkOff}
+                    alt="work"
+                    className="block h-[33.792px] w-[135.946px] max-w-none shrink-0"
+                  />
                   <BadgeNew />
                 </div>
               </div>
@@ -75,8 +110,12 @@ export default function DrawMenu({ onClose }: DrawMenuProps) {
 
             <Link to="/contact" onClick={onClose} className="no-underline w-full">
               <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="nav-item-contact">
-                <p className="font-['Manrope',sans-serif] font-semibold leading-[1.5] relative shrink-0 text-[#e4501d] text-[14px] whitespace-nowrap">03</p>
-                <img src={imgContact} alt="CONTACT" className="block h-[33.888px] w-[239.82px] max-w-none shrink-0" />
+                <NavNumber active={active === "contact"}>03</NavNumber>
+                <img
+                  src={active === "contact" ? imgContactOn : imgContactOff}
+                  alt="CONTACT"
+                  className="block h-[33.888px] w-[239.82px] max-w-none shrink-0"
+                />
               </div>
             </Link>
           </div>
