@@ -362,7 +362,7 @@ function NextProjectBanner() {
         <div className="content-stretch flex items-center justify-between px-[80px] py-[40px] relative size-full">
           <div className="[word-break:break-word] content-stretch flex flex-col gap-[6px] items-start leading-[normal] not-italic relative shrink-0 whitespace-nowrap">
             <p className="font-['Space_Grotesk',sans-serif] font-normal relative shrink-0 text-[#8a8a8a] text-[12px] tracking-[0.006px] uppercase">NEXT PROJECT</p>
-            <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0 text-[#161513] text-[20px]">BK 기업은행 개인스마트뱅킹 APP 제안 시안</p>
+            <p className="font-['Pretendard',sans-serif] font-semibold relative shrink-0 text-[#161513] text-[20px]">AMF Fantasy 글로벌 사이트</p>
           </div>
           <ArrowRightWrapper />
         </div>
