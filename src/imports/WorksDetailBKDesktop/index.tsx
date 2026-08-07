@@ -4,7 +4,10 @@ import imgHero from "./hero.png";
 import imgIoneBadge from "./ione-badge.png";
 import imgDesignMotifDiagram from "./design-motif-diagram.png";
 import imgSectionSplash from "./section-splash.png";
-import imgSectionMain from "./section-main.png";
+import imgMainPhoneExisting from "./main-phone-existing.png";
+import imgMainPhoneNotify from "./main-phone-notify.png";
+import imgMainPhoneNewuser from "./main-phone-newuser.png";
+import imgSectionMainDark from "./section-main-dark.png";
 import imgSectionAi from "./section-ai.png";
 import imgSectionProduct from "./section-product.png";
 import imgSectionLounge from "./section-lounge.png";
@@ -178,8 +181,55 @@ function MainPurpose({ items }: { items: string[] }) {
 /** Figma-exported section panel — preserves strokes, shadows, flow arrows, dashed highlights. */
 function SectionPanel({ src, alt }: { src: string; alt: string }) {
   return (
-    <div className="relative shrink-0 w-full overflow-hidden rounded-[20px]">
-      <img alt={alt} className="block w-full h-auto pointer-events-none" src={src} />
+    <div className="relative shrink-0 w-full rounded-[20px]">
+      <img alt={alt} className="block w-full h-auto pointer-events-none rounded-[20px]" src={src} />
+    </div>
+  );
+}
+
+function MainBadge({ children }: { children: string }) {
+  return (
+    <div className="bg-[#4393f0] content-stretch flex items-center justify-center px-[20px] py-[4px] rounded-[20px] shrink-0">
+      <p className="font-['Pretendard',sans-serif] font-semibold text-[18px] text-white whitespace-nowrap">{children}</p>
+    </div>
+  );
+}
+
+/**
+ * Main white card — Figma 2440:3977
+ * Phone assets are exported with #ededed frame strokes from Figma.
+ */
+function MainWhiteCard() {
+  return (
+    <div className="bg-white relative shrink-0 w-full rounded-[20px] h-[900px]" data-name="main-white">
+      <div className="absolute left-[152px] top-[72px]">
+        <MainBadge>기존 유저</MainBadge>
+      </div>
+      <div className="absolute left-[437px] top-[72px]">
+        <MainBadge>메인 알림</MainBadge>
+      </div>
+      <div className="absolute left-[825px] top-[72px]">
+        <MainBadge>신규 유저</MainBadge>
+      </div>
+
+      <p className="absolute left-[152px] top-[116px] font-['Pretendard',sans-serif] font-medium text-[14px] text-[#161513] whitespace-nowrap">
+        기존 유저의 경우 추천금융 배너가 최상단 배치
+      </p>
+
+      {/* Existing — Vector frame includes #ededed stroke (slightly oversized vs content box) */}
+      <div className="absolute left-[150px] top-[166px] w-[264px] h-[720px]" data-name="img-existing">
+        <img alt="기존 유저 메인" className="block size-full max-w-none pointer-events-none" src={imgMainPhoneExisting} />
+      </div>
+
+      {/* Notification — export includes #ededed border + bottom fade */}
+      <div className="absolute left-[440px] top-[167px] w-[260px] h-[422px]" data-name="img-notify">
+        <img alt="메인 알림" className="block size-full max-w-none pointer-events-none" src={imgMainPhoneNotify} />
+      </div>
+
+      {/* New user — export includes #ededed border + bottom fade */}
+      <div className="absolute left-[825px] top-[160px] w-[260px] h-[723px]" data-name="img-newuser">
+        <img alt="신규 유저 메인" className="block size-full max-w-none pointer-events-none" src={imgMainPhoneNewuser} />
+      </div>
     </div>
   );
 }
@@ -197,7 +247,8 @@ function MainSection() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
       <SectionHeading en="Main" kr="[메인]" />
-      <SectionPanel src={imgSectionMain} alt="Main screens with annotations" />
+      <MainWhiteCard />
+      <SectionPanel src={imgSectionMainDark} alt="Main screens — account and alert expand" />
     </div>
   );
 }
