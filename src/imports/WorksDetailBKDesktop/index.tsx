@@ -356,7 +356,11 @@ function ArrowRightWrapper() {
 
 function NextProjectBanner() {
   return (
-    <div className="bg-[rgba(255,255,255,0.6)] relative shrink-0 w-full" data-name="next-project-banner">
+    <Link
+      to="/work/amf"
+      className="bg-[rgba(255,255,255,0.6)] relative shrink-0 w-full no-underline block hover:bg-[rgba(255,255,255,0.85)] transition-colors cursor-pointer"
+      data-name="next-project-banner"
+    >
       <div aria-hidden className="absolute border-[#e5e0d0] border-solid border-t inset-0 pointer-events-none" />
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center justify-between px-[80px] py-[40px] relative size-full">
@@ -367,7 +371,7 @@ function NextProjectBanner() {
           <ArrowRightWrapper />
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
