@@ -24,7 +24,7 @@ import imgArrow from "./arrow.svg";
 function ArrowLeftWrapper() {
   return (
     <div className="relative shrink-0 size-[16px]" data-name="arrow-left-wrapper">
-      <Link to="/work" className="absolute inset-0 flex items-center justify-center hover:opacity-70 transition-opacity">
+      <Link to="/work/marketing" className="absolute inset-0 flex items-center justify-center hover:opacity-70 transition-opacity">
         <svg className="block size-full" fill="none" height="16" preserveAspectRatio="none" viewBox="0 0 16 16" width="16">
           <g id="arrow-left-wrapper">
             <path d="M8 2L2 8L8 14M2 8H14" id="arrow-left" stroke="var(--stroke-0, #E4501D)" strokeLinecap="round" strokeWidth="2" />
@@ -41,7 +41,7 @@ function BackNav() {
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex gap-[8px] items-center pt-[40px] px-[80px] relative size-full">
           <ArrowLeftWrapper />
-          <Link to="/work" className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[14px] whitespace-nowrap no-underline hover:opacity-70 transition-opacity">
+          <Link to="/work/marketing" className="[word-break:break-word] font-['Space_Grotesk',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#e4501d] text-[14px] whitespace-nowrap no-underline hover:opacity-70 transition-opacity">
             Back to works
           </Link>
         </div>

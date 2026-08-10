@@ -7,6 +7,7 @@ export default function WorkDetailPetitElinEtudePage() {
       year="2019"
       title="쁘띠엘린"
       subtitle="에티튜드 정기 기획전"
+      backTo="/work/marketing"
     />
   );
 }

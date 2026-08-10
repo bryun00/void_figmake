@@ -7,6 +7,7 @@ export default function WorkDetailPetitElinEvavivaPage() {
       year="2018"
       title="쁘띠엘린"
       subtitle="에바비바 정기 기획전"
+      backTo="/work/marketing"
     />
   );
 }

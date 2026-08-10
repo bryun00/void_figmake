@@ -7,6 +7,7 @@ export default function WorkDetailPetitElinEclaveCushionPage() {
       year="2024"
       title="쁘띠엘린"
       subtitle="에끌레브 역류방지쿠션"
+      backTo="/work/marketing"
     />
   );
 }

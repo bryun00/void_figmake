@@ -7,6 +7,7 @@ export default function WorkDetailPetitElinMontraumPage() {
       year="2019"
       title="쁘띠엘린"
       subtitle="몬트라움 이벤트"
+      backTo="/work/marketing"
     />
   );
 }

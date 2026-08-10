@@ -7,9 +7,11 @@ interface WorkDetailPlaceholderProps {
   year: string;
   title: string;
   subtitle: string;
+  /** Where "← Work 목록으로" navigates back to. Defaults to the Work page (Product tab). */
+  backTo?: string;
 }
 
-export default function WorkDetailPlaceholder({ tag, year, title, subtitle }: WorkDetailPlaceholderProps) {
+export default function WorkDetailPlaceholder({ tag, year, title, subtitle, backTo = "/work" }: WorkDetailPlaceholderProps) {
   return (
     <div className="bg-[#fff8e9] flex flex-col items-start min-h-screen w-full">
       <SiteHeader />
@@ -41,7 +43,7 @@ export default function WorkDetailPlaceholder({ tag, year, title, subtitle }: Wo
           </p>
         </div>
         <Link
-          to="/work"
+          to={backTo}
           className="no-underline text-[#161513] text-[14px] hover:opacity-60 transition-opacity"
           style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 500 }}
         >
