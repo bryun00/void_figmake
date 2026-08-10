@@ -12,6 +12,7 @@ import imgImage3963 from "./b38c3fa60d1a79e5ad9dff570f0ce9271b93d426.png";
 import imgImage3964 from "./98a1167f10b9efb8d570885762949585330cd723.png";
 import img190527AkMtevent3 from "./8979f185b9c9a4d3f1a3353585b34c8a4a9a1327.png";
 import { imgImage3958, img200113MtPd1 } from "./svg-y9cr5";
+import { Link } from "react-router";
 
 function Img() {
   return (
@@ -58,7 +59,9 @@ function Component() {
 function SectionRow() {
   return (
     <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
-      <Component />
+      <Link to="/work/nh-pay" className="no-underline w-full cursor-pointer">
+        <Component />
+      </Link>
     </div>
   );
 }
@@ -108,7 +111,9 @@ function Component1() {
 function SectionRow1() {
   return (
     <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
-      <Component1 />
+      <Link to="/work/hana-bank" className="no-underline w-full cursor-pointer">
+        <Component1 />
+      </Link>
     </div>
   );
 }
@@ -158,7 +163,9 @@ function Component2() {
 function SectionRow2() {
   return (
     <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
-      <Component2 />
+      <Link to="/work/ipnos" className="no-underline w-full cursor-pointer">
+        <Component2 />
+      </Link>
     </div>
   );
 }
@@ -208,7 +215,9 @@ function Component4() {
 function SectionRow3() {
   return (
     <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
-      <Component4 />
+      <Link to="/work/petit-elin-warmer" className="no-underline w-full cursor-pointer">
+        <Component4 />
+      </Link>
     </div>
   );
 }
@@ -261,7 +270,9 @@ function Component6() {
 function SectionRow4() {
   return (
     <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
-      <Component6 />
+      <Link to="/work/petit-elin-eclave-cushion" className="no-underline w-full cursor-pointer">
+        <Component6 />
+      </Link>
     </div>
   );
 }
@@ -311,7 +322,9 @@ function Component7() {
 function SectionRow5() {
   return (
     <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
-      <Component7 />
+      <Link to="/work/petit-elin-superleaves" className="no-underline w-full cursor-pointer">
+        <Component7 />
+      </Link>
     </div>
   );
 }
@@ -361,7 +374,9 @@ function Component9() {
 function SectionRow6() {
   return (
     <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
-      <Component9 />
+      <Link to="/work/petit-elin-mobile-app-event" className="no-underline w-full cursor-pointer">
+        <Component9 />
+      </Link>
     </div>
   );
 }
@@ -411,7 +426,9 @@ function Component10() {
 function SectionRow7() {
   return (
     <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
-      <Component10 />
+      <Link to="/work/petit-elin-lunar-event" className="no-underline w-full cursor-pointer">
+        <Component10 />
+      </Link>
     </div>
   );
 }
@@ -461,7 +478,9 @@ function Component11() {
 function SectionRow8() {
   return (
     <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
-      <Component11 />
+      <Link to="/work/petit-elin-frodogi" className="no-underline w-full cursor-pointer">
+        <Component11 />
+      </Link>
     </div>
   );
 }
@@ -511,7 +530,9 @@ function Component13() {
 function SectionRow9() {
   return (
     <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
-      <Component13 />
+      <Link to="/work/petit-elin-etude" className="no-underline w-full cursor-pointer">
+        <Component13 />
+      </Link>
     </div>
   );
 }
@@ -561,7 +582,9 @@ function Component14() {
 function SectionRow10() {
   return (
     <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
-      <Component14 />
+      <Link to="/work/petit-elin-evaviva" className="no-underline w-full cursor-pointer">
+        <Component14 />
+      </Link>
     </div>
   );
 }
@@ -611,7 +634,9 @@ function Component15() {
 function SectionRow11() {
   return (
     <div className="content-stretch flex flex-col items-start py-[64px] relative shrink-0 w-[296px]" data-name="section-row">
-      <Component15 />
+      <Link to="/work/petit-elin-montraum" className="no-underline w-full cursor-pointer">
+        <Component15 />
+      </Link>
     </div>
   );
 }
