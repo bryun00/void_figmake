@@ -258,13 +258,30 @@ function ChatbotComparisonSection() {
   );
 }
 
-/** Curved dashed connector used between before/after screens — Figma "_Main / Flow" */
-function FlowConnector({ dashedHeight }: { dashedHeight: number }) {
+/**
+ * Curved dashed connector overlaid on top of a screen mockup, pointing to the
+ * next screen — Figma "_Main / Flow". Positioned absolutely within a
+ * `relative` ancestor using the exact left/top from the design so it overlaps
+ * the highlighted UI element instead of floating between the screens.
+ */
+function FlowConnector({
+  left,
+  top,
+  containerHeight,
+  dashedHeight,
+  dashedTopOffset,
+}: {
+  left: number;
+  top: number;
+  containerHeight: number;
+  dashedHeight: number;
+  dashedTopOffset: number;
+}) {
   return (
-    <div className="relative shrink-0 w-[320px]" style={{ height: `${dashedHeight + 90}px` }}>
+    <div className="absolute w-[320px]" style={{ left: `${left}px`, top: `${top}px`, height: `${containerHeight}px` }}>
       <div
-        className="-translate-y-1/2 absolute border-2 border-[#3c54bb] border-dashed left-0 right-[24.69%] rounded-[4px] top-1/2"
-        style={{ height: `${dashedHeight}px` }}
+        className="-translate-y-1/2 absolute border-2 border-[#3c54bb] border-dashed left-0 right-[24.69%] rounded-[4px]"
+        style={{ height: `${dashedHeight}px`, top: `calc(50% + ${dashedTopOffset}px)` }}
       />
       <div className="absolute flex h-[144px] items-center justify-center left-[243px] top-0 w-[77px]">
         <div className="-scale-y-100 flex-none">
@@ -302,26 +319,34 @@ function DreamCardFlowSection() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
       <SectionHeading en="NH Card" kr="[꿈드리미카드 안내/신청 페이지 신규]" />
-      <div className="bg-white relative shrink-0 w-full">
-        <div className="flex items-center justify-center gap-[24px] px-[63px] py-[58px]">
-          <div className="h-[593px] rounded-[20px] border border-[#ededed] shrink-0 w-[230px] overflow-hidden">
-            <img alt="꿈드리미카드 상단 스크롤 화면" className="block size-full object-cover object-top pointer-events-none" src={imgCardScrollTop} />
+      <div className="bg-white relative shrink-0 w-full h-[746px] overflow-hidden">
+        {/* screen 1 — top of the scrolling detail page */}
+        <div className="absolute h-[593px] left-[63px] top-[115px] w-[230px]">
+          <div className="absolute bottom-0 h-[593px] w-[230px] rounded-tl-[20px] rounded-tr-[20px] border border-b-0 border-[#ededed] overflow-hidden">
+            <img alt="꿈드리미 교육 바우처 신청 상단 화면" className="absolute left-[-0.02%] top-0 h-[146.21%] w-[100.04%] max-w-none pointer-events-none" src={imgCardScrollTop} />
           </div>
-          <div className="h-[611px] rounded-[20px] border border-[#ededed] shrink-0 w-[230px] overflow-hidden">
-            <img alt="꿈드리미카드 하단 스크롤 화면" className="block size-full object-cover object-bottom pointer-events-none" src={imgCardScrollTop} />
+          <div className="absolute bottom-0 left-0 h-[53px] w-[230px] bg-gradient-to-b from-transparent to-[74.528%] to-white" />
+        </div>
+        {/* screen 2 — scrolled further down to the highlighted "신청" button */}
+        <div className="absolute h-[611px] left-[313px] top-[34px] w-[230px]">
+          <div className="absolute bottom-0 h-[611px] w-[230px] rounded-[20px] border border-[#ededed] overflow-hidden">
+            <img alt="꿈드리미 교육 바우처 신청 버튼 화면" className="absolute left-[-0.02%] top-[-41.9%] h-[141.9%] w-[100.04%] max-w-none pointer-events-none" src={imgCardScrollTop} />
           </div>
-          <FlowConnector dashedHeight={52} />
-          <div className="h-[516px] rounded-[20px] border border-[#ededed] shrink-0 w-[230px] overflow-hidden">
-            <img alt="꿈드리미카드 신청 완료 화면" className="block size-full object-cover pointer-events-none" src={imgCardFinal} />
+          <div className="absolute top-0 left-0 h-[53px] w-[230px] bg-gradient-to-t from-transparent to-[74.528%] to-white" />
+        </div>
+        {/* screen 3 — final application screen */}
+        <div className="absolute -translate-y-1/2 h-[516px] left-[639px] top-1/2 w-[230px]">
+          <div className="h-[516px] w-[230px] rounded-[20px] border border-[#ededed] overflow-hidden">
+            <img alt="꿈드리미 바우처카드 신청 화면" className="block size-full object-cover pointer-events-none" src={imgCardFinal} />
           </div>
         </div>
-        <div className="px-[134px] pb-[58px]">
+        {/* curved connector, overlaid on the "신청" button in screen 2, pointing at screen 3 */}
+        <FlowConnector left={306} top={485} containerHeight={170} dashedHeight={52} dashedTopOffset={59} />
+        <div className="absolute left-[889px] top-[333px] w-[320px]">
           <IssueList
             heading="Concept"
             items={[
-              <>
-                직관적인 ui를 위해 비교 버튼이 양쪽에 병렬로 놓이도록 디자인
-              </>,
+              "직관적인 ui를 위해 비교 버튼이 양쪽에 병렬로 놓이도록 디자인",
               "앱의 브랜드 컬러를 지키는 디자인을 기본으로 함",
             ]}
           />
@@ -336,17 +361,16 @@ function EventPageFlowSection() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
       <SectionHeading en="NH Card" kr="[이벤트페이지, 안내페이지]" />
-      <div className="bg-white relative shrink-0 w-full">
-        <div className="flex items-center justify-center gap-[24px] px-[63px] py-[58px]">
-          <div className="h-[773px] rounded-[20px] border border-[#ededed] shrink-0 w-[220px] overflow-hidden">
-            <img alt="적립 이벤트 안내 화면" className="block size-full object-cover pointer-events-none" src={imgEventPage1} />
-          </div>
-          <FlowConnector dashedHeight={70} />
-          <div className="h-[1182px] rounded-[20px] border border-[#ededed] shrink-0 w-[230px] overflow-hidden">
-            <img alt="적립 이벤트 상세 화면" className="block size-full object-cover pointer-events-none" src={imgEventPage2} />
-          </div>
+      <div className="bg-white relative shrink-0 w-full h-[1298px] overflow-hidden">
+        <div className="absolute h-[773px] left-[369px] top-[58px] w-[220px] rounded-[20px] border border-[#ededed] overflow-hidden">
+          <img alt="NH포인트 플러스 이벤트 안내 화면" className="block size-full object-cover pointer-events-none" src={imgEventPage1} />
         </div>
-        <div className="px-[134px] pb-[58px]">
+        <div className="absolute h-[1182px] left-[704px] top-[58px] w-[230px] rounded-[20px] border border-[#ededed] overflow-hidden">
+          <img alt="매일매일 교통적립 상세 화면" className="block size-full object-cover pointer-events-none" src={imgEventPage2} />
+        </div>
+        {/* curved connector, overlaid on the highlighted CTA in screen 1, pointing at screen 2 */}
+        <FlowConnector left={358} top={218} containerHeight={179} dashedHeight={70} dashedTopOffset={54.5} />
+        <div className="absolute left-[358px] top-[870px] w-[320px]">
           <IssueList
             heading="Concept"
             items={[
