@@ -13,6 +13,7 @@ export default function WorkDetailNhPayPage() {
           year="2024"
           title="NH pay,NH 카드"
           subtitle="pc,mobile"
+          backTo="/work/marketing"
         />
       </div>
       {/* Desktop: >440px */}

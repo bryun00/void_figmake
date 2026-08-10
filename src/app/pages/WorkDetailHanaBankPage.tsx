@@ -7,6 +7,7 @@ export default function WorkDetailHanaBankPage() {
       year="2023"
       title="하나은행 기업뱅킹"
       subtitle="pc,mobile"
+      backTo="/work/marketing"
     />
   );
 }

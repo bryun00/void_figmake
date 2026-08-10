@@ -7,6 +7,7 @@ export default function WorkDetailPetitElinWarmerPage() {
       year="2017"
       title="쁘띠엘린"
       subtitle="에끌레브 워머"
+      backTo="/work/marketing"
     />
   );
 }

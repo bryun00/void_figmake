@@ -7,6 +7,7 @@ export default function WorkDetailPetitElinSuperleavesPage() {
       year="2020"
       title="쁘띠엘린"
       subtitle="슈퍼리브즈 샴푸"
+      backTo="/work/marketing"
     />
   );
 }

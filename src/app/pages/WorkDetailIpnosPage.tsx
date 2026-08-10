@@ -7,6 +7,7 @@ export default function WorkDetailIpnosPage() {
       year="2025"
       title="이프노스"
       subtitle="요가복"
+      backTo="/work/marketing"
     />
   );
 }
